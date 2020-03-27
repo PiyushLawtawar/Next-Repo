@@ -1,4 +1,14 @@
 # Frontend_Codebase
+# Features:
+
+1.Atomic design
+2.SSR
+3.WInston logging
+4.NEXT JS
+5.Hapi JS server
+6.Service worker
+7.pm2 config
+8.Context API
 
 Steps to run server in localbox
 
