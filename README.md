@@ -1,4 +1,4 @@
-# LP_Frontend_EA_Codebase
+# Frontend_Codebase
 
 Steps to run server in localbox
 
