@@ -1,0 +1,130 @@
+min-w-mobile = 320px
+max-w-mobile = 991px
+
+min-w-tablet = 992px
+max-w-tablet = 1279px
+
+min-w-desktop = 1280px
+
+max-w-xdesktop = 1600px
+
+
+
+
+.t-promotions
+  display flex
+  flex-flow column wrap
+  justify-content center
+  height auto
+  max-width 1472px
+  padding 0
+  
+.t-promotions__headTitle
+  color $carbon
+  font: 1.5rem 'robotoRegular'
+  margin-bottom 28px
+  padding-left 16px
+  padding-top 16px
+  
+.t-promotions__head, .t-promotions__cards, .t-promotions__productList
+  margin 0
+  padding 0
+  display flex
+  flex-flow row wrap
+  width 100%
+
+.t-promotions__productList
+  background $background-color
+  border-radius 4px
+  justify-content flex-start
+
+.t-promotions__head
+  height auto
+  justify-content space-between
+.t-promotions__filter
+  width 263px
+  padding-left 16px
+  
+.t-promotions__productItems
+  width 24%
+  margin 5px
+  
+.t-promotions__productItems 
+  .demo-card
+    padding 13px
+  
+.t-promotions__productItems 
+  .demo-card 
+    .a-btn
+      margin-top 26px
+  
+.t-promotions__cards
+  padding-top 30px
+  padding-left 8px
+
+
+
+// Mobile
+@media (min-width: min-w-mobile) and (max-width: max-w-mobile) {
+  .t-promotions__productList{
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .t-promotions__cards{
+    padding-left: 0;
+  }
+  .t-promotions__filter{
+    width: 100%;
+    padding-left: 0;
+  }
+  .t-promotions__title{
+    width: 347px;
+  }
+  .t-promotions__title .container, .t-myBag__toBuy{
+    display: none;
+  }
+  .t-promotions__head{
+    justify-content: center;
+  }
+  .t-promotions__headTitle{
+    margin-top: 20px;
+    padding-left: 0;
+    
+  }
+}
+
+
+
+// Tablet
+@media (min-width: min-w-tablet) and (max-width: max-w-tablet) {
+  .t-promotions{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .t-promotions__productItems{
+    width: 100%;
+  }
+  
+  .t-promotions__productList{
+    justify-content: flex-start;
+  }
+  .t-promotions__cards{
+    padding-left: 0;
+  }
+  .t-promotions__headTitle, .t-promotions__filter{
+    padding-left: 0;
+  }
+  .t-promotions__title .container{
+    padding-left: 0;
+  }
+  
+  .t-promotions__productList .o-promotions:first-child{
+    margin-left: 0;
+  }
+}
+
+// Desktop
+@media (min-width: min-w-desktop) {
+
+}

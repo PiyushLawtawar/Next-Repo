@@ -1,0 +1,187 @@
+.a-footer__linkSession
+		padding 15px 0
+				font-family 'robotomedium'
+				display block
+				font-size 0.875em
+				color #fff
+				text-decoration none
+
+.a-footer__sectionTitle
+		label
+				font-family 'robotomedium'
+				color #fff
+
+.a-footer__link
+		a
+				font-family 'robotoregular'
+				color #fff
+				font-size 0.75em
+
+@media only screen and (max-width: 991px)
+		.a-footer__link
+				a
+						font-size 0.875em
+
+.a-footer__sectionIcon
+		-webkit-transition -webkit-transform 0.3s ease-in-out
+		transition -webkit-transform 0.3s ease-in-out
+		-moz-transition transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out
+		transition transform 0.3s ease-in-out
+		transition transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out
+		i
+				color #fff
+				font-size 12px
+
+.rotate-180
+		-webkit-transform rotate(180deg)
+		-moz-transform rotate(180deg)
+		transform rotate(180deg)
+		-webkit-transition -webkit-transform 0.3s ease-in-out
+		transition -webkit-transform 0.3s ease-in-out
+		-moz-transition transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out
+		transition transform 0.3s ease-in-out
+		transition transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -moz-transform 0.3s ease-in-out
+
+.a-footer__boletin
+		a
+				font-family 'robotoregular'
+				font-size 0.875em
+				border solid 1px #fff
+				display block
+				padding 10px
+				color #fff !important
+				text-align center
+				width 100%
+				&:hover
+						-moz-osx-font-smoothing grayscale
+						background #333
+						border solid 1px #313131
+
+.a-footer__contact
+		p
+				font-family 'robotoregular'
+				color #fff
+				font-size 0.75em
+				padding 1px 0
+
+@media only screen and (max-width: 991px)
+		.a-footer__contact
+				p
+						//pointer-events none
+
+.a-footer__comments
+		p
+				// display inline-block
+				font-family 'robotoregular'
+				color #fff
+				font-size 0.75em
+			 // white-space nowrap
+
+.a-footer__disclaimers
+		a
+				font-family 'robotoregular'
+				display inline-block
+				color #fff !important
+				font-size 0.75em
+				padding 0 7px
+				text-decoration none
+		span
+				color #fff
+
+.a-footer__misc
+		padding 6px 0
+		p
+				color #fff
+				font-family 'robotoregular'
+				font-size 0.625em
+
+.a-footer__copyright
+		padding 6px 0
+		p
+				color #fff
+				font-family 'robotoregular'
+				font-size 0.625em
+
+.a-footer-social-media
+		i
+				display inline-block
+				color #fff
+				font-size 20px
+				padding 0 13px
+
+.m-footer__links
+		.card
+				background-color #555
+				border 0
+				cursor pointer
+				.card-header
+						//pointer-events none
+						background-color transparent
+						border 0
+						padding 0.75rem 0
+				.card-body
+						padding 0
+						ul
+								padding 0
+								li
+										padding 8px 0
+										list-style-type none
+				h3
+						font-size 0.875em
+
+@media only screen and (max-width: 991px)
+		.m-footer__links
+				.card
+						padding 3px
+						-moz-border-radius 0
+						border-radius 0
+						border-bottom 1px solid #444
+						background-color #555
+				.card-header
+						pointer-events auto !important
+				.card-body
+						padding 0 1.25rem 0 1.25rem
+
+.m-footer__misc
+		background-color #464646
+		padding 10px 0
+
+html
+		height 100%
+
+main
+		-webkit-box-flex 1
+		-moz-box-flex 1
+		-ms-flex 1 0 auto
+		flex 1 0 auto
+
+.collapse
+		&:not(.show)
+				display block
+
+.checkoutPage_
+		.collapse
+				&:not(.show)
+						display none
+footer
+		-ms-flex-negative 0
+		flex-shrink 0
+		background-color #555
+		&.fixedFooter
+		  position fixed
+		  bottom 0
+		  width 100%
+		 .collapse:not(.show)
+		  display block
+		hr
+				border-bottom 1px solid #979797
+				margin 0
+				padding 0
+@media only screen and (max-width: 991px)
+	.collapse:not(.show)
+		display none
+	footer
+		.card-columns
+			column-count auto
+		.collapse:not(.show)
+			display none

@@ -1,0 +1,35 @@
+// Custom Products functionality START
+.m-customProduct
+    height auto !important
+    display flex
+    align-items center
+    padding 8px 16px
+    cursor: pointer
+    i
+        font: 0.7rem 'robotoRegular';
+        margin-left: auto
+    .a-customProduct__imgText
+        display: flex
+        align-items: center
+        img
+            width 40px
+            margin-right: 10px
+        .title-font
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: flex-start
+            text-align: left
+            span
+                &:nth-child(1)
+                    font: 0.875rem 'robotoRegular'
+                &:nth-child(2)
+                    font: 0.7rem 'robotoRegular'
+                    color: #666666
+
+@media only screen and (max-width: 991px)
+    .m-customProduct
+        .a-customProduct__imgText
+            img 
+                display: none
+// Custom Products functionality END

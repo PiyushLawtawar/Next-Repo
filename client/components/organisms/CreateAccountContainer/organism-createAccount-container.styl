@@ -1,0 +1,126 @@
+.o-createAccount-container
+    background: white
+    margin-bottom: 90px
+    padding-bottom: 50px
+    border-radius: 5px
+    box-shadow: $b-shadow-container
+    @media screen and (max-width: 991.5px)
+        padding: 0 16px 50px
+        margin: 0 -15px
+        box-shadow: none
+
+.m-createAccount-list
+    width: 344px
+    margin-top: 42px
+    ul
+        padding: 0 0 0 30px
+    li
+        font: $body3-legend
+        list-style-type: none
+        position: relative
+        &::before
+            content: '\2022'
+            position: absolute
+            left: -0.8em
+            font-size: 1.1em
+        p
+            margin: 0 0 3px 12px
+    
+.a-createAccount-listTitle
+    font: $share-modal
+
+.m-formCreateAccout
+    margin-top: 20px
+    width: 382px
+    padding: 0
+
+    @media screen and (max-width: 991.5px)
+        margin-top: 5px
+        width: 100%
+
+    .mdc-text-field + .mdc-text-field-helper-line
+        padding-left: 0px
+        margin-bottom: 22px
+
+    &.m-box-form__content--my__account .a-changePass-label--required
+        color: #f00
+        font: $caption
+        float: right
+
+    .mdc-text-field ~ .mdc-text-field-helper-line
+        visibility: hidden
+        padding-left: 0px
+        margin-bottom: 0
+
+    .mdc-text-field--invalid ~ .mdc-text-field-helper-line
+        visibility visible
+
+    .a-updatePersonalData-label
+        font: $caption
+
+    .a-updatePersonalData-label
+        color $carbon
+        font $caption
+        &:before
+            content: '* '
+            color: $red
+
+#formCreateAccount
+    & > div:nth-child(5)
+        visibility: visible
+
+.m-formCreateAccount__header
+    height: 38px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: row-reverse
+    margin-top: 10px
+    margin-bottom: 25px
+    @media screen and (min-width: 991.5px)
+        margin-bottom: 10px;
+        margin-top: 17px;
+    .a-formCreateAccount__benefitsModal
+        color: $lead
+        font: $overline-module
+        text-decoration: underline
+        height: 30px
+        display: flex
+        align-items: center
+        position: relative
+        @media screen and (min-width: 991.5px)
+            display: none
+        .a-login--iconHelper
+            position: absolute
+            right: -21px
+            top: 6px
+
+.select-gender
+    .m-radioButton
+        label
+            font: $body1-description
+
+.a-login-anchor--helperText
+    color: $lead
+    text-decoration: underline
+    font: $overline-link 
+    margin-left: 0.8rem
+    cursor: pointer
+
+.a-login-anchor--helperText:hover
+    color: $lead
+    text-decoration: underline
+
+.a-login--iconHelper:before
+  content: url("/static/images/atomo-icono-help-small.svg")
+
+.m-termsConditions
+    font: $caption
+    margin: 10px 0 25px
+    a
+        color: $primary-color 
+    // .mdc-text-field ~ .mdc-text-field-helper-line
+
+.m-formCreateAccount__container
+    @media screen and (max-width: 991.5px)
+        padding: 0

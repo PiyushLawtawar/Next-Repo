@@ -1,0 +1,1253 @@
+.buttonBack___1mlaL
+    cursor pointer
+    opacity: 0;
+
+.buttonFirst___2rhFr
+    cursor pointer
+
+.buttonNext___2mOCa
+    cursor pointer
+
+.buttonLast___2yuh0
+    cursor pointer
+
+.buttonNext___3Lm3s
+    cursor pointer
+
+.dot___3c3SI
+    cursor pointer
+
+.image___xtQGH
+    display block
+    width 100%
+    height 100%
+
+.container___2O72F
+    position relative
+    overflow hidden
+    height 100%
+    width 100%
+
+.overlay___IV4qY
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    right 0
+    opacity 0
+    cursor zoom-in
+    transition opacity .3s,transform .3s
+
+.hover___MYy31,.loading___1pvNI,.zoom___3kqYk
+    opacity 1
+
+.imageLoadingSpinnerContainer___3UIPD
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    background-color #f4f4f4
+
+.slide___3-Nqo
+    position relative
+    display block
+    box-sizing border-box
+    height 0
+    margin 0px 0px 0px 0px;
+    list-style-type none
+    &:focus
+        outline none!important
+
+.slideHorizontal___1NzNV
+    float left
+
+.slideInner___2mfX9
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+
+.retain-css-property-value
+    .slideInner___2mfX9
+        height 100%!important
+
+.focusRing___1airF
+    position absolute
+    top 5px
+    right 5px
+    bottom 5px
+    left 5px
+    pointer-events none
+    outline-width 5px
+    outline-style solid
+    outline-color Highlight
+
+@media (-webkit-min-device-pixel-ratio:0)
+    .focusRing___1airF
+        outline-style auto
+        outline-color -webkit-focus-ring-color
+
+.horizontalSlider___281Ls
+    position relative
+    overflow: hidden
+.horizontalSliderTray___1L-0W
+    overflow hidden
+    width 100%
+
+.verticalSlider___34ZFD
+    position relative
+    overflow hidden
+
+.verticalSliderTray___267D8
+    overflow hidden
+
+.verticalTray___12Key
+    float left
+
+.verticalSlideTrayWrap___2nO7o
+    overflow hidden
+
+.sliderTray___-vHFQ
+    display block
+    list-style none
+    padding 0
+    margin 0
+
+.sliderAnimation___300FY
+    transition transform .5s
+    transition-timing-function cubic-bezier(.645,.045,.355,1)
+    will-change transform
+
+.masterSpinnerContainer___1Z6hB
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    background-color #f4f4f4
+
+.spinner___27VUp
+    position absolute
+    top calc(50% - 15px)
+    left calc(50% - 15px)
+    width 30px
+    height 30px
+    animation-name a
+    animation-duration 1s
+    animation-timing-function linear
+    animation-iteration-count infinite
+    border-width 4px
+    border-style solid
+    border-top-color #000
+    border-right-color #a9a9a9
+    border-bottom-color #a9a9a9
+    border-left-color #a9a9a9
+    border-radius 30px
+
+@-keyframes a{
+  from {
+    transform rotate(0deg)
+  }
+  to {
+    transform rotate(1turn)
+  }
+}
+.o-carousel .o-carousel-row .owl-dots .carousel__dot--selected span, .o-carousel .o-carousel-row .owl-dots .owl-dot:hover span
+    background $primary-color
+.owl-carousel
+    display: block !important
+    align-items: center
+
+.owl-theme
+    .owl-nav
+        margin-top: -35px
+        position: absolute
+        width: 100%
+        display: flex
+        justify-content: space-between
+        color: $carbon
+        [class*=owl-]:hover
+            color: $carbon
+        button
+            background: $white !important
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15)
+            border: 1px solid $timberwolf !important
+            width: 45px
+            height: 45px
+            border-radius: 50% !important
+            outline: none
+            display: flex !important
+            justify-content: center
+            align-items: center
+            color: $lead !important
+            &:hover
+                color: $lead !important
+            &.owl-prev
+                position: absolute
+                left: -15px
+                z-index: 11
+            &.owl-next
+                position: absolute
+                right: -15px
+                z-index: 11
+.o-carousel-row
+    margin-top: 40px
+    @media screen and (max-width: 991.5px)
+        margin: 20px 0 30px
+        padding-bottom: 40px
+    .m-card
+        width: 226px
+        padding-bottom: 10px
+        img.card-img-top
+            width: 100%
+            height: auto
+            padding: 15px 15px 0 15px
+    .owl-dots,.slick-dots
+        position: absolute
+        top: -80px
+        right: 0
+        @media screen and (max-width: 991.5px)
+            bottom: 0
+            top 210px
+            right: inherit
+            width: 100%
+            display: flex
+            justify-content: center
+        button
+            outline: none
+        .owl-dot
+            &.active
+            &:hover
+                span
+                    background: $primary-color
+            span
+                margin: 4.5px
+    a
+        text-decoration: none
+        &:hover
+            text-decoration: none !important
+
+
+.o-carousel
+    margin: 50px 0 60px
+    h2
+        font 1.75rem 'robotoRegular'
+    @media screen and (max-width: 991.5px)
+        margin: 60px 0 0
+        h2
+            display: flex
+            justify-content: center
+            margin: 0
+            font-size: 1.000em
+        hr
+            display: none
+    @media screen and (max-width: 425.5px)
+		    margin: 25px 0 0
+    .o-carousel-row
+        margin-top 40px
+        @media screen and (max-width: 991.5px)
+                margin: 20px 0 30px
+                padding-bottom: 40px
+        .owl-dots
+            position absolute
+            right 0
+            display -webkit-box
+            display -moz-box
+            display -ms-flexbox
+            display flex
+            button
+            outline: none
+        .owl-dot
+            &.active
+            &:hover
+                span
+                    background: $primary-color
+            span
+                margin: 5px
+                width: 10px;
+                height: 10px;
+                margin: 5px 7px;
+                background: #D6D6D6;
+                display: block;
+                -webkit-backface-visibility: visible;
+                transition: opacity .2s ease;
+                border-radius: 30px;
+    a
+        text-decoration: none
+        &:hover
+            text-decoration: none !important
+
+
+.pzlcontainerthumbs
+    .carousel__next-button
+        opacity: 0;
+carousel__back-button
+    opacity: 0;
+
+.pswp
+    display none
+    position absolute
+    width 100%
+    height 100%
+    left 0
+    top 0
+    overflow hidden
+    -ms-touch-action none
+    touch-action none
+    z-index 1500
+    -webkit-text-size-adjust 100%
+    -webkit-backface-visibility hidden
+    outline none
+    *
+        -webkit-box-sizing border-box
+        box-sizing border-box
+    img
+        max-width none
+
+.pswp--animate_opacity
+    opacity 0.001
+    will-change opacity
+    -webkit-transition opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)
+    transition opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)
+
+.pswp--open
+    display block
+
+.pswp--zoom-allowed
+    .pswp__img
+        cursor -webkit-zoom-in
+        cursor -moz-zoom-in
+        cursor zoom-in
+
+.pswp--zoomed-in
+    .pswp__img
+        cursor -webkit-grab
+        cursor -moz-grab
+        cursor grab
+
+.pswp--dragging
+    .pswp__img
+        cursor -webkit-grabbing
+        cursor -moz-grabbing
+        cursor grabbing
+
+.pswp__bg
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    background #000
+    opacity 0
+    -webkit-transform translateZ(0)
+    transform translateZ(0)
+    -webkit-backface-visibility hidden
+    will-change opacity
+    will-change opacity
+    -webkit-transition opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)
+    transition opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)
+
+.pswp__scroll-wrap
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    overflow hidden
+
+.pswp__container,
+.pswp__zoom-wrap
+    -ms-touch-action none
+    touch-action none
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    -webkit-backface-visibility hidden
+
+.pswp__container,
+.pswp__img
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+    -webkit-tap-highlight-color transparent
+    -webkit-touch-callout none
+
+.pswp__zoom-wrap
+    position absolute
+    width 100%
+    -webkit-transform-origin left top
+    -ms-transform-origin left top
+    transform-origin left top
+    -webkit-transition -webkit-transform 333ms cubic-bezier(0.4, 0, 0.22, 1)
+    transition transform 333ms cubic-bezier(0.4, 0, 0.22, 1)
+
+.pswp--animated-in .pswp__bg,
+.pswp--animated-in .pswp__zoom-wrap
+    -webkit-transition none
+    transition none
+
+.pswp__item
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    overflow hidden
+
+.pswp__img
+    position absolute
+    width auto
+    height auto
+    top 0
+    left 0
+
+.pswp__img--placeholder
+    -webkit-backface-visibility hidden
+
+.pswp__img--placeholder--blank
+    background #222
+
+.pswp--ie
+    .pswp__img
+        width 100% !important
+        height auto !important
+        left 0
+        top 0
+
+.pswp__error-msg
+    position absolute
+    left 0
+    top 50%
+    width 100%
+    text-align center
+    font-size 14px
+    line-height 16px
+    margin-top -8px
+    color #CCC
+    a
+        color #CCC
+        text-decoration underline
+
+
+.pswp__button
+    width 44px
+    height 44px
+    position relative
+    background none
+    cursor pointer
+    overflow visible
+    -webkit-appearance none
+    display block
+    border 0
+    padding 0
+    margin 0
+    float right
+    opacity 0.75
+    -webkit-transition opacity 0.2s
+    transition opacity 0.2s
+    -webkit-box-shadow none
+    box-shadow none
+    &:active
+        outline none
+        opacity 0.9
+    &::-moz-focus-inner
+        padding 0
+        border 0
+
+.pswp__button:focus, .pswp__button:hover
+    opacity 1
+
+.pswp__ui--over-close
+    .pswp__button--close
+        opacity 1
+
+.pswp__button,
+.pswp__button--arrow--left:before,
+.pswp__button--arrow--right:before
+    background url('/static/images/PhotoSwipe/default-skin/default-skin.png') 0 0 no-repeat
+    background-size 264px 88px
+    width 44px
+    height 44px
+
+.pswp__button--close
+    background-position 0 -44px
+
+.pswp__button--share
+    background-position -44px -44px
+
+.pswp__button--fs
+    display none
+
+.pswp--supports-fs
+    .pswp__button--fs
+        display block
+
+.pswp--fs
+    .pswp__button--fs
+        background-position -44px 0
+
+.pswp__button--zoom
+    display none
+    background-position -88px 0
+
+.pswp--zoom-allowed
+    .pswp__button--zoom
+        display block
+
+.pswp--zoomed-in
+    .pswp__button--zoom
+        background-position -132px 0
+
+.pswp--touch .pswp__button--arrow--left,
+.pswp--touch .pswp__button--arrow--right
+    visibility hidden
+
+.pswp__button--arrow--left,
+.pswp__button--arrow--right
+    background none
+    top 50%
+    margin-top -50px
+    width 70px
+    height 100px
+    position absolute
+
+.pswp__button--arrow--left
+    left 0
+    &:before
+        left 6px
+        background-position -138px -44px
+
+.pswp__button--arrow--right
+    right 0
+    &:before
+        right 6px
+        background-position -94px -44px
+
+.pswp__button--arrow--left:before,
+.pswp__button--arrow--right:before
+    content ''
+    top 35px
+    background-color rgba(0, 0, 0, 0.3)
+    height 30px
+    width 32px
+    position absolute
+
+.pswp__counter,
+.pswp__share-modal
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+
+.pswp__share-modal
+    display block
+    background rgba(0, 0, 0, 0.5)
+    width 100%
+    height 100%
+    top 0
+    left 0
+    padding 10px
+    position absolute
+    z-index 1600
+    opacity 0
+    -webkit-transition opacity 0.25s ease-out
+    transition opacity 0.25s ease-out
+    -webkit-backface-visibility hidden
+    will-change opacity
+
+.pswp__share-modal--hidden
+    display none
+
+.pswp__share-tooltip
+    z-index 1620
+    position absolute
+    background #FFF
+    top 56px
+    border-radius 2px
+    display block
+    width auto
+    right 44px
+    -webkit-box-shadow 0 2px 5px rgba(0, 0, 0, 0.25)
+    box-shadow 0 2px 5px rgba(0, 0, 0, 0.25)
+    -webkit-transform translateY(6px)
+    -ms-transform translateY(6px)
+    transform translateY(6px)
+    -webkit-transition -webkit-transform 0.25s
+    transition transform 0.25s
+    -webkit-backface-visibility hidden
+    will-change transform
+    a
+        display block
+        padding 8px 12px
+        color #000
+        text-decoration none
+        font-size 14px
+        line-height 18px
+        &:hover
+            text-decoration none
+            color #000
+        &:first-child
+            border-radius 2px 2px 0 0
+        &:last-child
+            border-radius 0 0 2px 2px
+
+.pswp__share-modal--fade-in
+    opacity 1
+    .pswp__share-tooltip
+        -webkit-transform translateY(0)
+        -ms-transform translateY(0)
+        transform translateY(0)
+
+.pswp--touch
+    .pswp__share-tooltip
+        a
+            padding 16px 12px
+
+a
+    &.pswp__share--facebook
+        &:before
+            content ''
+            display block
+            width 0
+            height 0
+            position absolute
+            top -12px
+            right 15px
+            border 6px solid transparent
+            border-bottom-color #FFF
+            -webkit-pointer-events none
+            -moz-pointer-events none
+            pointer-events none
+        &:hover
+            background #3E5C9A
+            color #FFF
+            &:before
+                border-bottom-color #3E5C9A
+    &.pswp__share--twitter
+        &:hover
+            background #55ACEE
+            color #FFF
+    &.pswp__share--pinterest
+        &:hover
+            background #CCC
+            color #CE272D
+    &.pswp__share--download
+        &:hover
+            background #DDD
+
+.pswp__counter
+    position absolute
+    left 0
+    top 0
+    height 44px
+    font-size 13px
+    line-height 44px
+    color #FFF
+    opacity 0.75
+    padding 0 10px
+
+.pswp__caption
+    position absolute
+    left 0
+    bottom 0
+    width 100%
+    min-height 44px
+    small
+        font-size 11px
+        color #BBB
+
+.pswp__caption__center
+    text-align left
+    max-width 420px
+    margin 0 auto
+    font-size 13px
+    padding 10px
+    line-height 20px
+    color #CCC
+
+.pswp__caption--empty
+    display none
+
+.pswp__caption--fake
+    visibility hidden
+
+.pswp__preloader
+    width 44px
+    height 44px
+    position absolute
+    top 0
+    left 50%
+    margin-left -22px
+    opacity 0
+    -webkit-transition opacity 0.25s ease-out
+    transition opacity 0.25s ease-out
+    will-change opacity
+    direction ltr
+
+.pswp__preloader__icn
+    width 20px
+    height 20px
+    margin 12px
+
+.pswp__preloader--active
+    opacity 1
+    .pswp__preloader__icn
+        background url('/static/images/PhotoSwipe/default-skin/preloader.gif') 0 0 no-repeat
+
+.pswp--css_animation
+    .pswp__preloader--active
+        opacity 1
+        .pswp__preloader__icn
+            -webkit-animation clockwise 500ms linear infinite
+            animation clockwise 500ms linear infinite
+        .pswp__preloader__donut
+            -webkit-animation donut-rotate 1000ms cubic-bezier(0.4, 0, 0.22, 1) infinite
+            animation donut-rotate 1000ms cubic-bezier(0.4, 0, 0.22, 1) infinite
+    .pswp__preloader__icn
+        background none
+        opacity 0.75
+        width 14px
+        height 14px
+        position absolute
+        left 15px
+        top 15px
+        margin 0
+    .pswp__preloader__cut
+        position relative
+        width 7px
+        height 14px
+        overflow hidden
+    .pswp__preloader__donut
+        -webkit-box-sizing border-box
+        box-sizing border-box
+        width 14px
+        height 14px
+        border 2px solid #FFF
+        border-radius 50%
+        border-left-color transparent
+        border-bottom-color transparent
+        position absolute
+        top 0
+        left 0
+        background none
+        margin 0
+
+@media screen and (max-width: 1024px)
+    .pswp__preloader
+        position relative
+        left auto
+        top auto
+        margin 0
+        float right
+
+
+.pswp__top-bar
+    position absolute
+    left 0
+    top 0
+    height 44px
+    width 100%
+
+.pswp__caption,
+.pswp__top-bar,
+.pswp--has_mouse .pswp__button--arrow--left,
+.pswp--has_mouse .pswp__button--arrow--right
+    -webkit-backface-visibility hidden
+    will-change opacity
+    -webkit-transition opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)
+    transition opacity 333ms cubic-bezier(0.4, 0, 0.22, 1)
+
+.pswp--has_mouse .pswp__button--arrow--left,
+.pswp--has_mouse .pswp__button--arrow--right
+    visibility visible
+
+.pswp__top-bar,
+.pswp__caption
+    background-color rgba(0, 0, 0, 0.5)
+
+.pswp__ui--fit .pswp__top-bar,
+.pswp__ui--fit .pswp__caption
+    background-color rgba(0, 0, 0, 0.3)
+
+.pswp__ui--idle
+    .pswp__top-bar
+        opacity 0
+
+.pswp__ui--idle .pswp__button--arrow--left,
+.pswp__ui--idle .pswp__button--arrow--right
+    opacity 0
+
+.pswp__ui--hidden .pswp__top-bar,
+.pswp__ui--hidden .pswp__caption,
+.pswp__ui--hidden .pswp__button--arrow--left,
+.pswp__ui--hidden .pswp__button--arrow--right
+    opacity 0.001
+
+.pswp__ui--one-slide .pswp__button--arrow--left,
+.pswp__ui--one-slide .pswp__button--arrow--right,
+.pswp__ui--one-slide .pswp__counter
+    display none
+
+.pswp__element--disabled
+    display none !important
+
+.pswp--minimal--dark
+    .pswp__top-bar
+        background none
+
+
+
+.image-magnify
+    display flex
+    flex-direction column
+    margin 0 auto
+    max-width 1200px
+    &__image-container {
+    height 385px
+    > div > img {
+      max-height 385px
+    }
+    }
+figure
+    &.zoom
+        background-position 50% 50%
+        background-repeat no-repeat
+        cursor auto
+        height 100%
+        margin auto
+        overflow hidden
+        position relative
+        width 100%
+        &.isZoomable img hover {
+        opacity: 0
+        }
+    img
+        display block
+        margin auto
+        overflow hidden
+        transition opacity .5s
+        max-height 100%
+        max-width 100%
+
+
+.slick-slider
+    position relative
+    display block
+    box-sizing border-box
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+    -webkit-touch-callout none
+    -khtml-user-select none
+    -ms-touch-action pan-y
+    touch-action pan-y
+    -webkit-tap-highlight-color transparent
+
+
+
+.slick-list
+    position relative
+    display block
+    overflow hidden
+    margin 0
+    padding 0
+    &:focus
+        outline none
+    &.dragging
+        cursor pointer
+        cursor hand
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+    -webkit-transform translate3d(0, 0, 0)
+    -moz-transform translate3d(0, 0, 0)
+    -ms-transform translate3d(0, 0, 0)
+    -o-transform translate3d(0, 0, 0)
+    transform translate3d(0, 0, 0)
+
+.slick-track
+    position relative
+    top 20
+    left 0
+    display block
+    margin-left auto
+    margin-right auto
+    &:after
+        clear both
+
+.slick-track:before,
+.slick-track:after
+    display table
+    content ''
+
+.slick-loading
+    .slick-track
+        visibility hidden
+    .slick-slide
+        visibility hidden
+
+.slick-slide
+    display none
+    float left
+    height 100%
+    min-height 1px
+    img
+        display block
+    &.slick-loading
+        img
+            display none
+    &.dragging
+        img
+            pointer-events none
+
+[dir='rtl']
+    .slick-slide
+        float right
+
+.slick-initialized
+    .slick-slide
+        display block
+
+.slick-vertical
+    .slick-slide
+        display block
+        height auto
+        border 1px solid transparent
+
+.slick-arrow
+    &.slick-hidden
+        display none
+
+
+
+.slick-prev,
+.slick-next
+    font-size 0
+    line-height 0
+    position absolute
+    top 50%
+    display block
+    width 20px
+    height 20px
+    padding 0
+    -webkit-transform translate(0, -50%)
+    -ms-transform translate(0, -50%)
+    transform translate(0, -50%)
+    cursor pointer
+    color transparent
+    border none
+    outline none
+    background transparent
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+    outline none
+    background transparent
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+    opacity 1
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+    opacity .25
+
+.slick-prev:before,
+.slick-next:before
+    font-size 20px
+    line-height 1
+    opacity .75
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+
+.slick-prev
+    left -10px
+
+
+[dir='rtl']
+    .slick-prev
+        right -10px
+        left auto
+
+    .slick-next
+        right auto
+        left -10px
+
+
+.slick-next
+    right -10px
+
+
+.slick-dotted
+    &.slick-slider
+        margin-bottom 30px
+
+.slick-dots
+    position relative
+    display block
+    width 100%
+    padding 0
+    margin 0
+    list-style none
+    text-align center
+    button
+        position: relative;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin: 0 5px;
+        padding: 0;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        font-size: 6px;
+        opacity: .5;
+        background-color: #939393;
+
+.carousel__dot--selected
+    font-size 0
+    line-height 0
+    display block
+    width 20px
+    padding 5px
+    cursor pointer
+    color transparent
+    border 0
+    outline none
+    background transparent
+    &:disabled
+        font-size 6px
+        top: 0px;
+        left: 0;
+        opacity: 1;
+        background-color: #e10098;
+        -webkit-font-smoothing antialiased
+        -moz-osx-font-smoothing grayscale
+
+.slick-dots li button:hover,
+.slick-dots li button:focus
+    outline none
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+    opacity 1
+
+.carousel-heading a {
+    display: inline-block;
+    color: #000;
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+.carousel-heading a i {
+    font-size: 13px;
+    padding: 0 0 0 10px;
+}
+.carousel-heading a:hover {
+    background-color: #000;
+    color: #fff;
+}
+.carousel img {
+    width: 100%;
+}
+.owl-nav .buttonBack___1mlaL {
+    opacity: 1;
+}
+
+.CarouselSection{
+    background-color:#fff;
+}
+
+/* Start: Defect 20060, 19964 */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+    .avoid-bottom-space
+        /* .slide___3-Nqo
+            height: auto
+
+        .slideHorizontal___1NzNV
+            padding-bottom: 0 !important
+
+        .slideInner___2mfX9
+            position: relative
+            height: auto */
+
+        .slick-active
+            padding-bottom: 0
+        .slick-slider
+            margin-bottom: 0
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)
+    .avoid-bottom-space
+        /* .slide___3-Nqo
+            height: auto
+
+        .slideHorizontal___1NzNV
+            padding-bottom: 0 !important
+
+        .slideInner___2mfX9
+            position: relative
+            height: auto */
+
+        .slick-active
+            padding-bottom: 0
+        .slick-slider
+            margin-bottom: 0
+
+
+.slick-dots li
+    position relative
+    display inline-block
+    margin 0 5px
+    padding 0
+
+.slick-dots
+    position absolute
+    top -80px
+    right 0
+    text-align -webkit-right
+
+.o-carousel .slick-dots li button,.o-gallery__pdp--mobile .slick-dots li button
+    width 10px
+    height 10px
+    margin 0
+    display block
+    -webkit-backface-visibility visible
+    transition opacity .2s ease
+    background-color #D6D6D6
+    border-radius 30px
+    opacity 1!important
+    font-size 0
+
+.slick-active button
+    background $primary-color!important
+
+.o-carousel .slick-dots li:hover button
+    background $primary-color!important
+
+.slick-dots li button:before
+    font-family slick
+    font-size 6px
+    line-height 20px
+    position absolute
+    top 0
+    left 0
+    width 10px
+    height 10px
+    content " "
+    text-align center
+    opacity .25
+    color #000
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+
+
+.o-carousel .slick-prev,.o-carousel .slick-next
+    background: #fff;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.15);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 450%;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    transition: all 200ms linear;
+    z-index: 9;
+
+ @media screen and (max-width: 991.5px)
+    .slick-dots
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: center;
+
+    .o-gallery__pdp--mobile .slick-dots
+        top: 0;
+
+/* End: Defect 20060, 19964 */
+
+.o-carousel-container
+		background: $white
+		@media screen and (max-width: 991.5px)
+				background: $background-color
+
+.o-carousel-container--tracking
+		background: $white
+.hscrollfix
+	overflow: hidden
+
+@media screen and (min-width: 992px)
+	.o-carousel-container--tracking
+		max-width 85%
+
+.plpclp .slick-slider
+   margin-top: 40px
+
+
+@media screen and (max-width: 991.5px) {
+  .plpclp .slick-slider ,.o-carousel .o-carousel-row {
+    margin: 20px 0 30px;
+    padding-bottom: 10px;
+  }
+
+
+   .o-carousel .slick-dots li:hover button {
+     background: none !important;
+    }
+  .o-carousel .slick-dots li:focus button {
+     background: $primary-color !important;
+    }
+    .o-carousel .slick-dots li.slick-active button {
+     background: $primary-color!important;
+    }
+    .sellerpage .slick-dots
+    {
+            top:-20px;
+    }
+     .sellerpage .slick-list
+     {
+        margin-top: 20px;
+     }
+     .blpcarousel .slick-dots
+     {
+            top:-20px;
+     }
+
+    .blpcarousel .slick-list
+    {
+        margin:20px 0 0 0 ;
+    }
+}
+@media screen and (max-width: 425.5px) {
+
+    .blpcarousel .slick-list
+    {
+        margin:20px 0 0 0!important;
+    }
+    .blpcarousel .slick-dots
+    {
+        top:-20px!important;
+    }
+}
+
+/*start defect 22979*/
+label[for=input-update__amaterno].mdc-floating-label--float-above
+{
+  top:9px !important;
+}
+/*end defect 22979*/

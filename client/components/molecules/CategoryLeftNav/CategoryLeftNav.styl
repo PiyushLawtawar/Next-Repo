@@ -1,0 +1,63 @@
+.a-category__link-firstLevel, .a-category__link-secondLevel, .a-category__link-thirdLevel
+    display flex
+    font $body1-section
+    margin 0 1em
+.a-category__link
+    border-bottom 1px solid $gray-lighter
+    color $carbon
+    padding .8em 0
+    text-decoration none
+    width 100%
+    &:hover
+        color $carbon 
+        text-decoration none
+    i
+        font-size .75em
+        margin-right 1em        
+.a-category__link-secondLevel
+    .a-category__link
+        padding-left 1em
+        cursor: auto
+.a-category__link-thirdLevel
+    .a-category__link
+        border-bottom none
+        border-top 1px solid $gray-lighter
+        padding-left 2em
+
+.m-subcategory__menuList .a-category__title
+    line-height: 1.6
+@media only screen and (max-width: 1200px)
+    .m-category__menuList 
+      .a-category__title
+        width: 130px
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
+.m-category__menuList .m-subcategory__menuList .a-category__title.active
+    color $primary-color
+.m-subcategory__menuList .a-category__title:hover
+    color $primary-color
+
+.a-category__listElement
+    color $carbon
+    font-size .875em
+    text-decoration none
+    &:hover
+        color $primary-color
+        text-decoration none
+.a-category__listElement.active
+    color $primary-color
+.m-category__menuList
+    list-style none
+    padding-left 3.4em
+    padding-top 12px
+    .a-category__title
+        line-height 1.7
+    .a-category__title.current
+        font $title7
+.m-subcategory__menuList
+    list-style none
+    padding-left 1.5em
+.m-category__list
+    li.active a
+        color $primary-color

@@ -1,0 +1,145 @@
+.m-product__qty
+	background $white
+	border 1px solid $gray89
+	border-radius 4px
+	color $lead
+	display block
+	font-size 1em
+	margin-bottom 11px
+	width 100%
+	&:focus
+		outline none
+	&:before
+		content: ""
+		//background $gray89
+		position absolute
+		height 25px
+		width 1px
+		right 35%
+		top 17%
+	&.-multiple.d-lg-none
+		max-width 150px
+		width 65%
+		&:before
+			display none
+		.col
+			&:after
+				right 15%
+
+
+	h2
+		mixin-font($body1, $lead)
+		text-align left
+	i
+		mixin-font($overline-link, $lead)
+		position relative
+		right 3px
+		top 10px
+
+	input
+		border 1px solid transparent
+		color $lead
+		text-align center
+		width 100%
+		&:focus
+			outline none
+
+	&.d-lg-none
+		padding 0
+		.col
+			position relative
+			input
+				background transparent
+				text-align center
+				padding 9px 70px 9px 15px
+				z-index 2
+			&:before
+				content "Cantidad:"
+				font-size 0.875rem
+				position absolute
+				left 16px
+				top 25%
+				width 0
+				height 0
+				z-index 1
+				&.-multiple
+					padding 9px 15px 9px 50px
+					text-align left
+			&:after
+				content "\e902"
+				font-family 'icomoon' !important
+				position absolute
+				right 14px
+				top 35%
+				font-size 11px
+				z-index 1
+
+.o-myBag__column
+	.m-product__qty.-multiple .col.p-0:before
+		display none
+
+
+@media only screen and (min-width: 992px)
+	.m-product__qty
+		border none
+		font-size 0.7em
+		padding 14px 15px
+		i
+			right 2px
+			top 5px
+		input.a-ProductQty__input
+			font-size 1rem
+			border none
+			margin 0
+			padding-left 0
+			text-align center
+			&:focus
+				outline none
+		.m-ProductQty__container
+			align-items center
+			border 1px solid $gray89
+			border-radius 4px
+			display flex
+			height 44px
+			&:focus
+				outline none
+			> .row
+				width 100%
+		.dropdown-toggle
+			font-size 1em
+			color $black-with-opacity
+			display block
+			height 44px
+			padding 13px 10px
+			text-align center
+			i
+				font-size 10px
+				right 10px
+				top 10px
+			&:after
+				display none
+		.dropdown-menu
+			font-size 1em
+			margin 0
+			min-width auto
+			padding 0
+			width 90%
+			z-index 3
+			a
+				color $black-with-opacity
+				border-bottom 1px solid $timberwolf
+				display flex
+				height 52px
+				justify-content center
+				padding 20px 0 0
+				&:hover
+					background $gray-mid
+
+.m-ProductQty__container--small
+	width 100%
+	min-width 70px
+.dropdown-menu--small
+	width 100px
+button.m-product__qty
+	&:before
+		background $gray89

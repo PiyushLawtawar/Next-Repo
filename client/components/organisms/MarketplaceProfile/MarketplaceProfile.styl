@@ -1,0 +1,28 @@
+.o-marketplace__profile, .o-marketplace__profileOpinions
+	margin 0px
+.m-marketplace__opinions .m-marketplace__opinionBlock:nth-child(n+3)
+	display none
+.m-marketplace__opinions .m-marketplace__opinionBlock.show:nth-child(n+3)
+	display block
+.m-marketplace__vendorInfo
+	.a-btn--tertiaryAlternative, .a-btn--tertiary
+		border-width 1px
+	.rating_calification
+		font $seoText-bold
+		color $light-gold
+		margin-right: 6px
+
+
+@media only screen and (max-width: 992px)
+	.o-marketplace__profile
+		margin 15px
+		.a-marketplace__aboutTitle, .a-marketplace__aboutDesc
+			margin 0 15px
+			text-align left
+	.o-marketplace__profileOpinions
+		margin 15px
+		.a-marketplace__opinionsTitle
+			border none
+			padding-bottom 0
+	.m-marketplace__vendorInfo p, .m-marketplace__sendMessage
+		text-align center

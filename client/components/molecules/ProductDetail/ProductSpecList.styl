@@ -1,0 +1,47 @@
+.m-product__productSpecsList
+	.card
+		border-radius 0px
+	.card-header
+		background white
+		border-radius 0
+		border-bottom none
+		border-top none
+		color $lead
+		cursor pointer
+		height 56px
+		padding-left 16px
+		padding-right 16px
+		@media screen and (min-width: 991.5px)
+			padding: 14px 0
+			margin: 0 1rem 
+			border-bottom: solid 1px $whisper
+			border-radius: 0
+		i
+			font $caption
+			@media screen and (min-width: 991.5px)
+				position: relative
+				right: 1%
+		h3
+			font $body1
+			margin 0
+	 .a-btn.-noRadius
+		border-bottom: none	
+	.col-auto
+		padding 5px 8px 0
+	.col
+		padding 0
+	.m-product__giftPurchase-container
+		.a-btn.a-btn--action
+			&:hover
+				border-color: $gray89
+.m-product__productSpecsList .ratingsContainer
+	.card.nav-item
+		box-shadow: none
+		@media screen and (min-width: 991.5px)
+			border: none
+			box-shadow: $b-shadow
+		.card-header
+			border-radius: 4px
+			@media screen and (max-width: 991.5px)
+				border-radius: none
+				box-shadow: none

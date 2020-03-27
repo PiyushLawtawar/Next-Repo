@@ -1,0 +1,20 @@
+#UpdateDataPersonal
+    .a-updatePersonalData-label
+        color $lead
+        font $body2
+        &:before
+            content: '* '
+            color: $red
+    .mdc-text-field.mdc-text-field--outlined
+        margin-top: 0px
+    .mdc-text-field ~ .mdc-text-field-helper-line
+        visibility hidden
+        padding-left 0px
+        margin-bottom 10px
+    .mdc-text-field--invalid ~ .mdc-text-field-helper-line
+        visibility visible
+    // .mdc-text-field__input:required~.mdc-floating-label::after, .mdc-text-field__input:required~.mdc-notched-outline .mdc-floating-label::after
+    //     display none
+    .m-inputText.mdc-text-field--invalid ~ .m-input-helper__text .a-intput-paragraph
+        margin-bottom: 13px
+

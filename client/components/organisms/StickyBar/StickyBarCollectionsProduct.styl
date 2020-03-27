@@ -1,0 +1,79 @@
+//---------------------------
+//- Kevin Salinas
+//---------------------------
+
+
+.o-stickyBar__product__item
+    width: 100%
+    height: 100%;
+    overflow: hidden;
+
+    display: grid
+    grid-template-columns: 35% 65%
+    grid-template-rows: 100%
+    .m-stickyBar__product__image
+        width: 100%
+        display: flex
+        align-items: center
+        figure
+            margin: 0
+    .m-stickyBar__product__detail
+        display: grid
+        grid-template-columns: 1fr 2px 1fr
+        grid-template-rows: 35% 65%
+        .m-stickyBar__product__title
+            /* autoprefixer: off */ 
+            -webkit-box-orient: vertical; 
+        .m-stickyBar__product__title
+            grid-area: 1 / 1 / 2 / 4
+            overflow: hidden;
+            position: relative;
+            width: 80%;
+            display: -webkit-box;
+            margin: 0 5px; 
+            p.a-stickyBar__title
+                margin: 0
+                font: $caption
+                color: $lead
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+        .m-stickyBar__product__quantity
+            display: flex
+            justify-content: center
+            align-items: center
+            grid-area: 2 / 1 / 3 / 2;
+            p.a-stickyBar__product__quantity
+                margin: 0
+                font: $body1
+                color: $carbon
+        .m-stickyBar__product__separator
+                background: $carbon;
+                margin: .5em 0;
+                max-width: 1px
+                grid-area: 2 / 2 / 3 / 3;
+        .m-stickyBar__product__color
+            display: flex
+            justify-content: center
+            align-items: center
+            grid-area: 2 / 3 / 3 / 4;
+            .m-stickyBar__product__color__selected
+                width: 24px
+                height 24px
+                background: $white
+                border: 1px solid $carbon
+                border-radius: 50%
+                position relative
+                display: flex
+                justify-content: center
+                align-items: center
+                .color
+                    // position absolute
+                    width: 22px
+                    height: 22px
+                    border-radius: 50%
+                    border: 1px solid $white
+                    &.red
+                        background: $red
+
+

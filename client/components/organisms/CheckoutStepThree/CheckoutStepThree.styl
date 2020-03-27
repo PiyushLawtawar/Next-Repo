@@ -1,0 +1,135 @@
+.a-checkout__imageProduct
+                width 100%
+.o-checkout__stepThree
+	.a-product__paragraphDiscountPrice
+		mixin-font($body1,$red)
+		sup
+			font $flagMesa
+			position absolute
+			right auto
+			top -0.1em
+
+	.a-product__paragraphRegularPrice
+		mixin-font($body1,$carbon)
+		text-decoration none
+		sup
+			font $flagMesa
+			right initial
+
+		&.--oldPrice
+			color $lead
+			text-decoration line-through
+			sup
+				text-decoration line-through
+
+	.m-checkout__productAdded
+		border-top 1px solid $gray-lighter
+		margin-bottom 1.5rem
+		padding-bottom 3rem
+		&.show
+			margin-bottom 0
+	.a-checkout__termsAndConditions
+		text-align right
+	.m-checkout__eddConsolidated
+		border-bottom 1px solid $gray-lighter
+		display block
+		padding-bottom 1rem
+		&.show
+			display block
+	.m-checkout__edd
+		display none
+		&.show
+			display block
+	.a-checkout_promoList
+		margin 0
+		max-height 400px
+		overflow auto
+		padding 0
+
+	.a-checkout_promoListElement
+		display inline-block
+		list-style-type none
+		mixin-font($body3,$carbon)
+		padding 15px
+		width 100%
+		&:hover, &:focus
+			background $gray-mid
+		strong
+			mixin-font($body2-title,$carbon)
+		i
+			float right
+			margin-top 3px
+	.a-checkout__btnPromotion
+		mixin-font($body2-others,$carbon)
+		height auto
+		min-height: 44px
+		position relative
+		padding: 10px 16px
+		strong
+			mixin-font($body2-footer-bold,$carbon)
+		i
+			display none
+			position: absolute
+			right 16px
+			top: 42%
+			margin-top: 0px
+		&.show
+			i
+				display block
+	.m-box
+		&.-paymentMethodAlert
+			border 2px solid $red
+	.m-product__qty
+		margin-bottom 0
+
+
+@media only screen and (max-width: 992px)
+	.o-checkout__stepThree
+		.a-checkout__headingDeliveryDate
+			display block
+		.a-checkout_promoList
+			max-height 100%
+		.a-checkout__termsAndConditions
+			text-align center
+		.a-checkout__paymentPaypal
+			margin-bottom 0
+			width 31%
+		.a-checkout__btnPromotion
+			min-height: 40px
+			padding 8px 16px
+	.m-product__qty .col-1 i
+		position absolute
+		right 15px
+	.m-checkout__productAdded
+		.m-product__qty
+			width 85%
+			&.-multiple.d-lg-none
+				.col
+					&:after
+						right 5%
+			&.d-lg-none .col
+				position relative
+				input
+					background transparent
+					text-align center
+					padding 9px
+					z-index 2
+				&:before
+					content ""
+@media only screen and (max-width: 359px)
+	.o-checkout__stepThree
+		.a-checkout_promoListElement
+			padding 15px 6px
+		.m-product__giftRegistry-container i
+			margin-top -5px
+@media (min-width: 360px) and (max-width: 370px)
+	.o-checkout__stepThree
+		.a-checkout_promoListElement
+			padding 15px 6px
+		.m-product__giftRegistry-container i
+			margin-right -10px
+			margin-top 5px
+@media only screen and (max-width: 1024px)
+	.o-checkout__stepThree 
+		button#submitForOther
+    		font-size: 0.85rem; 

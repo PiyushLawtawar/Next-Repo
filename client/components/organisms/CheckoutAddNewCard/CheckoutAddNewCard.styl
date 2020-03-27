@@ -1,0 +1,196 @@
+.o-cashTransferenceInfo
+	display none
+
+.alertContainer
+	.mdc-snackbar
+		top 100px
+
+.o-addNewCardForm
+	background-color $white
+	box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+	border-radius 4px
+	padding 15px 16px 38px 16px
+
+.o-addNewCardForm--guest
+	background-color $white
+	box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+	border-radius 4px
+	padding 15px 16px 19px 16px
+
+.m-addressSectionHeader
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items flex-start
+	margin-bottom 1.875rem
+	line-height 18.4px
+
+.m-cardsThumbnails
+	margin-bottom 36px
+
+.m-typeCardContainer
+	flex-direction column
+
+.m-cardholderInfo
+	flex-direction column
+
+.m-deliverAddress
+	padding-left 44px
+	margin-bottom 34px
+
+.a-cardsThumbnails__squareCard
+	height 22px
+	width 22px
+	margin-right 0.5rem
+
+.a-cardsThumbnails__rectangleCard
+	height 22px
+	width 34px
+	margin-right 0.5rem
+
+.a-cardsThumbnails__squareCard--visa
+	height 9px
+	width 30px
+	margin-right 0.5rem
+
+.a-cardsThumbnails__squareCard--master
+	height 17px
+	width 21px
+
+.m-typeCardContainer__input
+	margin-bottom 32px
+
+.--sm-mt-2
+	margin-top 0.5rem
+
+.--mb-25
+	margin-bottom 25px
+
+.--noBottom
+	bottom 14px
+
+.--mb-40
+	margin-bottom 40px
+
+.--mb-11
+	margin-bottom 11px
+
+.--mb-46
+	margin-bottom 46px
+
+.--mb-44
+	margin-bottom 44px
+
+.--storeDisabled
+	opacity 0.2
+
+input[type=number] 
+    -moz-appearance textfield
+
+input[type=number]::-webkit-inner-spin-button 
+input[type=number]::-webkit-outer-spin-button 
+	-webkit-appearance none
+	margin 0
+
+.a-infoContainer__cardName 
+	font-size 0.875rem
+	color #333
+	margin-bottom 0.5rem
+
+.a-deliveryAddress__description 
+	font-size 0.75rem
+	color #333
+	margin 0
+.m-textField__helperText
+//	width 120%
+
+
+
+.mdc-text-field-helper-text 
+				color rgba(0,0,0,.6)
+
+
+@media only screen and (max-width: 992px)
+	.o-addNewCardForm
+		.a-inputTextContainer__notch
+			.mdc-floating-label
+				top 7px
+	
+	.o-addNewCardForm
+		.a-inputSelectContainer__notch
+			.mdc-floating-label
+				top 7px
+
+@media (min-width: 991px)  
+	.o-addNewCardForm
+		background-color $white
+		box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+		border-radius 4px
+		padding 32px 20px 36px 24px
+
+	.m-typeCardContainer
+		flex-direction row
+		margin-bottom 33px
+
+	.m-cardsThumbnails
+		margin-bottom 0px
+		margin-left 36px
+
+	.m-typeCardContainer__input
+		margin-bottom 0px
+
+	.--mb-40
+		margin-bottom 54px
+	
+	.m-predefinedAddress--disabled
+		color #666666
+
+@media (min-width: 1199px)
+	.alertContainer
+		.mdc-snackbar
+			top 70px
+
+	.--sm-mt-2
+		margin-top 0
+		padding-left 7px
+
+	.m-addressSectionHeader
+		margin-bottom 22px
+
+	#previousAddress
+		font-size 0.875rem
+
+	.m-typeCardContainer
+		margin-bottom 43px
+
+	.m-cardholderInfo
+		flex-direction row
+
+	.m-cardsThumbnails
+		margin-bottom 0px
+		margin-left 39px
+
+	.m-deliverAddress
+		margin-bottom 48px
+
+	.a-cardsThumbnails__rectangleCard
+		height 30px
+		width 47px
+		margin-right 0.5rem
+
+	.a-cardsThumbnails__squareCard
+		height 30px
+		width 30px
+		margin-right 0.5rem
+
+	.a-cardsThumbnails__squareCard--visa
+		height 12px
+		width 41px
+		margin-right 0.5rem
+
+	.a-cardsThumbnails__squareCard--master
+		height 23px
+		width 29px
+
+	.--mb-40
+		margin-bottom 40px

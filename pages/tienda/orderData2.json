@@ -1,0 +1,86 @@
+{
+    "s": "0",
+    "orderSuccess": {
+        "ItemDetails": {
+            "success": [
+                {
+                    "shippingGroupTotal": "139.0",
+                    "tienda": "039",
+                    "itemType": "Soft Line",
+                    "deliveryInfo": [
+                        {
+                            "ProductType": "Soft Line",
+                            "packedList": [
+                                {
+                                    "imageMap": "https://media11qa.liverpool.com.mx/web/images/products/es_MX/lg/1041958746.jpg",
+                                    "quantity": 1,
+                                    "productId": "1041958746",
+                                    "salePrice": "139.0",
+                                    "displayName": "Vaso Jumbo Tar Hong Chevron PSRJM194JCL",
+                                    "ProductType": "Soft Line",
+                                    "discountAmount": "0.0",
+                                    "packageApplied": false,
+                                    "promoDescription": "No aplica promoción",
+                                    "clothingColor": "TRANSPARENTE",
+                                    "clothingSize": null,
+                                    "shippingGroupTotal": null,
+                                    "giftWrapIsSelected": false,
+                                    "total": "139.0",
+                                    "material": "ACRILICO",
+                                    "sku": "1041958746",
+                                    "listPrice": "139.0",
+                                    "dimensions": "9 CM"
+                                }
+                            ],
+                            "packageApplied": false
+                        }
+                    ],
+                    "shippingCost": "0.0",
+                    "CodigoFacturacion": null,
+                    "isPackageApplied": false,
+                    "packageId": null,
+                    "shippingGroupId": "sg1707438059",
+                    "shoppingType": "Personal Shopping",
+                    "terminal": null
+                }
+            ],
+            "failure": [],
+            "footerContentForPrint": "<p>&#160;</p>\r\r<div style=\"text-align:center;color: #9E005D;font-size: 10px;font-weight: bold;padding-top: 10px;\">* Si compraste a través de Click&amp;Collect, recibirás un email indicando la fecha en que tu pedido esté listo para que pases a recogerlo.</div>\r\r<p>&#160;</p>\r\r<div style=\"text-align:center;color: #9E005D;font-size: 10px;font-weight: bold;padding-top: 10px;\">* En caso de que haya adquirido más de un artículo, es probable que le sean entregados por separado, agradecemos su comprensión.</div>\r\r<p>&#160;</p>\r\r<div style=\"text-align: center; color: #9E005D; font-size: 10px; font-weight: bold;\">* En Liverpool, nos preocupamos por su seguridad por lo que su compra estará sujeta a un proceso de validación para la entrega de la mercancía.</div>\r\r<p>&#160;</p>\r\r<div style=\"text-align: center;\">mar 30/04/2019 04:26</div>\r\r<p>&#160;</p>\r\r<p>*Para saber mas sobre la forma de tu reembolso, te invitamos a contactarnos a través de nuestro equipo de <br />\r\r<span style=\"color:#9e005d\">Ventas y Centro de Atención Telefónica (CAT) 52 62 99 99 DF y del interior 01 800 713 55 55</span></p>\r\r<p>&#160;</p>\r\r<div>\r\r<div style=\"text-align:center;color:#6c6c6c\">Este documento sirve para hacer válida tu garantía.</div>\r\r<div style=\"padding-bottom:11px;text-align:center;color:#6c6c6c\">Este documento es válido para hacer devoluciones en tienda.</div>\r\r<p style=\"margin:0px;color:#9e005d\">POLÍTICAS DE PRIVACIDAD</p>\r\r<p>Llama al Centro de Atención telefónica 52 62 9999 o del interior 01 800 713 5555, ten a la mano tu confirmación de compra (email que recibiste cuando realizaste tu compra).</p>\r\r<p>O te sugerimos acudir a la tienda de tu preferencia junto con el producto y la confirmación de compra a la sección correspondiente.</p>\r\r<p>El vendedor te asesorá para realizar el cambio* y/o devolución**</p>\r\r<p>*Se sustituye el producto. <br />\r\r**Se bonifica el monto en Monedero Electrónico o en el mismo medio en que se realizó el pago.\r<br><br>\r<span style=\"font-size: 90%;\">Distribuidora Liverpool S.A. de C.V.\rProlongación Vasco de Quiroga 4800, Torre 2, Piso 3.\rColonia Santa Fe Cuajimalpa Delegación Cuajimalpa de Morelos. C.P. 05348, Ciudad de México.\rRFC: DLI931201MI9. Régimen General de Ley Personas Morales.</span>\r</p>\r\r</div>\r\r<div><a href=\"https://assetspwa.liverpool.com.mx/ayuda/terminos-y-condiciones.html\">Ver más detalles &gt;&gt;</a> <br />\r\r&#160;</div>",
+            "headerContentForPrint": {
+                "staticCont1": "Gracias por tu preferencia."
+            }
+        },
+        "purchaseDate": "martes 30 de abril de 2019 04:26",
+        "deleveryAddressDetail": {
+            "interiorNumber": "dfhdfhfd",
+            "phoneNumber": "999-4567894",
+            "city": "rayadurg",
+            "exteriorNumber": "34643747",
+            "address1": "gandi street",
+            "postalCode": "02300",
+            "neighborhood": "INDUSTRIAL VALLEJO",
+            "state": "DISTRITO FEDERAL",
+            "delegation": "AZCAPOTZALCO"
+        },
+        "paymentDetail": {
+            "expiryDate": {
+                "time": 1556875618000
+            },
+            "Forma de pago": "Pago: CIE Bancomer"
+        },
+        "orderSuccessTotal": {
+            "couponDiscount": "0.0",
+            "payemntMethod": "CIEBancomer",
+            "expirationTime": "30 Apr 2019/23:59:59",
+            "cieBarCode": "iVBORw0KGgoAAAANSUhEUgAAAKUAAAAwCAAAAABV6+X2AAABGklEQVR42u2WgRKDIAiGeUnf/1FYqSAJtrm2O9t+LzVR8TsgjFgLEdPekryWSvXJwyoRkan6KhqquqZFNZQ5ymfKAj2dC4IsqGig/AZlKiWfkZQyrWfL5G25KuVuz92WW78yZfF46Van5HtQpuxyePwzlOkWHt8+9xUpcUOCEpSgBCUoQQlKUIISlAtSLlxACUpQ/iclaeaKWkmCTm7awV4i6ULJFCVJxg1byd9ObobjvWeSeY+f6B1wmOVu1hyns7FkhpLMzt5yr1Oa67LFA3eRc5RM21LVe989pdSbvPOJr/1omnLgcXIEAeUg/toy6p0+TRnGvvlt0b+bQM58+vXQUf8VyjczUTWytPGapl9yEF+IS9w9P0n5AK4/VdJKE084AAAAAElFTkSuQmCC",
+            "institutionalPromotionDiscount": "0.0",
+            "nightOrderReferenceNumber": "",
+            "discountAmount": "0.0",
+            "subTotal": "139.0",
+            "orderTotal": "139.0",
+            "cieBancomerReference": "39300400011986378278"
+        },
+        "email": "kravichandra@zensar.com"
+    }
+}
+

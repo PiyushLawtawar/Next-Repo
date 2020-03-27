@@ -1,0 +1,102 @@
+.mdc-snackbar
+	bottom auto
+	margin 0
+	top 0px
+	.mdc-snackbar__label
+		mixin-font($body2,$carbon)
+		padding-left 20px
+	.mdc-snackbar__surface
+		position relative
+		width 100%
+		.a-alert__icon
+			display none
+			left 15px
+			position absolute
+			&.icon-error
+				color $red
+			&.icon-warning
+				color $light-gold
+			&.icon-done
+				color $lime-green
+		.icon-close
+			color $gray-night
+			font-size 0.75em
+			position absolute
+			right 0
+			top 20%
+			&:before
+				background transparent
+	&.-alert
+		.mdc-snackbar__label
+			background-color $pale-red
+			border-left 4px solid $red
+		.mdc-snackbar__surface
+			background-color $pale-red
+	&.-warning
+		.mdc-snackbar__label
+			background-color $pale-yellow
+			border-left 4px solid $light-gold
+		.mdc-snackbar__surface
+			background-color $pale-yellow
+	&.-success
+		.mdc-snackbar__label
+			background-color $pale-green
+			border-left 4px solid $lime-green
+		.mdc-snackbar__surface
+			background-color $pale-green
+	&.-toTop, &.-toTopSticky
+		top 0
+
+// modal alerts
+.m-alert
+	box-shadow $b-shadow-card
+	margin 0px 0px 23px
+	padding: 16px 40px 16px 10px
+	cursor pointer
+	position relative
+	.a-alert-iconAlert
+		width 15px
+		height 15px
+		padding 8px
+		margin-right 10px
+	.a-alert-text
+		font $body2
+		color $carbon
+		margin 0
+	.a-alert-iconClose
+		width 15px
+		height 15px
+		align-self flex-start
+		position absolute
+		right 20px
+	&.-alert
+		background-color $pale-red
+		border-left solid 5px $red
+		.a-alert-iconAlert
+			background-position center
+			background-repeat no-repeat
+			background-size cover
+		.a-alert-iconClose
+			background-position center
+			background-repeat no-repeat
+			background-size cover
+
+@media only screen and (min-width: 992px)
+	.mdc-snackbar
+		margin 8px
+		top 106px
+		position absolute
+		.mdc-snackbar__label
+			padding-left 40px
+		.mdc-snackbar__surface
+			min-width 500px
+			width 50%
+			.a-alert__icon
+				display block
+		&.-toTop
+			margin-top 0
+			top 0
+			position fixed
+		&.-toTopSticky
+			top 115px
+			position fixed

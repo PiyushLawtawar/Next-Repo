@@ -1,0 +1,252 @@
+// Custom Products functionality START
+.wrapper-modal
+    background: white
+    .inner-modal
+        display: flex
+        flex-direction: row
+    .wrapper-button-terminos
+        display: flex
+        flex-direction: column
+        .m-buttons-modal
+            order: 1
+            align-items: center
+        .m-terminos-condiciones
+            order: 2
+
+// IMAGE AND TEXT PREVIE
+.box
+    position: relative
+    // display: inline-block
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+    .text-personalization
+        position: absolute
+        z-index: 999
+        margin: 0 auto
+        left: -31px
+        right: 0
+        top: 29%
+        width: 100%
+        text-align: center
+
+.wrapper-input-name
+    .input-name
+        label
+            font-family: 'Roboto'
+            font-size: 14px
+            font-weight: normal
+        .title-button
+            display: flex
+            align-items: center
+            justify-content: space-between
+        .mdc-text-field-helper-text
+            text-align: left
+        .helperText-counter
+            margin-top: -31px
+            text-align: right
+            p
+                font-size: .75rem
+                color: rgba(0,0,0,0.6)
+                margin-bottom: 8px
+
+.wrapper-font-size
+    label.step-two-personalizatio
+        margin-bottom: 15px
+        font-family: 'Roboto'
+        font-size: 14px
+        font-weight: normal
+.wrapper-label-size
+    display: flex
+    justify-content: space-between
+
+.wrapper-colors
+    label
+        font-family: 'Roboto'
+        font-size: 14px
+        font-weight: normal
+
+.m-textField__helperText
+    padding-bottom: 2px !important
+
+.mdc-text-field-helper-text
+    width: 100%
+    text-align: right
+
+.selects-text
+    width: 100%
+    margin-right: 17px
+
+.a-productColorModal
+    border-radius: 50%
+    border: 1px solid #cdcdcd
+    display: inline-block
+    height: 30px
+    list-style-type: none
+    margin: 0 2px
+    padding: 1px
+    width: auto
+
+// COLORS
+.a-productColorModal.active
+    border: 1px solid #000
+.a-productColorModal.error-color
+    border: 1px solid red
+ul.colors
+    padding-left: 0px
+    margin-bottom: 0px
+    margin-top: 8px
+    .a-productColorModal
+        span
+            border-radius: 50%
+            border: 1px solid #fff
+            cursor: pointer
+            display: inline-block
+            height: 26px
+            width: 26px
+    
+
+// BUTTONS
+.m-buttons-modal
+    margin-top: 10px
+    .a-product__buttonCancelar
+        background: #ada8a8
+        color: #fff
+        font-size: 1rem
+        height: 44px
+        margin-top: 4px
+        border: none
+    .a-product__buttonAcept
+        background: #e10098
+        color: #fff
+        font-size: 1rem
+        height: 44px
+        margin-top: 4px
+        &:hover
+            background: #c20083
+            border-color: #c20083
+            color: #fff 
+
+//TERMINOS
+.m-terminos-condiciones
+    p
+        font-size: 12px
+        font-family: 'Roboto'
+        text-align: center
+        color: #333333
+        margin-bottom: 0px
+    a
+        color: #f6009c
+        text-align: center
+        font-size: 12px
+        width: 100%
+        display: block
+
+// ERRORS
+p.message-error
+    font-size: .75rem
+    color: red
+    margin-top: -32px
+p.message-error-color
+    font-size: .75rem
+    color: red
+
+// SELECTED FONT
+#label-font
+    #american
+        font-family: american
+    #ballatines
+        font-family: ballantines
+    #graffiti
+        font-family: graffiti
+    #garamondFont
+        font-family: garamondFont
+    #times
+        font-family: times
+
+.font-american
+    font-family: american
+.font-ballantines
+    font-family: ballantines
+.font-graffiti
+    font-family: graffiti
+.font-garamondFont
+    font-family: garamondFont
+.font-times
+    font-family: times
+
+// IMAGE AND TEXT PREVIEW
+.bgImage-customProduct
+    // background-image: url('/static/images/botas/bota_roja.jpg')
+    // width: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    position: relative
+    height: 355px
+    text-align: center
+    font-size: 20px
+    padding-top: 90px
+    text-align: center
+    padding-right: 27px
+
+.negro
+    color: rgb(0, 0, 0)
+.azul
+    color: rgb(0, 112, 196)
+.gris
+    color: rgb(180, 180, 180)
+.rojo
+    color: rgb(255, 0, 0)
+.dorado
+    color: rgb(204, 153, 0)
+.verde
+    color: rgb(0, 176, 80)
+.rosa
+    color: rgb(255, 0, 102)
+
+// LOADER
+.loader-custom-products
+    display: flex
+    align-content: center
+    justify-content: center
+    height: 100%
+
+@media only screen and (max-width: 991px)
+    .wrapper-modal
+        .inner-modal
+            flex-direction: row-reverse
+        .wrapper-button-terminos
+            align-items: flex-end
+            margin-right: 10px
+            width: 100%
+            .m-buttons-modal
+                flex-direction: column-reverse
+                align-items: flex-end
+                width: 100%
+                padding-right: 5px
+            .m-terminos-condiciones
+                padding-right: 15px
+    .inner-modal
+        .boot
+            order: 2
+            margin-top: 20px
+            display: flex
+            justify-content: center
+
+@media only screen and (max-width: 767px)
+    .wrapper-modal
+        .wrapper-button-terminos
+            align-items: center
+            .m-buttons-modal    
+                order: 2
+                padding-right: 0px
+            .m-terminos-condiciones
+                order: 1
+                padding-right: 0px
+                margin-top: 10px
+    .wrapper-modal
+        .inner-modal
+            flex-direction: column
+// Custom Products functionality END

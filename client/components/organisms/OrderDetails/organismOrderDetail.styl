@@ -1,0 +1,319 @@
+
+.o-orderDetail
+
+	.o-orderDetail__card, .m-orderDetail__card
+		background $white
+		border-radius 4px
+		box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+		margin-bottom 10px
+		padding 15px
+	.o-orderDetail__card
+		margin 0 0 10px 0
+		padding 0
+
+	.o-orderDetail__products
+		.m-orderDetail__headers
+			display none
+
+	.m-orderDetail__total
+		.m-orderDetail__date, .m-orderDetail__total
+			mixin-font($caption, $carbon)
+			margin-bottom 6px
+		.m-orderDetail__total
+			margin 0
+		.a-orderDetail__dateValue
+			mixin-font($body4, $carbon)
+		.a-orderDetail__totalValue
+			mixin-font($body1, $red)
+
+	.m-orderDetail__address
+		.a-orderDetail__addressTitle, .a-orderDetail__paymentTitle
+			mixin-font($caption, $carbon)
+			margin-bottom 19px
+		.a-orderDetail__addressName, .a-orderDetail__paymentValue
+			mixin-font($body4, $carbon)
+			margin-bottom 6px
+		.a-orderDetail__addressValue
+			mixin-font($body2, $lead)
+			border-bottom 1px solid $whisper
+			padding-bottom 23px
+		.a-orderDetail__paymentValue
+			margin-bottom 0
+		.a-orderDetail__paymentValueDetail
+			mixin-font($body2, $lead)
+			margin-bottom 0
+
+	.m-orderDetail__giftRegistry
+		border-bottom 1px solid $whisper
+		padding 15px
+		.a-orderDetail__giftRegistryTitle, .a-orderDetail__giftRegistryEventCelebratedValue, .a-orderDetail__giftRegistryEventValue
+			mixin-font($body4, $carbon)
+		.a-orderDetail__giftRegistryTitle
+			margin-bottom 4px
+		.m-orderDetail__giftRegistryEvent, .m-orderDetail__giftRegistryCelebrated
+			mixin-font($body3, $carbon)
+			margin-bottom 4px
+
+	.m-orderDetail__billing
+		.a-orderDetail__billTitle
+			mixin-font($caption, $carbon)
+			margin 0
+			padding 16px 0
+		.a-orderDetail__billValue
+			mixin-font($body4, $carbon)
+			text-transform uppercase
+		.m-orderDetail__billingBlock
+			border-top 1px solid $whisper
+			border-bottom 1px solid $whisper
+			padding 10px 0
+			.m-orderDetail__billLink
+				display block
+				padding 0 15px
+				position relative
+				width 100%
+			.a-orderDetail__billIcon
+				color $lead
+				position absolute
+				right 15px
+				bottom 2px
+
+	.a-orderDetail__productDownloadTicket
+		margin-bottom 18px
+
+	.m-orderDetail__status
+		.m-orderDetail__statusTitle, .m-orderDetail__idTitle,
+		.m-orderDetail__storeTitle, .m-orderDetail__expireTitle,
+		.m-orderDetail__ticketTitle, .m-orderDetail__terminalTitle,
+		.m-orderDetail__bankTitle, .m-orderDetail__orderTitle,
+		.m-orderDetail__folioTitle, .m-orderDetail__foliopaypalTitle
+			mixin-font($caption, $carbon)
+			margin-bottom 14px
+		.a-orderDetail__statusValue
+			&.-approved
+				mixin-font($body2, $lime-green)
+			&.-cancelled
+				mixin-font($body2, $red)
+			&.-pending
+				mixin-font($body2, $tangerine)
+		.a-orderDetail__idValue, .a-orderDetail__storeValue, .a-orderDetail__expireValue,
+		.a-orderDetail__bankValue, .a-orderDetail__terminalValue, .a-orderDetail__ticketValue,
+		.a-orderDetail__foliopaypalValue, .a-orderDetail__folioValue, .a-orderDetail__orderValue
+			mixin-font($body2-title, $carbon)
+
+	.m-orderDetail__message
+		margin-bottom 60px
+		.a-orderDetail__message
+			mixin-font($body2, $red)
+			margin 0
+		.a-orderDetail__speiTitle
+			mixin-font($body1, $carbon)
+		.m-orderDetail__speiList, .m-orderDetail__cashList
+			list-style-type none
+			padding 0
+		.a-orderDetail__speiStep, .a-orderDetail__cashStep
+			mixin-font($body2, $black-marlin)
+			text-align justify
+		.a-orderDetail__cashStepLink
+			color $primary-color
+
+
+	.o-orderDetail__product
+		border-bottom 1px solid $whisper
+		padding 15px 0
+		.a-orderDetail__productImage
+			width 100%
+		.a-orderDetail__productTitle, .a-orderDetail__productDiscountPrice
+			mixin-font($body1, $carbon)
+			margin-bottom 6px
+		.a-orderDetail__productDiscountPrice
+			margin-bottom 14px
+		.a-orderDetail__productSku, .a-orderDetail__productSize, .a-orderDetail__productColor,
+		.a-orderDetail__productMaterial, .a-orderDetail__productQuantity,
+		.a-orderDetail__productPromo, .a-orderDetail__productTotalTitle, .a-orderDetail__productDownloadable
+			mixin-font($overline, $carbon)
+			margin-bottom 3px
+		.a-orderDetail__productDownloadable
+			margin-bottom 15px
+		.a-orderDetail__productRegularPrice
+			mixin-font($body1, $lead)
+			margin 12px 0 7px
+			text-decoration line-through
+		.a-orderDetail__productTotalTitle
+			margin-top 15px
+		.a-orderDetail__productTotalTitle, .a-orderDetail__productTotalValue
+			display inline-block
+		.a-orderDetail__productStatus
+			mixin-font($body2, $red)
+			margin-bottom 7px
+		.a-orderDetail__productTotalValue
+			mixin-font($body1, $red)
+		.a-order-DetailProductQuantityTitle, .a-orderDetail__productQuantity
+			mixin-font($overline, $carbon)
+			display inline-block
+			vertical-align middle
+			margin-bottom 6px
+
+
+@media screen and (min-width: 992px)
+	.o-orderDetail
+
+		.o-orderDetail__products
+			.m-orderDetail__headers
+				border-bottom 1px solid $whisper
+				border-top 1px solid $whisper
+				display flex
+				justify-content space-between
+				padding 18px 15px
+			.a-orderDetail__productHeader
+				mixin-font($body2, $lead)
+				margin-bottom 0
+
+		.o-orderDetail__product
+			.a-orderDetail__productImage
+				max-width 80%
+			.a-orderDetail__productRegularPrice
+				margin-top 0
+			.a-order-DetailProductQuantityTitle, .a-orderDetail__productTotalTitle
+				display none
+			.a-orderDetail__productQuantity
+				font-size 0.875rem
+				padding-left 5px
+
+
+		.m-orderDetail__status
+			.a-orderDetail__idValue, .a-orderDetail__storeValue, .a-orderDetail__expireValue, .a-orderDetail__bankValue, .a-orderDetail__terminalValue, .a-orderDetail__ticketValue, .a-orderDetail__foliopaypalValue, .a-orderDetail__folioValue, .a-orderDetail__orderValue,
+		.a-orderDetail__statusValue
+				display block
+
+		.m-orderDetail__total
+			margin-top 0
+			.a-orderDetail__dateValue, .a-orderDetail__totalValue
+				display block
+
+		.m-orderDetail__address
+			.m-orderDetail__payment
+				border-top none
+			.a-orderDetail__addressValue
+				border-bottom none
+				margin-bottom 0
+				padding-bottom 0
+			.a-orderDetail__paymentTitle
+				margin-top 0
+
+		.m-orderDetail__billing
+			padding 15px 0
+			.a-orderDetail__billTitle
+				padding 0
+			.m-orderDetail__billingBlock
+				border-bottom none
+				border-top none
+				padding 0
+				.m-orderDetail__billLink
+					line-height 0
+					padding-top 0
+					width 130px
+				.a-orderDetail__billIcon
+					font-size 0.75rem
+				.a-orderDetail__billTitle
+					color $primary-color
+					text-decoration underline
+
+		.m-orderDetail__message
+			margin-bottom 45px
+
+		.m-orderDetail__giftRegistry
+			border-bottom none
+
+		.m-orderDetail__actions
+			margin-top 23px
+			margin-bottom 65px
+			.a-orderDetail__print
+				cursor pointer
+				font-size 2rem
+
+@media screen and (min-width: 1200px)
+	.o-orderDetail
+		.m-orderDetail__billing .a-orderDetail__billTitle
+			text-align right
+
+@media screen and (min-width: 1400px)
+	.o-orderDetail
+		.m-orderDetail__billing
+			padding-top 15px
+			.a-orderDetail__billTitle, .m-orderDetail__billingBlock .m-orderDetail__billLink
+				padding-top 15px
+			&.-bill
+				.a-orderDetail__billTitle, .m-orderDetail__billingBlock .m-orderDetail__billLink
+					padding-top 0
+
+		.m-orderDetail__giftRegistry
+			.m-orderDetail__giftRegistryEvent, .m-orderDetail__giftRegistryCelebrated
+				display inline-block
+			.m-orderDetail__giftRegistryCelebrated
+				position relative
+				padding-left 15px
+			.m-orderDetail__giftRegistryCelebrated:before
+				content "|"
+				position absolute
+				left 5px
+
+
+@media print
+
+	footer, header, .m-orderDetail__billingBlock
+		display none
+	.m-orderDetail__card, .o-orderDetail__card
+		border 1px solid $whisper
+	.m-orderDetail__billTitle
+		margin-top 15px
+	.a-orderDetail__productImage
+		max-width 300px
+	.m-orderDetail__status .row, .m-orderDetail__total.m-orderDetail__card .row, .m-orderDetail__address.m-orderDetail__card .row,
+	.o-orderDetail__product .row
+		display inline
+		> div
+			display inline-block
+			vertical-align middle
+			width auto
+			span
+				display block
+	.m-orderDetail__total.m-orderDetail__card .row
+		> div
+			width 49%
+			span
+				display block
+	.m-orderDetail__address.m-orderDetail__card
+		padding-bottom 0
+		.row > div
+				vertical-align top
+				width 49%
+			.a-orderDetail__addressValue
+				border-bottom 1px solid $white
+				padding-bottom 0
+	.o-orderDetail__product .row
+		> div
+			width 18%
+			&:nth-child(1)
+				width 35%
+			&:nth-child(5)
+				width 8%
+
+.o-orderDetail__products
+	.o-orderDetail__product
+		.product-notAvailable
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			img
+				z-index: 1
+				filter: opacity(40%)
+			p
+				z-index: 2
+				position: absolute
+				background: #666
+				color: #fff
+				font: $body2
+				border-radius: 1rem
+				margin: 0
+				padding: 1px 15px

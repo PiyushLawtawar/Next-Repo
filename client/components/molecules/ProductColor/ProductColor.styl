@@ -1,0 +1,31 @@
+.m-product__productColor ul
+	display flex
+	overflow-y hidden
+	overflow-x auto
+	width 100%
+	&.dBlock
+		display block
+		overflow hidden
+		.a-productColor__item
+			margin-right 16px
+
+
+.m-product__qty
+	#a-input__Qty
+		text-align right
+		&:focus
+			outline none
+
+
+@media only screen and (min-width: 992px)
+	.m-product__productColor ul,
+	.productSizeList
+		display block
+		max-height 148px
+		overflow-x hidden
+		overflow-y auto
+		max-width 280px
+
+.m-product__colors
+	.m-product__productColor
+		width: 96%

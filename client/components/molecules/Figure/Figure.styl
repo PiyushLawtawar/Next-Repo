@@ -1,0 +1,93 @@
+.m-imageProductMyBag
+  width 100%
+  height 100%
+  margin 0
+  padding 0
+  position relative
+
+.m-promotionCard
+	display flex
+	flex-flow row wrap
+	justify-content flex-start
+	padding-left 15px
+	padding-right 15px
+	padding-top 18px
+
+.o-card__image__container
+	width: 100%;
+	margin: 0;
+	position: relative;
+	min-height: 175px;
+	max-width: 100%
+	overflow: hidden
+	img
+		position:absolute;
+		left:0;
+		max-height: 100%;
+		max-width: 100%;
+		width: 100%;
+		height: 100%
+		object-fit: contain;
+		-webkit-transition: opacity .5s ease-in-out;
+		-moz-transition: opacity .5s ease-in-out;
+		-o-transition: opacity .5s ease-in-out;
+		transition: opacity .5s ease-in-out;
+		&:last-child:hover
+			opacity: 0
+
+.m-checkbox__button.mdc-form-field.m-plp-compareCheckbox label
+	color: $lead
+	font: $caption
+@media only screen and (max-width: 991px)
+	li.a-productColor__item.a-product__color:nth-child(5)
+		// display none // For Defect 19742
+	.m-compare__products
+		display none
+	.o-listing__products
+		.m-ratings
+			display block
+		.card
+			margin-bottom .5rem
+	.card-columns-plp
+		.card
+			display block
+
+
+@media only screen and (min-width: 768px) and (max-width: 1279px)
+	.o-card__image__container
+		img
+			object-fit: contain;
+
+/* 22526 Start */
+.m-imageProductMyBag--isntAvailable
+  .a-myBagImageProduct
+    filter: opacity(40%)
+/* 22526 End */
+.m-imageProductMyBag--isntAvailable::after
+  content "No disponible"
+  width 90px
+  height 22px
+  padding 2px 5px
+  color $white
+  background $lead
+  position absolute
+  left 18%
+  top 40%
+  font $caption
+  border-radius 16px
+  text-align center
+  line-height 1.5em
+
+// Mobile
+@media (min-width: 320px) and (max-width: 991px) and (orientation: portrait) {
+  .m-imageProductMyBag--isntAvailable::after{
+    left: 8%;
+  }
+}
+
+// Tablet
+@media (min-width: 992px) and (max-width: 1279px) and (orientation: landscape) {
+ .m-imageProductMyBag--isntAvailable::after{
+    left: 27%;
+  }
+}

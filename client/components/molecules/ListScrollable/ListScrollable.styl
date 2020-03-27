@@ -1,0 +1,29 @@
+
+
+.m-list-scrollable
+    max-height: 260px
+    overflow: auto
+    width: 100%
+    li
+        &:hover
+            background-color: $gray-mid
+            color $lead
+        font $body2
+        color: $lead
+        cursor pointer
+        &.list-group-item
+            border: solid 1px $timberwolf
+    .m-list-ul-scrollable
+        min-height: 260px
+        padding: 3px 0px
+::-webkit-scrollbar
+    width: 5px
+::-webkit-scrollbar-track
+    background: $gray-mid
+    border-radius: 10px
+::-webkit-scrollbar-thumb
+    background: $timberwolf; 
+    border-radius: 10px;
+::-webkit-scrollbar-thumb:hover
+    background: $timberwolf
+    

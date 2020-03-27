@@ -1,0 +1,52 @@
+.o-offerListTable
+		background #fff
+		border-radius 4px
+		box-shadow $b-shadow-card
+		.a-offer-list__noteTitle
+				font $body1
+		.a-offer-list__noteText
+				font $overline
+				margin 0
+		.-prices
+				font $body1
+		.table
+				thead
+						th
+								text-align: center
+								font $body2
+								color $carbon
+				tbody
+						td
+								font $body2
+								text-align center
+								p
+										margin: 0 auto
+								.a-btn.a-btn--primary
+										max-width: 221px
+		.table-hover tbody tr:hover
+				background-color: #f9f9f9
+		.m-card
+				box-shadow none
+				padding 0px
+		.a-offerList-date--green
+				color: $lime-green
+		.a-offerList-date--yellow
+				color:$yellow-orange
+		.m-table
+				.m-table-tbody, .m-table-thead
+						th, td
+								border-top none
+				.m-table-tbody
+						tr
+								padding: 1.2rem 0rem
+								border-bottom: solid 1px $timberwolf
+								&:last-of-type
+									padding 0rem
+@media only screen and (max-width:992px)
+		.o-offerListTable
+				.table
+						tbody
+								td
+										padding 0rem .75rem 0.531rem
+										p
+											margin 0

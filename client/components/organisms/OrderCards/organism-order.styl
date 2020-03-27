@@ -1,0 +1,157 @@
+.a-order__title
+	margin-bottom: 26px
+	font: $title6
+	color: $carbon
+
+.a-orders__title
+	font $title5-discount
+	color: $carbon
+	margin-bottom 24px
+
+.-section-title
+	width: 100%
+
+// .white-container:last-child
+//     margin-bottom: 10rem
+.o-one-column
+	.o-content.white-container:not(.o-order__searchContainer)
+		width: 100%
+	.o-content.-pagination
+		width: 100%
+
+.o-order__searchContainer
+	width: 906px
+	margin: 0 auto
+	min-height: 200px
+	padding: 3rem 103px
+	margin-bottom: 2rem
+	display block
+	.m-order__search__title
+		display: flex
+		align-items: center
+		margin-bottom: 60px
+		.a-order__search__title
+			color: $carbon
+			font: $body2
+			margin-right: 1rem
+	.a-order__search__label
+		font: $subtitle-slot
+		color: $lead
+		&.-light
+			font-weight: 300;
+			font: $body1;
+		&.-help
+			font: $body1;
+	.a-order__search__searchBar__error
+		margin-top: 1rem
+		margin-bottom: 50px
+		font: $body2
+		color: $red
+		opacity: 0
+		&.visible
+			opacity: 1
+			transition: opacity 1s ease
+
+.gray-shadow
+	box-shadow: $b-shadow-card
+
+input.a-order__search__searchBar__input
+  font-size 1rem
+	border: .5px solid $white
+	transition: border 2s ease-out;
+	-webkit-transition : border 1000ms ease-out;
+	-moz-transition : border 1000ms ease-out;
+	-o-transition : border 1000ms ease-out;
+	&:focus
+		border: 1px solid $white
+	& ~ .input-group-append
+		border: 1px solid $white
+		-webkit-transition : border 1000ms ease-out;
+		-moz-transition : border 1000ms ease-out;
+		-o-transition : border 1000ms ease-out;
+
+input.a-order__search__searchBar__input.invalid
+	border: 1px solid $red;
+	border-right: none
+	& ~ .input-group-append
+		border: 1px solid $red;
+		border-left: none
+		border-radius: 0 4px 4px 0
+		-webkit-border-radius: 0 4px 4px 0
+
+@media only screen and (max-width: 991px)
+	.o-content
+		&.-section-title
+			background: white
+			box-shadow: $b-shadow-card
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 0 1rem;
+			height 60px
+			width: 100%
+			min-height: 60px
+			& > h1
+				margin: 0
+
+	.o-main-container
+		// padding: 0
+		.col-lg-9
+			padding: 0
+
+		.-section-title
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 0 1rem;
+			height 60px
+			width: 100%
+			h1
+				margin: 0
+		.o-order__search ~ h4.a-order__title
+			font-size: 1rem;
+
+		.white-container
+			overflow: hidden;
+			// width: auto
+			.o-order__container
+				.o-order__container__header.g-3
+					grid-template-columns: 100%
+					min-height: 50px
+					height: auto
+					.o-order__container__header__cell
+						min-height: 50px
+					.o-order__container__header__cell:not(:first-child)
+						display: none;
+					.o-order__container__header__cell:first-child
+						flex-direction: row;
+						justify-content: flex-start;
+						align-items: center;
+						& > p:first-child
+								margin-right: .5rem
+				.o-order__container__products
+					.o-order__product__header
+						position relative
+						grid-template-columns: 100%;
+						& > div:not(:first-child)
+							display: none
+					.o-order__product__content
+						.o-order__product__item:not(:last-child)
+							border-bottom: 1px solid $whisper
+						.o-order__product__item
+							grid-template-columns: 35% 65%!important
+							.m-order__product__image
+								padding: 1rem 0.5rem;
+		.o-order__searchContainer
+			width: 100%
+			margin: 2rem 0rem
+			min-height: 200px
+			padding: 1rem
+		.o-content.no-shadow.-pagination
+			max-width: 100%
+			overflow: hidden
+
+		.row.mt-lg-3
+			margin: 0
+
+

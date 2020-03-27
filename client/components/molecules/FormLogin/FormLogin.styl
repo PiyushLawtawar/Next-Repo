@@ -1,0 +1,142 @@
+.m-box-form__content
+	padding 0px 24px 39px
+	text-align left
+	hr
+		border-color $timberwolf
+		margin-top: 0px
+		margin-bottom: 24px
+#create_account
+		margin-bottom: 36px
+.m-box-title 
+				padding 15px 24px
+				color $carbon
+				border-bottom solid 1px $timberwolf
+				.a-box-title--login
+						font $body1
+				.a-box-title--changePass
+						font $title5
+				.a-box-title--forms
+						font $title5
+				.a-box-title--preferences
+						font $title6
+				&.-recoveryPassword
+						padding: 15px 10px
+.t-columnCenter .o-content__columnCenter
+		.o-main-content
+				min-width 479.99px
+		#loginDetails
+				margin-bottom 0px
+				padding-bottom 13px
+				.popover
+						left 24px!important
+						box-shadow $b-shadow-popOver
+						max-width 295px
+						border: none
+						.popover-body
+								padding 10px 24px
+								box-shadow none
+								width 100%
+								font-size 0.75rem
+						.popover-header
+								background-color #fff
+								background-image url('/static/images/atomo-icono-close-small-dark.svg')
+								background-position center
+								background-repeat no-repeat
+								width 7px
+								padding 8px
+								-moz-background-size cover
+								background-size cover
+								height 7px
+								-ms-flex-item-align start
+								align-self flex-start
+								text-align right
+								border none
+								position absolute
+								top 10px
+								color #666
+								right 8px
+								cursor pointer
+		.a-login-anchor--helperText
+				color $lead
+				text-decoration underline
+				font $caption
+				margin-left 0.8rem
+				cursor pointer
+				&:hover
+						color $lead
+						text-decoration underline
+		.a-login-anchor--forgotPass
+				font $caption
+				text-decoration underline
+				&:hover
+						text-decoration underline
+						color $primary-color
+		.a-login--iconHelper:before
+				content url('/static/images/atomo-icono-help-small.svg')
+		.a-login-label--new, .a-login-label--recovery
+				color $lead
+				font $body1
+				margin-bottom 20px
+		.a-login-label--recovery
+				color: $carbon
+				margin-bottom 28px
+		.mdc-text-field.mdc-text-field--outlined
+				margin-top: 0px
+		.a-btn
+				margin: 3px 0px 16px
+		.mdc-text-field ~ .mdc-text-field-helper-line
+				visibility hidden
+				padding-left 0px
+		.mdc-text-field--invalid ~ .mdc-text-field-helper-line
+				visibility visible
+		.a-login-backIcon
+				 background-image url('/static/images/dark.svg')
+				background-position center
+				background-repeat no-repeat
+				background-size contain
+				padding 14px
+				margin-right 10px
+		.mdc-text-field__input:required~.mdc-floating-label::after, .mdc-text-field__input:required~.mdc-notched-outline .mdc-floating-label::after
+				display none
+		.mdc-snackbar
+			position relative
+			top 0 !important
+			margin 1rem 1.5rem 0.313rem
+			.mdc-snackbar__surface
+				min-width 320px
+				width 100%
+				max-width 100%
+		.m-inputText.mdc-text-field--invalid ~ .m-input-helper__text .a-intput-paragraph
+			margin-bottom: 13px
+#loginDetails > div > label:nth-child(2)
+		padding-left 0px
+@media only screen and (max-width:1240.5px)
+		.m-box-form__content
+			&--my__account
+				max-width 60%
+@media only screen and (min-width: 992px)
+	.t-columnCenter .o-content__columnCenter
+		.mdc-snackbar .mdc-snackbar__label
+			padding-left 10px
+@media only screen and (max-width:992px)
+		.m-box-title
+				border-bottom none
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+		.t-columnCenter .o-content__columnCenter
+				.o-main-content
+						min-width auto
+			.mdc-snackbar
+				margin 0!important
+				.mdc-snackbar__surface
+					max-width 100%
+		.m-box-form__content
+				&--my__account
+					padding 0px 24px 43px
+					max-width 100%
+@media only screen and (max-width: 414px)
+		.m-box-form__content
+		&--my__account 
+			max-width unset
+@media only screen and (max-width: 415px)
+	.t-columnCenter .o-content__columnCenter #loginDetails .popover
+		left: -10px !important;

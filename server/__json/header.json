@@ -1,0 +1,1762 @@
+{
+    "header": {
+        "promomessage": "Zen Store"
+    },
+    "menu": {
+        "0": {
+            "id": 103826,
+            "name": "Gifts",
+            "seourl": "/gifts/N-103826",
+            "categoryLabel": "Gifts",
+            "subCats": [
+                {
+                    "id": 103832,
+                    "name": "All Holiday Gifts",
+                    "seourl": "/gifts/N-103832",
+                    "categoryLabel": "All Holiday Gifts",
+                    "subCats": []
+                },
+                {
+                    "id": 103828,
+                    "name": "Gifts Under $25",
+                    "seourl": "/gifts/gifts-under-25/N-103828",
+                    "categoryLabel": "Gifts Under $25",
+                    "subCats": []
+                },
+                {
+                    "id": 103829,
+                    "name": "Gifts under $50",
+                    "seourl": "/gifts/gifts-under-50/N-103829",
+                    "categoryLabel": "Gifts under $50",
+                    "subCats": []
+                },
+                {
+                    "id": 103830,
+                    "name": "Cozy Gifts",
+                    "seourl": "/gifts/luxe-gifts/N-103830",
+                    "categoryLabel": "Cozy Gifts",
+                    "subCats": []
+                },
+                {
+                    "id": 103831,
+                    "name": "Stocking Stuffers",
+                    "seourl": "/gifts/stocking-stuffers/N-103831",
+                    "categoryLabel": "Stocking Stuffers",
+                    "subCats": []
+                }
+            ]
+        },
+        "1": {
+            "id": 102687,
+            "name": "Eva Mendes",
+            "seourl": "/eva-mendes/N-102687",
+            "categoryLabel": "Eva Mendes",
+            "subCats": [
+                {
+                    "id": 102688,
+                    "name": "Eva Mendes Collection",
+                    "seourl": "/eva-mendes/N-3455744724",
+                    "categoryLabel": "Eva Mendes Collection"
+                },
+                {
+                    "id": "",
+                    "name": "Discover Eva Mendes",
+                    "seourl": "https://www.nyandcompany.com/eva-mendes/",
+                    "categoryLabel": "Discover Eva Mendes"
+                },
+                {
+                    "id": "",
+                    "name": "Eva Film &amp; Runway Show",
+                    "seourl": "https://www.nyandcompany.com/trends/evamendesrunwayshow/N-2165508767/",
+                    "categoryLabel": "Eva Film &amp; Runway Show"
+                },
+                {
+                    "id": 103467,
+                    "name": "Eva Mendes Party Collection",
+                    "seourl": "/eva-mendes/eva-mendes-bridal-party-collection/N-103468",
+                    "categoryLabel": "Eva Mendes Party Collection"
+                },
+                {
+                    "id": 2099413315,
+                    "name": "Eva Dresses",
+                    "seourl": "/eva-mendes/eva-dresses/N-1767853277",
+                    "categoryLabel": "Eva Dresses"
+                },
+                {
+                    "id": 3261272000,
+                    "name": "Eva Tops",
+                    "seourl": "/eva-mendes/eva-tops/N-3116136613",
+                    "categoryLabel": "Eva Tops"
+                },
+                {
+                    "id": 2843654105,
+                    "name": "Eva Skirts",
+                    "seourl": "/eva-mendes/eva-skirts/N-2304379759",
+                    "categoryLabel": "Eva Skirts"
+                },
+                {
+                    "id": 543471310,
+                    "name": "Eva Accessories",
+                    "seourl": "/eva-mendes/eva-accessories/N-1735208804",
+                    "categoryLabel": "Eva Accessories"
+                },
+                {
+                    "id": "",
+                    "name": "Eva In Stores",
+                    "seourl": "https://www.nyandcompany.com/evaboutiques/",
+                    "categoryLabel": "Eva In Stores"
+                }
+            ]
+        },
+        "2": {
+            "id": 3441618840,
+            "name": "Gabrielle Union",
+            "seourl": "/gabrielle-union/N-3441618840",
+            "categoryLabel": "Gabrielle Union",
+            "subCats": [
+                {
+                    "id": 388967562,
+                    "name": "Gabrielle Union Collection",
+                    "seourl": "/gabrielle-union/N-686967418",
+                    "categoryLabel": "Gabrielle Union Collection",
+                    "subCats": []
+                },
+                {
+                    "id": 2512124059,
+                    "name": "Gabrielle Union for 7th Ave",
+                    "seourl": "/gabrielle-union-7-ave/N-745729030",
+                    "categoryLabel": "Gabrielle Union for 7th Ave",
+                    "subCats": []
+                },
+                {
+                    "id": 2022200144,
+                    "name": "Gabrielle Union Plus Collection",
+                    "seourl": "/gabrielle-union/gabrielle-union-plus/N-2022200144",
+                    "categoryLabel": "Gabrielle Union Plus Collection",
+                    "subCats": []
+                },
+                {
+                    "id": "",
+                    "name": "About Gabrielle Union",
+                    "seourl": "https://www.nyandcompany.com/aboutgabrielleunion/",
+                    "categoryLabel": "About Gabrielle Union"
+                }
+            ]
+        },
+        "3": {
+            "id": 102689,
+            "name": "New Arrivals",
+            "seourl": "/new/N-102689",
+            "categoryLabel": "New Arrivals",
+            "subCats": [
+                {
+                    "id": 103455,
+                    "name": "All New Arrivals",
+                    "seourl": "/new/must-haves/N-103455",
+                    "categoryLabel": "All New Arrivals",
+                    "subCats": []
+                },
+                {
+                    "id": "",
+                    "name": "Holiday Fashion Book",
+                    "seourl": "https://www.nyandcompany.com/trends/holidaymailer/N-1914208328/",
+                    "categoryLabel": "Holiday Fashion Book"
+                },
+                {
+                    "id": 102843,
+                    "name": "Eva Mendes Collection",
+                    "seourl": "/new/eva-mendes/N-102843",
+                    "categoryLabel": "Eva Mendes Collection",
+                    "subCats": []
+                },
+                {
+                    "id": 4247442478,
+                    "name": "Gabrielle Union Collection",
+                    "seourl": "/new/gabrielle-union-collection/N-4247442478",
+                    "categoryLabel": "Gabrielle Union Collection",
+                    "subCats": []
+                },
+                {
+                    "id": 774013966,
+                    "name": "Gabrielle Union for 7th Ave",
+                    "seourl": "/new/gabrielle-union/N-774013966",
+                    "categoryLabel": "Gabrielle Union for 7th Ave",
+                    "subCats": []
+                },
+                {
+                    "id": 1553482202,
+                    "name": "Kate Hudson for Soho Jeans",
+                    "seourl": "/new/kate-hudson-soho/N-1553482202",
+                    "categoryLabel": "Kate Hudson for Soho Jeans",
+                    "subCats": []
+                },
+                {
+                    "id": 1843412952,
+                    "name": "Sweet Pea Collection",
+                    "seourl": "/new/sweet-pea/N-1843412952",
+                    "categoryLabel": "Sweet Pea Collection",
+                    "subCats": []
+                },
+                {
+                    "id": 102698,
+                    "name": "Dresses",
+                    "seourl": "/new/dresses/N-102698",
+                    "categoryLabel": "Dresses",
+                    "subCats": []
+                },
+                {
+                    "id": 102690,
+                    "name": "Tops",
+                    "seourl": "/new/tops/N-102690",
+                    "categoryLabel": "Tops",
+                    "subCats": []
+                },
+                {
+                    "id": 102692,
+                    "name": "Sweaters",
+                    "seourl": "/new/sweaters/N-102692",
+                    "categoryLabel": "Sweaters",
+                    "subCats": []
+                },
+                {
+                    "id": 102693,
+                    "name": "Pants",
+                    "seourl": "/new/pants/N-102693",
+                    "categoryLabel": "Pants",
+                    "subCats": []
+                },
+                {
+                    "id": 102694,
+                    "name": "Soho Jeans",
+                    "seourl": "/new/jeans/N-102694",
+                    "categoryLabel": "Soho Jeans",
+                    "subCats": []
+                },
+                {
+                    "id": 102699,
+                    "name": "Outerwear",
+                    "seourl": "/new/outerwear/N-102699",
+                    "categoryLabel": "Outerwear",
+                    "subCats": []
+                },
+                {
+                    "id": 102695,
+                    "name": "Skirts",
+                    "seourl": "/new/skirts/N-102695",
+                    "categoryLabel": "Skirts",
+                    "subCats": []
+                },
+                {
+                    "id": 104021,
+                    "name": "Two-Piece Sets",
+                    "seourl": "/new/two-piece-sets/N-104021",
+                    "categoryLabel": "Two-Piece Sets",
+                    "subCats": []
+                },
+                {
+                    "id": 102696,
+                    "name": "Jackets",
+                    "seourl": "/new/jackets/N-102696",
+                    "categoryLabel": "Jackets",
+                    "subCats": []
+                },
+                {
+                    "id": 102697,
+                    "name": "Suiting",
+                    "seourl": "/new/suits/N-102697",
+                    "categoryLabel": "Suiting",
+                    "subCats": []
+                },
+                {
+                    "id": 103602,
+                    "name": "Lounge &amp; Active",
+                    "seourl": "/new/active/N-103602",
+                    "categoryLabel": "Lounge &amp; Active",
+                    "subCats": []
+                },
+                {
+                    "id": 2097912535,
+                    "name": "Tunics &amp; Leggings Shop",
+                    "seourl": "/new/tunics-leggings/N-2097912535",
+                    "categoryLabel": "Tunics &amp; Leggings Shop",
+                    "subCats": []
+                },
+                {
+                    "id": 102702,
+                    "name": "Online Exclusives",
+                    "seourl": "/new/online-exclusives/N-102702",
+                    "categoryLabel": "Online Exclusives",
+                    "subCats": []
+                },
+                {
+                    "id": 103414,
+                    "name": "Sleepwear",
+                    "seourl": "/new/sleep-wear-pjs/N-103414",
+                    "categoryLabel": "Sleepwear",
+                    "subCats": []
+                },
+                {
+                    "id": 102703,
+                    "name": "New Accessories",
+                    "seourl": "/accessories/new-arrivals/N-102889",
+                    "categoryLabel": "New Accessories",
+                    "subCats": []
+                },
+                {
+                    "id": 102704,
+                    "name": "New Jewelry",
+                    "seourl": "/accessories/new-arrivals/jewelry/N-102798",
+                    "categoryLabel": "New Jewelry",
+                    "subCats": []
+                }
+            ]
+        },
+        "4": {
+            "id": 102581,
+            "name": "Apparel",
+            "seourl": "/apparel/N-102581",
+            "categoryLabel": "Apparel",
+            "subCats": [
+                {
+                    "id": 102800,
+                    "name": "Doorbusters",
+                    "seourl": "/doorbusters/N-102800",
+                    "categoryLabel": "Doorbusters",
+                    "subCats": []
+                },
+                {
+                    "id": "",
+                    "name": "Holiday Fashion Book",
+                    "seourl": "https://www.nyandcompany.com/trends/holidaymailer/N-1914208328/",
+                    "categoryLabel": "Holiday Fashion Book"
+                },
+                {
+                    "id": 102583,
+                    "name": "Eva Mendes Collection",
+                    "seourl": "/eva-mendes/N-3455744724",
+                    "categoryLabel": "Eva Mendes Collection",
+                    "subCats": [
+                        {
+                            "id": 3455744724,
+                            "name": "All Eva Mendes Collection",
+                            "seourl": "/eva-mendes/N-3455744724",
+                            "categoryLabel": "All Eva Mendes Collection"
+                        },
+                        {
+                            "id": 1767853277,
+                            "name": "Eva Dresses",
+                            "seourl": "/eva-mendes/eva-dresses/N-1767853277",
+                            "categoryLabel": "Eva Dresses"
+                        },
+                        {
+                            "id": 3116136613,
+                            "name": "Eva Tops",
+                            "seourl": "/eva-mendes/eva-tops/N-3116136613",
+                            "categoryLabel": "Eva Tops"
+                        },
+                        {
+                            "id": 2304379759,
+                            "name": "Eva Skirts",
+                            "seourl": "/eva-mendes/eva-skirts/N-2304379759",
+                            "categoryLabel": "Eva Skirts"
+                        },
+                        {
+                            "id": 1735208804,
+                            "name": "Eva Accessories",
+                            "seourl": "/eva-mendes/eva-accessories/N-1735208804",
+                            "categoryLabel": "Eva Accessories"
+                        }
+                    ]
+                },
+                {
+                    "id": 686967418,
+                    "name": "Gabrielle Union Collection",
+                    "seourl": "/gabrielle-union/N-686967418",
+                    "categoryLabel": "Gabrielle Union Collection",
+                    "subCats": []
+                },
+                {
+                    "id": 745729030,
+                    "name": "Gabrielle Union for 7th Ave",
+                    "seourl": "/gabrielle-union-7-ave/N-745729030",
+                    "categoryLabel": "Gabrielle Union for 7th Ave",
+                    "subCats": []
+                },
+                {
+                    "id": 927638323,
+                    "name": "Kate Hudson for Soho Jeans",
+                    "seourl": "/kate-hudson-soho/N-927638323",
+                    "categoryLabel": "Kate Hudson for Soho Jeans",
+                    "subCats": []
+                },
+                {
+                    "id": 103475,
+                    "name": "Sweet Pea Collection",
+                    "seourl": "/sweet-pea/N-103475",
+                    "categoryLabel": "Sweet Pea Collection",
+                    "subCats": []
+                },
+                {
+                    "id": 102625,
+                    "name": "Dresses",
+                    "seourl": "/dresses/N-102626",
+                    "categoryLabel": "Dresses",
+                    "subCats": [
+                        {
+                            "id": 102626,
+                            "name": "All Dresses",
+                            "seourl": "/dresses/N-102626",
+                            "categoryLabel": "All Dresses"
+                        },
+                        {
+                            "id": 103756,
+                            "name": "Midi &amp; Sheaths",
+                            "seourl": "/dresses/sheath-dress/N-103756",
+                            "categoryLabel": "Midi &amp; Sheaths"
+                        },
+                        {
+                            "id": 103757,
+                            "name": "Sweater",
+                            "seourl": "/dresses/sweater-dress/N-103757",
+                            "categoryLabel": "Sweater"
+                        },
+                        {
+                            "id": 70503803,
+                            "name": "Shift",
+                            "seourl": "/dresses/shift-dress/N-70503803",
+                            "categoryLabel": "Shift"
+                        },
+                        {
+                            "id": 3413881841,
+                            "name": "Maxi",
+                            "seourl": "/dresses/maxi/N-3413881841",
+                            "categoryLabel": "Maxi"
+                        },
+                        {
+                            "id": 102891,
+                            "name": "Jumpsuits &amp; Rompers",
+                            "seourl": "/dresses/jumpsuits/N-102891",
+                            "categoryLabel": "Jumpsuits &amp; Rompers"
+                        },
+                        {
+                            "id": 102628,
+                            "name": "Work",
+                            "seourl": "/dresses/work/N-102628",
+                            "categoryLabel": "Work"
+                        },
+                        {
+                            "id": 102627,
+                            "name": "Casual",
+                            "seourl": "/dresses/casual/N-102627",
+                            "categoryLabel": "Casual"
+                        },
+                        {
+                            "id": 102629,
+                            "name": "Cocktail",
+                            "seourl": "/dresses/cocktail-dresses/N-102629",
+                            "categoryLabel": "Cocktail"
+                        }
+                    ]
+                },
+                {
+                    "id": 102589,
+                    "name": "Tops",
+                    "seourl": "/tops/N-102781",
+                    "categoryLabel": "Tops",
+                    "subCats": [
+                        {
+                            "id": 102781,
+                            "name": "All Tops",
+                            "seourl": "/tops/N-102781",
+                            "categoryLabel": "All Tops"
+                        },
+                        {
+                            "id": 102784,
+                            "name": "All Sweaters",
+                            "seourl": "/sweaters/N-102596",
+                            "categoryLabel": "All Sweaters"
+                        },
+                        {
+                            "id": 102782,
+                            "name": "Shirts &amp; Blouses",
+                            "seourl": "/tops/shirts-blouses/N-102782",
+                            "categoryLabel": "Shirts &amp; Blouses"
+                        },
+                        {
+                            "id": 102590,
+                            "name": "Knits &amp; Tees",
+                            "seourl": "/tops/knits-tees/N-102590",
+                            "categoryLabel": "Knits &amp; Tees"
+                        },
+                        {
+                            "id": 102783,
+                            "name": "Bodysuits &amp; Camis",
+                            "seourl": "/tops/camis-shells/N-102783",
+                            "categoryLabel": "Bodysuits &amp; Camis"
+                        },
+                        {
+                            "id": 103603,
+                            "name": "Soho Top Shop",
+                            "seourl": "/tops/sohoshirts/N-103603",
+                            "categoryLabel": "Soho Top Shop"
+                        },
+                        {
+                            "id": 103604,
+                            "name": "Shirt Shop",
+                            "seourl": "/tops/tunic-tops/N-103604",
+                            "categoryLabel": "Shirt Shop"
+                        }
+                    ]
+                },
+                {
+                    "id": 102595,
+                    "name": "Sweaters",
+                    "seourl": "/sweaters/N-102596",
+                    "categoryLabel": "Sweaters",
+                    "subCats": [
+                        {
+                            "id": 102596,
+                            "name": "All Sweaters",
+                            "seourl": "/sweaters/N-102596",
+                            "categoryLabel": "All Sweaters"
+                        },
+                        {
+                            "id": 102598,
+                            "name": "Pullovers",
+                            "seourl": "/sweaters/pullovers/N-102598",
+                            "categoryLabel": "Pullovers"
+                        },
+                        {
+                            "id": 102597,
+                            "name": "Cardigans",
+                            "seourl": "/sweaters/cardigans/N-102597",
+                            "categoryLabel": "Cardigans"
+                        },
+                        {
+                            "id": 3238268773,
+                            "name": "Dress Cardigans",
+                            "seourl": "/sweaters/dress-cardigans/N-3238268773",
+                            "categoryLabel": "Dress Cardigans"
+                        }
+                    ]
+                },
+                {
+                    "id": 102600,
+                    "name": "Pants",
+                    "seourl": "/pants/N-102601",
+                    "categoryLabel": "Pants",
+                    "subCats": [
+                        {
+                            "id": 102601,
+                            "name": "All Pants",
+                            "seourl": "/pants/N-102601",
+                            "categoryLabel": "All Pants"
+                        },
+                        {
+                            "id": 104287,
+                            "name": "Straight Leg",
+                            "seourl": "/pants/straight-leg/N-104287",
+                            "categoryLabel": "Straight Leg"
+                        },
+                        {
+                            "id": 104291,
+                            "name": "Bootcut",
+                            "seourl": "/pants/bootcut-pants/N-104291",
+                            "categoryLabel": "Bootcut"
+                        },
+                        {
+                            "id": 104289,
+                            "name": "Slim Leg",
+                            "seourl": "/pants/slim-leg/N-104289",
+                            "categoryLabel": "Slim Leg"
+                        },
+                        {
+                            "id": 104288,
+                            "name": "Audrey",
+                            "seourl": "/pants/audreypant/N-104288",
+                            "categoryLabel": "Audrey"
+                        },
+                        {
+                            "id": 104290,
+                            "name": "Ankle",
+                            "seourl": "/pants/ankle-pants/N-104290",
+                            "categoryLabel": "Ankle"
+                        },
+                        {
+                            "id": 104292,
+                            "name": "Wide Leg",
+                            "seourl": "/pants/wide-leg/N-104292",
+                            "categoryLabel": "Wide Leg"
+                        },
+                        {
+                            "id": 102606,
+                            "name": "Crops",
+                            "seourl": "/pants/crops/N-102606",
+                            "categoryLabel": "Crops"
+                        },
+                        {
+                            "id": "",
+                            "name": "Petite Pants",
+                            "seourl": "https://www.nyandcompany.com/petite-tall/womens-petite/womens-petite-pants/N-103491/",
+                            "categoryLabel": "Petite Pants"
+                        },
+                        {
+                            "id": "",
+                            "name": "Tall Pants",
+                            "seourl": "https://www.nyandcompany.com/petite-tall/womens-tall/womens-tall-pants/N-103500/",
+                            "categoryLabel": "Tall Pants"
+                        },
+                        {
+                            "id": "",
+                            "name": "Extended Sizes",
+                            "seourl": "https://www.nyandcompany.com/promo/extended-sizes/",
+                            "categoryLabel": "Extended Sizes"
+                        },
+                        {
+                            "id": "",
+                            "name": "Petite Pants",
+                            "seourl": "https://www.nyandcompany.com/petite-tall/womens-petite/womens-petite-pants/N-103491/",
+                            "categoryLabel": "Petite Pants"
+                        },
+                        {
+                            "id": "",
+                            "name": "Tall Pants",
+                            "seourl": "https://www.nyandcompany.com/petite-tall/womens-tall/womens-tall-pants/N-103500/",
+                            "categoryLabel": "Tall Pants"
+                        },
+                        {
+                            "id": "",
+                            "name": "Extended Sizes",
+                            "seourl": "https://www.nyandcompany.com/promo/extended-sizes/",
+                            "categoryLabel": "Extended Sizes"
+                        }
+                    ]
+                },
+                {
+                    "id": 102608,
+                    "name": "Soho Jeans",
+                    "seourl": "/jeans/N-102609",
+                    "categoryLabel": "Soho Jeans",
+                    "subCats": [
+                        {
+                            "id": 102609,
+                            "name": "All Soho Jeans",
+                            "seourl": "/jeans/N-102609",
+                            "categoryLabel": "All Soho Jeans"
+                        },
+                        {
+                            "id": 102787,
+                            "name": "Legging",
+                            "seourl": "/jeans/leggings/N-102787",
+                            "categoryLabel": "Legging"
+                        },
+                        {
+                            "id": 102610,
+                            "name": "Bootcut",
+                            "seourl": "/jeans/bootcut/N-102610",
+                            "categoryLabel": "Bootcut"
+                        },
+                        {
+                            "id": 102611,
+                            "name": "Curvy",
+                            "seourl": "/jeans/curvy/N-102611",
+                            "categoryLabel": "Curvy"
+                        },
+                        {
+                            "id": 102615,
+                            "name": "Boyfriend",
+                            "seourl": "/jeans/boyfriend-jeans/N-102615",
+                            "categoryLabel": "Boyfriend"
+                        },
+                        {
+                            "id": 102614,
+                            "name": "Skinny",
+                            "seourl": "/jeans/skinny/N-102614",
+                            "categoryLabel": "Skinny"
+                        },
+                        {
+                            "id": 102789,
+                            "name": "Super Stretch",
+                            "seourl": "/jeans/super-stretch-jeans/N-102789",
+                            "categoryLabel": "Super Stretch"
+                        },
+                        {
+                            "id": 102788,
+                            "name": "Ultimate Stretch",
+                            "seourl": "/jeans/stretch-jeans/N-102788",
+                            "categoryLabel": "Ultimate Stretch"
+                        }
+                    ]
+                },
+                {
+                    "id": 102633,
+                    "name": "Outerwear",
+                    "seourl": "/outerwear/N-102634",
+                    "categoryLabel": "Outerwear",
+                    "subCats": [
+                        {
+                            "id": 102634,
+                            "name": "All Outerwear",
+                            "seourl": "/outerwear/N-102634",
+                            "categoryLabel": "All Outerwear"
+                        },
+                        {
+                            "id": 102638,
+                            "name": "Trench",
+                            "seourl": "/outerwear/trench/N-102638",
+                            "categoryLabel": "Trench"
+                        },
+                        {
+                            "id": 102635,
+                            "name": "Faux Leather",
+                            "seourl": "/outerwear/faux-leather/N-102635",
+                            "categoryLabel": "Faux Leather"
+                        },
+                        {
+                            "id": 102637,
+                            "name": "Puffer",
+                            "seourl": "/outerwear/puffer/N-102637",
+                            "categoryLabel": "Puffer"
+                        },
+                        {
+                            "id": 102639,
+                            "name": "Wool",
+                            "seourl": "/outerwear/wool/N-102639",
+                            "categoryLabel": "Wool"
+                        },
+                        {
+                            "id": 102636,
+                            "name": "Jackets &amp; More",
+                            "seourl": "/outerwear/bomber-jackets/N-102636",
+                            "categoryLabel": "Jackets &amp; More"
+                        },
+                        {
+                            "id": 1798470293,
+                            "name": "Faux Fur",
+                            "seourl": "/N-2164125954",
+                            "categoryLabel": "Faux Fur"
+                        }
+                    ]
+                },
+                {
+                    "id": 102617,
+                    "name": "Skirts",
+                    "seourl": "/skirts/N-102618",
+                    "categoryLabel": "Skirts",
+                    "subCats": [
+                        {
+                            "id": 102618,
+                            "name": "All Skirts",
+                            "seourl": "/skirts/N-102618",
+                            "categoryLabel": "All Skirts"
+                        },
+                        {
+                            "id": 102620,
+                            "name": "7th Avenue Skirts",
+                            "seourl": "/skirts/work-skirts/N-102620",
+                            "categoryLabel": "7th Avenue Skirts"
+                        },
+                        {
+                            "id": 103514,
+                            "name": "Pencil Skirts",
+                            "seourl": "/skirts/pencil-skirts/N-103514",
+                            "categoryLabel": "Pencil Skirts"
+                        },
+                        {
+                            "id": 103515,
+                            "name": "Full &amp; Pleated Skirts",
+                            "seourl": "/skirts/full-skirts/N-103515",
+                            "categoryLabel": "Full &amp; Pleated Skirts"
+                        },
+                        {
+                            "id": 2669772746,
+                            "name": "Maxi Skirts",
+                            "seourl": "/skirts/maxi-skirts/N-2669772746",
+                            "categoryLabel": "Maxi Skirts"
+                        },
+                        {
+                            "id": 788593629,
+                            "name": "Mini Skirts",
+                            "seourl": "/skirts/mini-skirts/N-788593629",
+                            "categoryLabel": "Mini Skirts"
+                        }
+                    ]
+                },
+                {
+                    "id": 102621,
+                    "name": "Jackets",
+                    "seourl": "/jackets/N-102622",
+                    "categoryLabel": "Jackets",
+                    "subCats": [
+                        {
+                            "id": 102622,
+                            "name": "All Jackets",
+                            "seourl": "/jackets/N-102622",
+                            "categoryLabel": "All Jackets"
+                        },
+                        {
+                            "id": 102624,
+                            "name": "7th Avenue Jackets",
+                            "seourl": "/jackets/7th-avenue/N-102624",
+                            "categoryLabel": "7th Avenue Jackets"
+                        },
+                        {
+                            "id": 104265,
+                            "name": "Denim Jackets",
+                            "seourl": "/jackets/denimjackets/N-104265",
+                            "categoryLabel": "Denim Jackets"
+                        },
+                        {
+                            "id": 103529,
+                            "name": "Casual Jackets",
+                            "seourl": "/jackets/casual-jackets/N-103529",
+                            "categoryLabel": "Casual Jackets"
+                        }
+                    ]
+                },
+                {
+                    "id": 103637,
+                    "name": "Suiting",
+                    "seourl": "/suits/N-103644",
+                    "categoryLabel": "Suiting",
+                    "subCats": [
+                        {
+                            "id": 103644,
+                            "name": "All Suiting",
+                            "seourl": "/suits/N-103644",
+                            "categoryLabel": "All Suiting"
+                        },
+                        {
+                            "id": 103639,
+                            "name": "Suiting Jackets",
+                            "seourl": "/suits/jackets/N-103639",
+                            "categoryLabel": "Suiting Jackets"
+                        },
+                        {
+                            "id": 103640,
+                            "name": "Suiting Pants",
+                            "seourl": "/suits/pants/N-103640",
+                            "categoryLabel": "Suiting Pants"
+                        },
+                        {
+                            "id": 103638,
+                            "name": "Suiting Skirts",
+                            "seourl": "/suits/skirts/N-103638",
+                            "categoryLabel": "Suiting Skirts"
+                        }
+                    ]
+                },
+                {
+                    "id": 103605,
+                    "name": "Lounge &amp; Active",
+                    "seourl": "/activewear/N-103606",
+                    "categoryLabel": "Lounge &amp; Active",
+                    "subCats": [
+                        {
+                            "id": 103606,
+                            "name": "All Lounge &amp; Active",
+                            "seourl": "/activewear/N-103606",
+                            "categoryLabel": "All Lounge &amp; Active"
+                        },
+                        {
+                            "id": 103609,
+                            "name": "Soho Street",
+                            "seourl": "/activewear/loungewear/N-103609",
+                            "categoryLabel": "Soho Street"
+                        },
+                        {
+                            "id": 103773,
+                            "name": "Velour",
+                            "seourl": "/activewear/velour-pants-jackets/N-103773",
+                            "categoryLabel": "Velour"
+                        },
+                        {
+                            "id": 103608,
+                            "name": "Yoga",
+                            "seourl": "/activewear/yoga/N-103608",
+                            "categoryLabel": "Yoga"
+                        },
+                        {
+                            "id": 103613,
+                            "name": "Dresses",
+                            "seourl": "/activewear/dresses/N-103613",
+                            "categoryLabel": "Dresses"
+                        },
+                        {
+                            "id": 103610,
+                            "name": "Tops",
+                            "seourl": "/activewear/tops/N-103610",
+                            "categoryLabel": "Tops"
+                        },
+                        {
+                            "id": 103611,
+                            "name": "Jackets",
+                            "seourl": "/activewear/jackets/N-103611",
+                            "categoryLabel": "Jackets"
+                        },
+                        {
+                            "id": 103612,
+                            "name": "Pants",
+                            "seourl": "/activewear/yoga-pants/N-103612",
+                            "categoryLabel": "Pants"
+                        }
+                    ]
+                },
+                {
+                    "id": 102653,
+                    "name": "Online Exclusives",
+                    "seourl": "/online-exclusives/N-102654",
+                    "categoryLabel": "Online Exclusives",
+                    "subCats": [
+                        {
+                            "id": 102654,
+                            "name": "All Exclusives",
+                            "seourl": "/online-exclusives/N-102654",
+                            "categoryLabel": "All Exclusives"
+                        },
+                        {
+                            "id": 102655,
+                            "name": "Dresses &amp; Skirts",
+                            "seourl": "/online-exclusives/exclusive-dresses-skirts/N-102655",
+                            "categoryLabel": "Dresses &amp; Skirts"
+                        },
+                        {
+                            "id": 102661,
+                            "name": "Tops &amp; Sweaters",
+                            "seourl": "/online-exclusives/tops-sweaters/N-102661",
+                            "categoryLabel": "Tops &amp; Sweaters"
+                        },
+                        {
+                            "id": 102659,
+                            "name": "Pants &amp; Jeans",
+                            "seourl": "/online-exclusives/pants-jeans/N-102659",
+                            "categoryLabel": "Pants &amp; Jeans"
+                        },
+                        {
+                            "id": 102658,
+                            "name": "Outerwear",
+                            "seourl": "/online-exclusives/outerwear/N-102658",
+                            "categoryLabel": "Outerwear"
+                        },
+                        {
+                            "id": 102656,
+                            "name": "Jackets",
+                            "seourl": "/online-exclusives/jackets/N-102656",
+                            "categoryLabel": "Jackets"
+                        },
+                        {
+                            "id": 103504,
+                            "name": "Accessories",
+                            "seourl": "/online-exclusives/exclusive-accessories/N-103504",
+                            "categoryLabel": "Accessories"
+                        }
+                    ]
+                },
+                {
+                    "id": 104022,
+                    "name": "The Pull-On Shop",
+                    "seourl": "/womens-clothing/N-104022",
+                    "categoryLabel": "The Pull-On Shop",
+                    "subCats": []
+                },
+                {
+                    "id": 4242775382,
+                    "name": "Sleepwear",
+                    "seourl": "/sleep-wear-pjs/N-4242775382",
+                    "categoryLabel": "Sleepwear",
+                    "subCats": []
+                },
+                {
+                    "id": 102959,
+                    "name": "Clearance",
+                    "seourl": "/sale/N-103480",
+                    "categoryLabel": "Clearance",
+                    "subCats": [
+                        {
+                            "id": 103480,
+                            "name": "All Clearance",
+                            "seourl": "/sale/N-103480",
+                            "categoryLabel": "All Clearance"
+                        },
+                        {
+                            "id": 103481,
+                            "name": "Tops / Sweaters",
+                            "seourl": "/sale/sale-top-sweaters/N-103481",
+                            "categoryLabel": "Tops / Sweaters"
+                        },
+                        {
+                            "id": 103482,
+                            "name": "Pants / Jeans",
+                            "seourl": "/sale/sale-pants-jeans/N-103482",
+                            "categoryLabel": "Pants / Jeans"
+                        },
+                        {
+                            "id": 103483,
+                            "name": "Dresses / Skirts",
+                            "seourl": "/sale/sale-dresses/N-103483",
+                            "categoryLabel": "Dresses / Skirts"
+                        },
+                        {
+                            "id": 103484,
+                            "name": "Outerwear",
+                            "seourl": "/sale/sale-coats/N-103484",
+                            "categoryLabel": "Outerwear"
+                        },
+                        {
+                            "id": 103485,
+                            "name": "Accessories",
+                            "seourl": "/sale/sale-accessories/N-103485",
+                            "categoryLabel": "Accessories"
+                        }
+                    ]
+                },
+                {
+                    "id": 103392,
+                    "name": "St. Jude Donation",
+                    "seourl": "/st-jude-donation/N-103392",
+                    "categoryLabel": "St. Jude Donation"
+                },
+                {
+                    "id": 103753,
+                    "name": "Gift Cards",
+                    "seourl": "/gift-cards/N-103754",
+                    "categoryLabel": "Gift Cards",
+                    "subCats": [
+                        {
+                            "id": 103754,
+                            "name": "Gift Cards",
+                            "seourl": "/gift-cards/N-103754",
+                            "categoryLabel": "Gift Cards"
+                        }
+                    ]
+                }
+            ]
+        },
+        "5": {
+            "id": 103456,
+            "name": "Dresses",
+            "seourl": "/dresses/N-103456",
+            "categoryLabel": "Dresses",
+            "subCats": [
+                {
+                    "id": 103457,
+                    "name": "All Dresses",
+                    "seourl": "/dresses/N-102626",
+                    "categoryLabel": "All Dresses",
+                    "subCats": []
+                },
+                {
+                    "id": 103758,
+                    "name": "Midi &amp; Sheaths",
+                    "seourl": "/dresses/sheath-dress/N-103756",
+                    "categoryLabel": "Midi &amp; Sheaths",
+                    "subCats": []
+                },
+                {
+                    "id": 2785278994,
+                    "name": "Shift",
+                    "seourl": "/dresses/shift-dress/N-70503803",
+                    "categoryLabel": "Shift",
+                    "subCats": []
+                },
+                {
+                    "id": 2752789861,
+                    "name": "Maxi",
+                    "seourl": "/dresses/maxi/N-3413881841",
+                    "categoryLabel": "Maxi",
+                    "subCats": []
+                },
+                {
+                    "id": 103458,
+                    "name": "Jumpsuits &amp; Rompers",
+                    "seourl": "/dresses/jumpsuits/N-102891",
+                    "categoryLabel": "Jumpsuits &amp; Rompers",
+                    "subCats": []
+                },
+                {
+                    "id": 103459,
+                    "name": "Work",
+                    "seourl": "/dresses/work/N-102628",
+                    "categoryLabel": "Work",
+                    "subCats": []
+                },
+                {
+                    "id": 103460,
+                    "name": "Casual",
+                    "seourl": "/dresses/casual/N-102627",
+                    "categoryLabel": "Casual",
+                    "subCats": []
+                },
+                {
+                    "id": 103461,
+                    "name": "Cocktail",
+                    "seourl": "/dresses/cocktail-dresses/N-102629",
+                    "categoryLabel": "Cocktail",
+                    "subCats": []
+                },
+                {
+                    "id": 103759,
+                    "name": "Sweater",
+                    "seourl": "/dresses/sweater-dress/N-103757",
+                    "categoryLabel": "Sweater",
+                    "subCats": []
+                },
+                {
+                    "id": "",
+                    "name": "Eva Dresses",
+                    "seourl": "https://www.nyandcompany.com/eva-mendes/eva-dresses/N-1767853277/",
+                    "categoryLabel": "Eva Dresses"
+                },
+                {
+                    "id": "",
+                    "name": "Petite Dresses",
+                    "seourl": "https://www.nyandcompany.com/petite-tall/womens-petite/petite-dresses/N-103490/",
+                    "categoryLabel": "Petite Dresses"
+                },
+                {
+                    "id": "",
+                    "name": "Tall Dresses",
+                    "seourl": "https://www.nyandcompany.com/petite-tall/womens-tall/tall-dresses/N-103499/",
+                    "categoryLabel": "Tall Dresses"
+                },
+                {
+                    "id": "",
+                    "name": "Little Black Dress",
+                    "seourl": "https://www.nyandcompany.com/dresses/little-black-dress/N-102632/",
+                    "categoryLabel": "Little Black Dress"
+                },
+                {
+                    "id": "",
+                    "name": "Fit &amp; Flare Dresses",
+                    "seourl": "https://www.nyandcompany.com/dresses/fit-and-flare-dresses/N-3977509429/",
+                    "categoryLabel": "Fit &amp; Flare Dresses"
+                },
+                {
+                    "id": "",
+                    "name": "Bodycon Dresses",
+                    "seourl": "https://www.nyandcompany.com/dresses/bodycon-dresses/N-1834289645/",
+                    "categoryLabel": "Bodycon Dresses"
+                },
+                {
+                    "id": "",
+                    "name": "Extended Sizes",
+                    "seourl": "https://www.nyandcompany.com/promo/extended-sizes/",
+                    "categoryLabel": "Extended Sizes"
+                }
+            ]
+        },
+        "6": {
+            "id": 102748,
+            "name": "Tops",
+            "seourl": "/tops/N-102748",
+            "categoryLabel": "Tops",
+            "subCats": [
+                {
+                    "id": 102794,
+                    "name": "All Tops",
+                    "seourl": "/tops/N-102781",
+                    "categoryLabel": "All Tops"
+                },
+                {
+                    "id": 102796,
+                    "name": "All Sweaters",
+                    "seourl": "/sweaters/N-102596",
+                    "categoryLabel": "All Sweaters"
+                },
+                {
+                    "id": 102749,
+                    "name": "Shirts &amp; Blouses",
+                    "seourl": "/tops/shirts-blouses/N-102782",
+                    "categoryLabel": "Shirts &amp; Blouses"
+                },
+                {
+                    "id": 102795,
+                    "name": "Knits &amp; Tees",
+                    "seourl": "/tops/knits-tees/N-102590",
+                    "categoryLabel": "Knits &amp; Tees"
+                },
+                {
+                    "id": 102750,
+                    "name": "Bodysuits &amp; Camis",
+                    "seourl": "/tops/camis-shells/N-102783",
+                    "categoryLabel": "Bodysuits &amp; Camis"
+                },
+                {
+                    "id": 103614,
+                    "name": "Soho Top Shop",
+                    "seourl": "/tops/sohoshirts/N-103614",
+                    "categoryLabel": "Soho Top Shop"
+                },
+                {
+                    "id": 103615,
+                    "name": "Shirt Shop",
+                    "seourl": "/tops/tunic-tops/N-103604",
+                    "categoryLabel": "Shirt Shop"
+                },
+                {
+                    "id": "",
+                    "name": "Eva Tops",
+                    "seourl": "https://www.nyandcompany.com/eva-mendes/eva-tops/N-3116136613/",
+                    "categoryLabel": "Eva Tops"
+                },
+                {
+                    "id": "",
+                    "name": "Petite Tops",
+                    "seourl": "https://www.nyandcompany.com/petite-tall/womens-petite/petite-tops/N-103488/",
+                    "categoryLabel": "Petite Tops"
+                },
+                {
+                    "id": "",
+                    "name": "Tall Tops",
+                    "seourl": "https://www.nyandcompany.com/petite-tall/womens-tall/tall-tops/N-103497/",
+                    "categoryLabel": "Tall Tops"
+                },
+                {
+                    "id": "",
+                    "name": "The Shoulder Top Shop",
+                    "seourl": "https://www.nyandcompany.com/tops/shoulder-tops/N-770087847/",
+                    "categoryLabel": "The Shoulder Top Shop"
+                },
+                {
+                    "id": "",
+                    "name": "Extended Sizes",
+                    "seourl": "https://www.nyandcompany.com/promo/extended-sizes/",
+                    "categoryLabel": "Extended Sizes"
+                }
+            ]
+        },
+        "7": {
+            "id": 102706,
+            "name": "Pants",
+            "seourl": "/pants/N-102706",
+            "categoryLabel": "Pants",
+            "subCats": [
+                {
+                    "id": 102707,
+                    "name": "All Pants",
+                    "seourl": "/pants/N-102601",
+                    "categoryLabel": "All Pants"
+                },
+                {
+                    "id": 104307,
+                    "name": "Straight Leg",
+                    "seourl": "/pants/straight-leg/N-104287",
+                    "categoryLabel": "Straight Leg"
+                },
+                {
+                    "id": 104309,
+                    "name": "Bootcut",
+                    "seourl": "/pants/bootcut-pants/N-104291",
+                    "categoryLabel": "Bootcut"
+                },
+                {
+                    "id": 104306,
+                    "name": "Slim Leg",
+                    "seourl": "/pants/slim-leg/N-104289",
+                    "categoryLabel": "Slim Leg"
+                },
+                {
+                    "id": 104305,
+                    "name": "Ankle",
+                    "seourl": "/pants/ankle-pants/N-104290",
+                    "categoryLabel": "Ankle"
+                },
+                {
+                    "id": 104308,
+                    "name": "Audrey",
+                    "seourl": "/pants/audreypant/N-104288",
+                    "categoryLabel": "Audrey"
+                },
+                {
+                    "id": 2613915194,
+                    "name": "Wide Leg",
+                    "seourl": "/pants/wide-leg/N-104292",
+                    "categoryLabel": "Wide Leg"
+                },
+                {
+                    "id": 102712,
+                    "name": "Crops",
+                    "seourl": "/pants/crops/N-102606",
+                    "categoryLabel": "Crops"
+                },
+                {
+                    "id": "",
+                    "name": "Petite Pants",
+                    "seourl": "http://www.nyandcompany.com/petite-tall/womens-petite/womens-petite-pants/N-103491/",
+                    "categoryLabel": "Petite Pants"
+                },
+                {
+                    "id": "",
+                    "name": "Tall Pants",
+                    "seourl": "http://www.nyandcompany.com/petite-tall/womens-tall/womens-tall-pants/N-103500/",
+                    "categoryLabel": "Tall Pants"
+                },
+                {
+                    "id": "",
+                    "name": "Extended Sizes",
+                    "seourl": "https://www.nyandcompany.com/promo/extended-sizes/",
+                    "categoryLabel": "Extended Sizes"
+                }
+            ]
+        },
+        "8": {
+            "id": 104380,
+            "name": "Jeans",
+            "seourl": "/jeans/N-104380",
+            "categoryLabel": "Jeans",
+            "subCats": [
+                {
+                    "id": 104381,
+                    "name": "All Soho Jeans",
+                    "seourl": "/jeans/N-102609",
+                    "categoryLabel": "All Soho Jeans"
+                },
+                {
+                    "id": "",
+                    "name": "Legging",
+                    "seourl": "https://www.nyandcompany.com/jeans/leggings/N-102787/",
+                    "categoryLabel": "Legging"
+                },
+                {
+                    "id": "",
+                    "name": "Bootcut",
+                    "seourl": "https://www.nyandcompany.com/jeans/bootcut/N-102610/",
+                    "categoryLabel": "Bootcut"
+                },
+                {
+                    "id": "",
+                    "name": "Curvy",
+                    "seourl": "https://www.nyandcompany.com/jeans/curvy/N-102611/",
+                    "categoryLabel": "Curvy"
+                },
+                {
+                    "id": "",
+                    "name": "Boyfriend",
+                    "seourl": "https://www.nyandcompany.com/jeans/boyfriend-jeans/N-102615/",
+                    "categoryLabel": "Boyfriend"
+                },
+                {
+                    "id": "",
+                    "name": "Skinny",
+                    "seourl": "https://www.nyandcompany.com/jeans/skinny/N-102614/",
+                    "categoryLabel": "Skinny"
+                },
+                {
+                    "id": "",
+                    "name": "Super Stretch",
+                    "seourl": "https://www.nyandcompany.com/jeans/super-stretch-jeans/N-102789/",
+                    "categoryLabel": "Super Stretch"
+                },
+                {
+                    "id": "",
+                    "name": "Ultimate Stretch",
+                    "seourl": "https://www.nyandcompany.com/jeans/stretch-jeans/N-102788/",
+                    "categoryLabel": "Ultimate Stretch"
+                },
+                {
+                    "id": "",
+                    "name": "Contour Stretch",
+                    "seourl": "https://www.nyandcompany.com/jeans/contour-stretch/N-103575/",
+                    "categoryLabel": "Contour Stretch"
+                },
+                {
+                    "id": "",
+                    "name": "TREND: Make it Stretch!",
+                    "seourl": "https://www.nyandcompany.com/trends/makeitstretch/N-1044851830/",
+                    "categoryLabel": "TREND: Make it Stretch!"
+                },
+                {
+                    "id": "",
+                    "name": "Introducing Soho Jeans Stretch",
+                    "seourl": "https://www.nyandcompany.com/introducing-soho-stretch/",
+                    "categoryLabel": "Introducing Soho Jeans Stretch"
+                }
+            ]
+        },
+        "9": {
+            "id": 102714,
+            "name": "Petite &amp; Tall",
+            "seourl": "/petite-tall/N-102714",
+            "categoryLabel": "Petite &amp; Tall",
+            "subCats": [
+                {
+                    "id": 103486,
+                    "name": "Petites",
+                    "seourl": "/petite-tall/womens-petite/N-103487",
+                    "categoryLabel": "Petites",
+                    "subCats": [
+                        {
+                            "id": 103487,
+                            "name": "All Petites",
+                            "seourl": "/petite-tall/womens-petite/N-103487",
+                            "categoryLabel": "All Petites"
+                        },
+                        {
+                            "id": 103490,
+                            "name": "Dresses",
+                            "seourl": "/petite-tall/womens-petite/petite-dresses/N-103490",
+                            "categoryLabel": "Dresses"
+                        },
+                        {
+                            "id": 103494,
+                            "name": "Jackets",
+                            "seourl": "/petite-tall/womens-petite/petite-jackets/N-103494",
+                            "categoryLabel": "Jackets"
+                        },
+                        {
+                            "id": 103488,
+                            "name": "Tops &amp; Sweaters",
+                            "seourl": "/petite-tall/womens-petite/petite-tops/N-103488",
+                            "categoryLabel": "Tops &amp; Sweaters"
+                        },
+                        {
+                            "id": 103491,
+                            "name": "Pants",
+                            "seourl": "/petite-tall/womens-petite/womens-petite-pants/N-103491",
+                            "categoryLabel": "Pants"
+                        },
+                        {
+                            "id": 103492,
+                            "name": "Jeans",
+                            "seourl": "/petite-tall/womens-petite/womens-petite-jeans/N-103492",
+                            "categoryLabel": "Jeans"
+                        },
+                        {
+                            "id": 103493,
+                            "name": "Skirts",
+                            "seourl": "/petite-tall/womens-petite/petite-skirts/N-103493",
+                            "categoryLabel": "Skirts"
+                        }
+                    ]
+                },
+                {
+                    "id": 103495,
+                    "name": "Tall",
+                    "seourl": "/petite-tall/womens-tall/N-103496",
+                    "categoryLabel": "Tall",
+                    "subCats": [
+                        {
+                            "id": 103496,
+                            "name": "All Tall",
+                            "seourl": "/petite-tall/womens-tall/N-103496",
+                            "categoryLabel": "All Tall"
+                        },
+                        {
+                            "id": 103499,
+                            "name": "Dresses",
+                            "seourl": "/petite-tall/womens-tall/tall-dresses/N-103499",
+                            "categoryLabel": "Dresses"
+                        },
+                        {
+                            "id": 103503,
+                            "name": "Jackets",
+                            "seourl": "/petite-tall/womens-tall/tall-jackets/N-103503",
+                            "categoryLabel": "Jackets"
+                        },
+                        {
+                            "id": 103497,
+                            "name": "Tops &amp; Sweaters",
+                            "seourl": "/petite-tall/womens-tall/tall-tops/N-103497",
+                            "categoryLabel": "Tops &amp; Sweaters"
+                        },
+                        {
+                            "id": 103500,
+                            "name": "Pants",
+                            "seourl": "/petite-tall/womens-tall/womens-tall-pants/N-103500",
+                            "categoryLabel": "Pants"
+                        },
+                        {
+                            "id": 103501,
+                            "name": "Jeans",
+                            "seourl": "/petite-tall/womens-tall/womens-tall-jeans/N-103501",
+                            "categoryLabel": "Jeans"
+                        },
+                        {
+                            "id": 103502,
+                            "name": "Skirts",
+                            "seourl": "/petite-tall/womens-tall/tall-skirts/N-103502",
+                            "categoryLabel": "Skirts"
+                        }
+                    ]
+                },
+                {
+                    "id": "",
+                    "name": "Extended Sizes",
+                    "seourl": "https://www.nyandcompany.com/promo/extended-sizes/",
+                    "categoryLabel": "Extended Sizes"
+                }
+            ]
+        },
+        "10": {
+            "id": 102560,
+            "name": "Accessories",
+            "seourl": "/accessories/N-102560",
+            "categoryLabel": "Accessories",
+            "subCats": [
+                {
+                    "id": "",
+                    "name": "Gifts",
+                    "seourl": "https://www.nyandcompany.com/gifts/N-103832/",
+                    "categoryLabel": "Gifts"
+                },
+                {
+                    "id": 102565,
+                    "name": "New Arrivals",
+                    "seourl": "/accessories/new-arrivals/N-102889",
+                    "categoryLabel": "New Arrivals",
+                    "subCats": [
+                        {
+                            "id": 102889,
+                            "name": "All New Accessories",
+                            "seourl": "/accessories/new-arrivals/N-102889",
+                            "categoryLabel": "All New Accessories"
+                        },
+                        {
+                            "id": 102799,
+                            "name": "New Accessories",
+                            "seourl": "/accessories/new-arrivals/N-102889",
+                            "categoryLabel": "New Accessories"
+                        },
+                        {
+                            "id": 102797,
+                            "name": "New Beauty",
+                            "seourl": "/accessories/new-arrivals/beauty/N-102797",
+                            "categoryLabel": "New Beauty"
+                        },
+                        {
+                            "id": 102798,
+                            "name": "New Jewelry",
+                            "seourl": "/accessories/new-arrivals/jewelry/N-102798",
+                            "categoryLabel": "New Jewelry"
+                        }
+                    ]
+                },
+                {
+                    "id": 102566,
+                    "name": "Jewelry",
+                    "seourl": "/accessories/jewelry/N-102567",
+                    "categoryLabel": "Jewelry",
+                    "subCats": [
+                        {
+                            "id": 102567,
+                            "name": "All Jewelry",
+                            "seourl": "/accessories/jewelry/N-102567",
+                            "categoryLabel": "All Jewelry"
+                        },
+                        {
+                            "id": 102571,
+                            "name": "Necklaces",
+                            "seourl": "/accessories/jewelry/necklaces/N-102571",
+                            "categoryLabel": "Necklaces"
+                        },
+                        {
+                            "id": 102570,
+                            "name": "Earrings",
+                            "seourl": "/accessories/jewelry/earrings/N-102570",
+                            "categoryLabel": "Earrings"
+                        },
+                        {
+                            "id": 102568,
+                            "name": "Bracelets",
+                            "seourl": "/accessories/jewelry/bracelets/N-102568",
+                            "categoryLabel": "Bracelets"
+                        },
+                        {
+                            "id": 102572,
+                            "name": "Rings &amp; Pins",
+                            "seourl": "/accessories/jewelry/rings-pins/N-102572",
+                            "categoryLabel": "Rings &amp; Pins"
+                        },
+                        {
+                            "id": 102573,
+                            "name": "Watches",
+                            "seourl": "/accessories/watches/N-102890",
+                            "categoryLabel": "Watches"
+                        },
+                        {
+                            "id": 102569,
+                            "name": "Sterling Silver",
+                            "seourl": "/accessories/jewelry/silver-jewelry/N-102569",
+                            "categoryLabel": "Sterling Silver"
+                        }
+                    ]
+                },
+                {
+                    "id": 102890,
+                    "name": "Watches",
+                    "seourl": "/accessories/watches/N-102890",
+                    "categoryLabel": "Watches",
+                    "subCats": []
+                },
+                {
+                    "id": 102563,
+                    "name": "Hats, Scarves &amp; Gloves",
+                    "seourl": "/accessories/hats-gloves-scarves/N-102563",
+                    "categoryLabel": "Hats, Scarves &amp; Gloves",
+                    "subCats": []
+                },
+                {
+                    "id": 103049,
+                    "name": "Hats",
+                    "seourl": "/accessories/hats/N-103049",
+                    "categoryLabel": "Hats",
+                    "subCats": []
+                },
+                {
+                    "id": 102575,
+                    "name": "Scarves",
+                    "seourl": "/accessories/scarves/N-102575",
+                    "categoryLabel": "Scarves",
+                    "subCats": []
+                },
+                {
+                    "id": 102576,
+                    "name": "Shoes",
+                    "seourl": "/accessories/footwear/N-102576",
+                    "categoryLabel": "Shoes",
+                    "subCats": []
+                },
+                {
+                    "id": 102564,
+                    "name": "Handbags",
+                    "seourl": "/accessories/handbags/N-102564",
+                    "categoryLabel": "Handbags",
+                    "subCats": []
+                },
+                {
+                    "id": 102580,
+                    "name": "Wristlets &amp; Wallets",
+                    "seourl": "/accessories/wristlets-wallets/N-102580",
+                    "categoryLabel": "Wristlets &amp; Wallets",
+                    "subCats": []
+                },
+                {
+                    "id": 102579,
+                    "name": "Ponchos, Wraps, Cover-Ups",
+                    "seourl": "/accessories/cover-up-wraps/N-102579",
+                    "categoryLabel": "Ponchos, Wraps, Cover-Ups",
+                    "subCats": []
+                },
+                {
+                    "id": 102562,
+                    "name": "Belts",
+                    "seourl": "/accessories/belts/N-102562",
+                    "categoryLabel": "Belts",
+                    "subCats": []
+                },
+                {
+                    "id": "",
+                    "name": "Eva Accessories",
+                    "seourl": "https://www.nyandcompany.com/eva-mendes/eva-accessories/N-1735208804/",
+                    "categoryLabel": "Eva Accessories"
+                },
+                {
+                    "id": 103415,
+                    "name": "Sleepwear",
+                    "seourl": "/accessories/sleep-wear-pjs/N-103415",
+                    "categoryLabel": "Sleepwear",
+                    "subCats": []
+                },
+                {
+                    "id": 689399490,
+                    "name": "Home, Tech &amp; Gifts",
+                    "seourl": "/accessories/home-technology/N-689399490",
+                    "categoryLabel": "Home, Tech &amp; Gifts",
+                    "subCats": []
+                },
+                {
+                    "id": 102561,
+                    "name": "Fragrance &amp; Beauty",
+                    "seourl": "/accessories/beauty/N-102561",
+                    "categoryLabel": "Fragrance &amp; Beauty",
+                    "subCats": []
+                },
+                {
+                    "id": 103242,
+                    "name": "Hair Accessories",
+                    "seourl": "/accessories/headbands-hair-ties/N-103242",
+                    "categoryLabel": "Hair Accessories",
+                    "subCats": []
+                },
+                {
+                    "id": 102578,
+                    "name": "Socks &amp; Tights",
+                    "seourl": "/accessories/tights-socks/N-102578",
+                    "categoryLabel": "Socks &amp; Tights",
+                    "subCats": []
+                },
+                {
+                    "id": 104107,
+                    "name": "Swimwear",
+                    "seourl": "/accessories/swimsuit/N-104107",
+                    "categoryLabel": "Swimwear",
+                    "subCats": []
+                },
+                {
+                    "id": 102577,
+                    "name": "Sunglasses",
+                    "seourl": "/accessories/sunglasses/N-102577",
+                    "categoryLabel": "Sunglasses",
+                    "subCats": []
+                },
+                {
+                    "id": 103413,
+                    "name": "St. Jude Collection",
+                    "seourl": "/accessories/st-jude-collection/N-103413",
+                    "categoryLabel": "St. Jude Collection",
+                    "subCats": []
+                }
+            ]
+        },
+        "11": {
+            "id": 102672,
+            "name": "Clearance",
+            "seourl": "/sale/N-102672",
+            "categoryLabel": "Clearance",
+            "subCats": [
+                {
+                    "id": "",
+                    "name": "All Redlines | Final Sale",
+                    "seourl": "http://www.nyandcompany.com/sale/all-clearance/N-102672/",
+                    "categoryLabel": "All Redlines | Final Sale"
+                },
+                {
+                    "id": "",
+                    "name": "All Clearance",
+                    "seourl": "https://www.nyandcompany.com/sale/N-103480/",
+                    "categoryLabel": "All Clearance"
+                },
+                {
+                    "id": "",
+                    "name": "Clearance Dresses &amp; Skirts",
+                    "seourl": "https://www.nyandcompany.com/sale/sale-dresses/N-103483/",
+                    "categoryLabel": "Clearance Dresses &amp; Skirts"
+                },
+                {
+                    "id": "",
+                    "name": "Clearance Tops &amp; Sweaters",
+                    "seourl": "https://www.nyandcompany.com/sale/sale-top-sweaters/N-103481/",
+                    "categoryLabel": "Clearance Tops &amp; Sweaters"
+                },
+                {
+                    "id": "",
+                    "name": "Clearance Pants &amp; Jeans",
+                    "seourl": "https://www.nyandcompany.com/sale/sale-pants-jeans/N-103482/",
+                    "categoryLabel": "Clearance Pants &amp; Jeans"
+                },
+                {
+                    "id": "",
+                    "name": "Clearance Outerwear",
+                    "seourl": "https://www.nyandcompany.com/sale/sale-coats/N-103484/",
+                    "categoryLabel": "Clearance Outerwear"
+                },
+                {
+                    "id": "",
+                    "name": "Clearance Accessories",
+                    "seourl": "https://www.nyandcompany.com/sale/sale-accessories/N-103485/",
+                    "categoryLabel": "Clearance Accessories"
+                }
+            ]
+        }
+    }
+}

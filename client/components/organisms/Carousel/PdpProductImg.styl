@@ -1,0 +1,176 @@
+html
+    overflow: auto!important
+.o-gallery__pdp--desktop .pzlcontainermain
+    height auto
+
+.pzlcontainerthumbs .pzlContainerLeft
+    width 68px
+    height 427px
+    display block
+
+.pzlcontainermain
+    width 100%
+    float left
+    min-height 400px
+    position relative
+
+.pzlcontainermain .pzlvideo
+    width 50px
+    height 50px
+    position absolute
+    cursor pointer
+    margin 10px 0 10px
+    top 0
+    z-index 4
+
+.pzlcontainermain .pzlvideo > .pzlthumb
+    position absolute
+    width 100%
+    height 100%
+
+.pzlcontainermain .pzlvideo > .pzlthumbPlay
+    position absolute
+    width 57px
+    height 39px
+    top 4px
+    left -2px
+
+.pzlcontainerthumbs
+    position relative
+    float left
+    overflow hidden
+    margin-right 30px
+
+.pzlcontainerthumbs.pzlContainerLeft
+    width 53px
+    height 500px
+
+.pzlcontainerthumbs .pzlContainerTop
+    width 453px
+    height 53px
+
+.pzlcontainerthumbs > ul
+    list-style none
+    margin 0
+    padding 0
+    position absolute
+    top 0px
+
+.pzlcontainerthumbs .pzlLeft
+    width auto
+    white-space nowrap
+
+.pzlcontainerthumbs > ul li
+    width 51px
+    height 39px
+    margin 0 0 10px
+    padding 0
+    opacity 0.6
+    display inline-block
+    cursor pointer
+
+.pzlcontainerthumbs > ul > li.select
+    opacity 1
+
+.pzlcontainerthumbs > ul > li.select img
+    border solid 1px #d8d8d8
+
+.pzlcontainerthumbs > ul li > img
+    width 100%
+    height 100%
+    user-select none
+    user-drag none
+    -webkit-user-drag none
+
+.pzlcontainerviewer
+    position relative
+    width 78%
+    max-height 500px
+    float left
+    padding-bottom 56.25%
+    overflow hidden
+
+.pzlcontainerviewer .viewerImg
+    display block
+
+.pzlcontainerviewer .viewerVideo
+    display none
+
+.pzlcontainerviewer > div
+    // opacity 0
+
+
+.pzlcontainerviewer .pzlimgzoom
+    display none !important
+    position absolute
+    z-index 3
+    left 0
+    top 97%
+
+
+.pzlefectblur
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    background-color rgb(255, 255, 255)
+    z-index 2
+
+.pzlarealup
+    position absolute
+    border solid 1px #d8d8d8
+    left 0
+    top 0
+    z-index 3
+    overflow hidden
+
+.pzlcontainerviewerzoom
+    position absolute
+    left 645px
+    top -12px
+    width 748px
+    height 545px
+    border solid 1px #d8d8d8
+    overflow hidden
+    opacity 0
+    z-index 4
+    display none
+    box-shadow rgba(0, 0, 0, 0.2) 0px 2px 4px 1px
+    border 1px solid rgb(179, 179, 179)
+    background-color $white
+
+.img-zoom-lens
+  position absolute
+  border 1px solid #d4d4d4
+  width 110px
+  height 110px
+  display none
+
+.pzlarealup
+    opacity 0
+
+.pzlarealup > img, .pzlcontainerviewer > img
+    user-select none
+    user-drag none
+    -webkit-user-drag none
+
+.pzlvideo img
+    margin-top 0px
+
+.slick-active
+    padding-bottom 30px
+    outline none
+// change made for 22421 start
+.o-gallery__pdp--mobile
+    min-height 290px
+    margin-bottom 25px
+// change made for 22421 end
+    .carouselGallery
+        width: 100%
+
+        div
+            width: 100%
+
+            img
+                width 100%

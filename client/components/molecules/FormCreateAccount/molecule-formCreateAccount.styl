@@ -1,0 +1,112 @@
+.m-formCreateAccout
+	#benefits-modal
+		.modal-body
+			ul
+				margin-top: 20px
+				padding-left: 30px
+			li 
+				list-style-type: none
+				position: relative
+				&::before
+					content: '\2022'
+					position: absolute
+					left: -0.8em
+					font-size: 1.1em
+					margin-left: -10px
+				p
+					margin: 0
+					font: $body2
+
+.a-dateAlert
+	color rgba(0,0,0,0.6)
+	font 0.75rem  'robotoRegular'
+	font-weight 400
+
+.m-wrapDate
+	.supremeClass
+		color rgba(0,0,0,0.6) !important
+		font: 0.875rem 'robotoRegular';
+		top: 7px;
+
+.o-findGiftTable__items[name="dateEventFindGiftTable"] div > .dropIcon {
+	right: 7px;
+	top: 13px;
+	font-size: 1.2em;
+}
+
+.confirmationDropdownIcon{
+	right: 7px;
+  	top: 13px;
+  	font-size: 1.2em;
+}
+
+@media screen and (min-width: 992px)
+	/* Changes for defects 22957, 23425, 23423 and 22974  START */
+	.m-wrapDate
+		.firstDatePicker
+			padding-right 7px
+
+		.middleDatePicker
+			padding-left 5.5px
+			padding-right 5.5px
+
+		.lastDatePicker
+			padding-left 7px
+	/* Changes for defects 22957, 23425, 23423 and 22974  END */
+
+
+#formCreateAccount
+		margin-bottom 0px
+		padding-bottom 13px
+		.popover
+				left 24px!important
+				box-shadow $b-shadow-popOver
+				max-width 295px
+				border: none
+				.popover-body
+						padding 10px 24px
+						box-shadow none
+						width 100%
+						font-size 0.75rem
+				.popover-header
+						background-color #fff
+						background-image url('/static/images/atomo-icono-close-small-dark.svg')
+						background-position center
+						background-repeat no-repeat
+						width 7px
+						padding 8px
+						-moz-background-size cover
+						background-size cover
+						height 7px
+						-ms-flex-item-align start
+						align-self flex-start
+						text-align right
+						border none
+						position absolute
+						top 10px
+						color #666
+						right 8px
+						cursor pointer
+		.select-gender
+					.errormsg
+							font-family Roboto,sans-serif
+							color rgba(251,30,30,0.95) !important
+							font-size .75rem
+							line-height 1.25rem
+							font-weight 400
+							letter-spacing .0333333333em
+		.errormsg
+			font-family Roboto,sans-serif
+			color rgba(251,30,30,0.95) !important
+			font-size .75rem
+			line-height 1.25rem
+			font-weight 400
+			letter-spacing .0333333333em				
+
+
+.select-gender-createAccount .a-updatePersonalData-label + .row
+	& .col-4:first-child
+		@media screen and (max-width: 1245px) and (min-width: 991.5px)
+			margin-right: 50px
+		
+		

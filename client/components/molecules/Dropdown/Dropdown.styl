@@ -1,0 +1,145 @@
+.m-dropdown__mobile
+    .dropdown-toggle
+        padding .375rem 0
+        &:focus
+            box-shadow none
+            outline 0
+    .dropdown-toggle::after
+        content none
+    i
+        color $carbon
+        font-size .75em
+        margin-left .75em
+    .dropdown-menu
+        border 0
+        box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.3)
+        left -15px!important
+        min-width 13rem
+    .dropdown-item
+        padding 0.8rem 1.5rem
+        &:active
+            background-color $silver
+.btn
+    display: inline-block
+    font-weight: 400
+    color: #212529
+    text-align: center
+    vertical-align: middle
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    background-color: #0000
+    border: 1px solid #0000
+    padding: .375rem .75rem
+    font-size: 1rem
+    line-height: 1.5
+    border-radius: .25rem
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+.m-dropdown
+    background-color $white
+    border 1px solid #dbdbdb
+    .dropdown-toggle
+        color rgba(0,0,0,0.6)
+        font $overline-module
+        height 36px
+        text-align left
+        width 100%
+        padding-left 14px
+        i
+            font $overline-module
+            margin-top 7px
+            position absolute
+            right 15px
+        &:focus
+            box-shadow none
+    .dropdown-toggle::after
+        content none
+    .dropdown-menu
+        border 1px solid $timberwolf
+        font-size .75em
+        margin -1px 0
+        width 100%
+        .dropdown-item
+            padding .5rem 1.5rem
+            color rgba(0,0,0,0.6)
+            font-size 1em
+            
+            &:focus
+                outline 0
+        .dropdown-item:active
+            background-color $gray
+
+@media (min-width: 992px) and (max-width: 1024px)
+    .m-dropdown
+        .dropdown-toggle
+            i
+                margin-left 60%
+    
+
+
+
+.m-dropDown
+  border 1px solid $gray89
+  background $white
+  text-align center
+  position relative
+  overflow hidden
+.m-dropDown:before
+  content ''
+  position absolute
+  right 15px
+  top 45%
+  width 0
+  height 0
+  border-style solid
+  border-width 7px 5px 0 5px
+  border-color #000000 transparent transparent transparent
+  z-index 5
+  pointer-events none  
+
+
+.m-dropDown__select
+  width 130%
+  height 100%
+  border none
+  background transparent
+  box-shadow none
+  background-image none
+  appearance none
+  padding-left 35%
+
+.m-dropDown__select:focus
+  outline none
+
+
+
+  
+  
+
+  
+.m-dropDown--myBagQuantity
+  width 100px
+  height 44px
+
+.m-dropdown__tracking
+    .dropdown-toggle
+        padding 0 0
+        &:focus
+            box-shadow none
+            outline 0
+    .dropdown-toggle::after
+        content none
+    i
+        color $carbon
+        font-size .75em
+        margin-left .75em
+    .dropdown-menu
+        border 0
+        box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.3)
+        left -15px!important
+        min-width 13rem
+    .dropdown-item
+        padding 0.8rem 1.5rem
+        &:active
+            background-color $silver

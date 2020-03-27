@@ -1,0 +1,136 @@
+
+
+.o-paymentBox
+    padding: 0px 12px 15px 12px
+
+.o-personalInfor 
+	background-color #fff
+	border-radius 4px
+	padding 16px
+	margin-bottom 8px
+
+
+.m-paymentOptionContainer
+    height 3.375rem
+    display flex
+    justify-content center
+    align-items start
+    cursor pointer
+
+.m-paymentOptionContainer__selector
+    width 97%
+    background-color #fff
+    height 89%
+    text-align center
+    box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+    display flex
+    justify-content center
+    align-items center
+    border-radius 4px
+    transition: all 350ms linear
+
+.m-paymentOptionContainer__selector--selected
+    width 97%
+    background-color #333333
+    height 89%
+    text-align center
+    box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+    display flex
+    justify-content center
+    align-items center
+    border-radius 4px
+
+.m-paymentOptionContainer__selector--selected .a-paymentOptionContainer__tooltip::after
+    content ""
+    position absolute
+    top 93%
+    left 48%
+    margin-left -5px
+    border-width 7px
+    border-style solid
+    border-color #333333 transparent transparent transparent
+
+.a-paymentOptionContainer__optionText--selected
+    font-size 0.75rem
+    color white
+
+.a-paymentOptionContainer__optionText
+    font-size 0.75rem
+    color #666666
+
+.a-paymentOptionContainer__logo
+    width 4.375rem
+    max-width 174px
+
+@media (min-width: 600px) 
+    .m-paymentOptionContainer
+        height 3.75rem
+    
+    .m-paymentOptionContainer__selector--selected .a-paymentOptionContainer__tooltip::after
+        top: 89%;
+    
+    .a-paymentOptionContainer__logo
+        width 6.125rem
+
+@media (min-width: 991px)
+    .o-paymentBox
+        padding 0px 10px 15px 10px
+    
+    .a-paymentOptionContainer__optionText--selected
+        font-size 1rem
+    
+    .a-paymentOptionContainer__optionText
+        font-size 1rem
+
+.o-paypalInfo
+  background-color $white
+  box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+  border-radius 4px
+  padding 28px 14px
+  
+
+.a-paypalInfo__heading
+  font $body2-title
+  text-align center
+
+.a-paypalInfo__logo
+  width 150px
+  height 38px
+  margin 44px auto 44px auto
+
+.a-paypalInfo__description
+  font $caption
+  color $carbon
+  margin-bottom 4px
+
+@media (min-width: 991px)
+  .o-paypalInfo
+    padding 32px 24px
+
+  .a-paypalInfo__heading
+    text-align left
+
+  .a-paypalInfo__logo
+    width 182px
+    height 46px
+    margin 22px 0 30px 0
+
+  .a-paypalInfo__description
+    font $body2 
+    margin-bottom 0
+
+@media (min-width: 1199px)
+  .a-paypalInfo__logo
+    margin 31px 0 30px 0
+
+.o-paymentBox {
+    padding: 0px 10px 15px 10px;
+}
+.o-personalInfo
+    background-color $white
+    box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+    border-radius 4px
+    padding 16px
+    margin-bottom 8px
+.a-cashInfo__heading 
+	font 1.25rem 'robotoMedium'

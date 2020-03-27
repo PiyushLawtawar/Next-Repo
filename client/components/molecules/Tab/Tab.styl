@@ -1,0 +1,38 @@
+
+
+
+.mdc-tab
+	.mdc-tab-indicator
+		>.mdc-tab-indicator__content--underline
+			background $timberwolf
+			opacity 1
+			height 1px
+	&.mdc-tab--active .mdc-tab-indicator >.mdc-tab-indicator__content--underline
+		background $primary-color
+
+.mdc-tab.mdc-tab--active .mdc-tab__text-label, .mdc-tab .mdc-tab__text-label
+	mixin-font($title6, $primary-color)
+	.mdc-tab-indicator--active, .mdc-ripple-upgraded--background-focused
+		background transparent
+
+.mdc-tab-scroller__scroll-area--scroll
+	overflow-y hidden
+
+.mdc-tab
+	background transparent
+	flex 0 1 auto
+	height 43px
+	// padding 3px 10px 0
+	justify-content left
+	text-transform capitalize
+	&:focus
+		background transparent
+		outline none
+	.mdc-tab__text-label
+		color rgba(0,0,0,0.87)
+		letter-spacing 0
+
+.tabs-content
+	display none
+	&:first-of-type
+		display block

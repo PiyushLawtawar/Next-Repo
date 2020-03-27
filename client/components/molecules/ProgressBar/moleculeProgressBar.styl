@@ -1,0 +1,371 @@
+.o-progressBar__indicator 
+    display -webkit-box
+    display -moz-box
+    display -ms-flexbox
+    display -webkit-flex
+    display flex
+    margin 0 0 1em
+    padding 0
+    
+    li
+        -ms-flex 1
+        -webkit-flex 1
+        -moz-flex 1
+        flex 1
+        list-style none
+        width auto
+        padding 0
+        margin 0
+        position relative
+        text-overflow ellipsis
+        color $lead
+        display block
+
+        &:hover
+            color #6f6f6f
+
+        &.m-progressBar__completed
+            color $lime-green
+            .a-progressBar__bubble
+                color: $lime-green
+                background-color $lime-green
+                
+                &:after
+                &:before
+                    background-color $lime-green
+
+        .a-progressBar__bubble
+            border-radius: 1000px
+            width 20px
+            height 20px
+            background-color $timberwolf
+            display block
+
+            &:after
+                display block
+                position absolute
+                top 9px
+                width 100%
+                height 3px
+                content ''
+                background-color $timberwolf
+                right 0
+            &:before
+                display block
+                position absolute
+                top 9px
+                width 100%
+                height 3px
+                content ''
+                background-color $timberwolf
+                left 0
+        &:first-child 
+            .a-progressBar__bubble
+                &:after
+                    width 65%
+                    margin-left 35%
+
+                &:before
+                    width 65%
+                    margin-left 35%
+        &:last-child 
+            .a-progressBar__bubble
+                &:after
+                    width 65%
+                    margin-right 35%
+
+                &:before
+                    width 65%
+                    margin-right 35%
+
+.a-progressBar__bubbleR
+    margin 0 65% .5em
+
+.a-progressBar__bubbleC
+    margin 0 auto .5em
+
+.a-progressBar__bubbleL
+    margin 0 35% .5em
+
+//mobile version
+
+.o-progressBar__indicator-mobile 
+    display -webkit-box
+    display -moz-box
+    display -ms-flexbox
+    display -webkit-flex
+    display flex
+    margin 0 0 1em
+    padding 0
+    
+    li
+        -ms-flex 1
+        -webkit-flex 1
+        -moz-flex 1
+        flex 1
+        list-style none
+        width auto
+        padding 0
+        margin 0
+        position relative
+        text-overflow ellipsis
+        color $lead
+        display block
+        height 90px
+
+        &:hover
+            color #6f6f6f
+
+        &.m-progressBar__completed
+            color $lime-green
+            .a-progressBar__bubble
+            .a-progressBar__bubbleLastMobile
+                color: $lime-green
+                background-color $lime-green
+                
+                &:after
+                &:before
+                    background-color $lime-green
+
+        .a-progressBar__bubble
+            border-radius: 1000px
+            width 20px
+            height 20px
+            background-color $timberwolf
+            display block
+
+            &:after
+                display block
+                position absolute
+                top 9px
+                width 100%
+                height 3px
+                content ''
+                background-color $timberwolf
+                right 0
+            &:before
+                display block
+                position absolute
+                top 9px
+                width 100%
+                height 3px
+                content ''
+                background-color $timberwolf
+                left 0
+            
+        &:first-child 
+            .a-progressBar__bubble
+                &:after
+                    width 65%
+                    margin-left 35%
+
+                &:before
+                    width 65%
+                    margin-left 35%
+        &:last-child 
+            .a-progressBar__bubble
+                &:after
+                    width 65%
+                    margin-right 35%
+
+                &:before
+                    width 65%
+                    margin-right 35%
+
+
+        .a-progressBar__bubbleLastMobile
+            border-radius: 1000px
+            width 20px
+            height 20px
+            background-color $timberwolf
+            display block
+
+            &:after
+                display block
+                position absolute
+                top 9px
+                width 100%
+                height 3px
+                content ''
+                background-color $timberwolf
+                right 0
+            &:before
+                display block
+                position absolute
+                top 9px
+                width 100%
+                height 3px
+                content ''
+                background-color $timberwolf
+                left 0
+            
+        &:first-child 
+            .a-progressBar__bubbleLastMobile
+                &:after
+                    width 65%
+                    margin-left 35%
+
+                &:before
+                    width 65%
+                    margin-left 35%
+        &:last-child 
+            .a-progressBar__bubbleLastMobile
+                &:after
+                    width 65%
+                    margin-right 35%
+
+                &:before
+                    width 65%
+                    margin-right 35%
+
+.o-progressBar__indicator-mobile.stacked 
+    display block
+    margin-left -60%
+
+.o-progressBar__indicator-mobile.stacked>li 
+    text-indent -10px
+    text-align center
+    display block
+
+
+.o-progressBar__indicator-mobile.stacked>li .a-progressBar__bubble:after,
+.o-progressBar__indicator-mobile.stacked>li .a-progressBar__bubble:before 
+    left 50%
+    margin-left -1.5px
+    width 3px
+    height 100%
+
+.a-progressBar__bubble__medium:after,
+.a-progressBar__bubble__medium:before
+    border-bottom 45px solid $timberwolf
+
+.o-progressBar__indicator-mobile.stacked>li .a-progressBar__bubbleLastMobile:after
+.o-progressBar__indicator-mobile.stacked>li .a-progressBar__bubbleLastMobile:before 
+    left 50%
+    margin-left -1.5px
+    width 3px
+    height 10%
+
+
+.o-progressBar__indicator-mobile.stacked .stacked-text 
+    margin-left 50%
+    width 45%
+    display inline-block
+    text-align left
+
+
+.o-progressBar__indicator-mobile.stacked>li a 
+    border: none
+
+
+.o-progressBar__indicator-mobile.stacked.nocenter>li .a-progressBar__bubble
+.o-progressBar__indicator-mobile.stacked.nocenter>li .a-progressBar__bubbleLastMobile
+    margin-left: 0;
+    margin-right: 0
+
+
+.o-progressBar__indicator-mobile.stacked.nocenter>li .a-progressBar__bubble:after,
+.o-progressBar__indicator-mobile.stacked.nocenter>li .a-progressBar__bubble:before,
+.o-progressBar__indicator-mobile.stacked.nocenter>li .a-progressBar__bubbleLastMobile:after,
+.o-progressBar__indicator-mobile.stacked.nocenter>li .a-progressBar__bubbleLastMobile:before 
+    left 10px
+
+
+.o-progressBar__indicator-mobile.stacked.nocenter .stacked-text 
+    width auto !important
+    display block
+    margin-left 40px !important
+
+.m-progressBar_helper
+    display inline
+    vertical-align middle
+
+.m-progressBar__divStatusIcon
+    margin-left 35%
+    display flex
+.m-progressBar__divStatusIcon--mobile
+    margin-left 35%
+    display flex
+    margin-top -31px
+
+.m-progressBar__divStatus
+    width 80%
+    display inline
+.m-progressBar__divStatus--mobile
+    width 80%
+    display inline
+    
+.m-progressBar__divIcon
+    display inline
+.m-progressBar__divIcon2
+    margin-left 5px
+.m-progressBar__divStatusDate
+    margin-left 35%
+.m-progressBar__divStatusDate--mobile
+    margin-left 35%
+
+.m-progressBar__divStatusIconC
+    margin-left 18%
+    display flex
+.m-progressBar__divStatusDateC
+    margin-left 20%
+
+.m-progressBar__divStatusC
+    width 70%
+    display inline
+.a-progressBar__iconHelp
+    color $carbon
+    font-size 0.875rem
+.m-progressBar__divStatusIconL
+    margin-left 15%
+    display flex
+.m-progressBar__divStatusL
+    width 60%
+    display inline
+.m-progressBar__divStatusDateL
+    margin-left 15%
+
+.m-progressBar_helper
+    .popover
+        border-radius 7px !important
+    .popover-body_
+        padding 10px 36px 10px 12px
+        box-shadow none
+        width 100%
+        font-size 0.75rem
+        border-radius 7px !important
+
+    .popover-header
+        background-color #fff
+        //background-image url('../images/atomo-icono-close-small-dark.svg')
+        background-position center
+        background-repeat no-repeat
+        width 7px
+        padding 8px
+        -moz-background-size cover
+        background-size cover
+        height 7px
+        -ms-flex-item-align start
+        align-self flex-start
+        text-align right
+        border none
+        border-radius 7px !important
+        position absolute
+        top 10px
+        color #666
+        right 8px
+        cursor pointer
+
+.m-progressBar__divDate--mobile
+    margin-left 35%
+    display flex
+
+.m-progressBar__divDate2--mobile
+    width 80%
+    display inline
+
+.m-progressBar__dateValue
+    margin-left 50%
+    width 45%
+    display inline-block
+    text-align left

@@ -1,0 +1,405 @@
+//---------------------------
+//- Kevin Salinas
+//---------------------------
+
+//- Mixin to create a container with a title on the top          
+mixin product-container(title,hr)
+	.o-product-container&attributes(attributes)
+		if title
+			label=title
+		if hr
+			hr
+		if block
+			block
+
+mixin container()
+	.o-content&attributes(attributes)
+		block
+
+
+mixin order-container(options)
+	include ../../atoms/Buttons/atom-buttons.pug
+	.o-order__container&attributes(attributes)
+		each row in options.rowsContent
+			case row.title
+				when 'header'
+					.o-order__container__header(class='g-'+(row.row.length))
+						each cell,index in row.row
+							.m-order__container__header__cell
+								if cell.title 
+									p.a-order__container__header--title= cell.title 
+								if cell.subtitle
+									p.a-order__container__header--subtitle= cell.subtitle
+
+				when 'products'
+					.o-order__container__products
+						each product in row.products
+							case product.title
+								when 'product-giftRegistry'
+									+product-header(product)
+									+product-content(product)
+									
+								when 'product-giftRegistryCard'
+									+product-header(product)
+									+product-content(product)
+									
+								when 'product-consolidated'
+									+product-header(product)
+									+product-content(product)
+									+product-header(product)
+									+product-content(product)
+								when 'product-generic-pending'
+									+product-header(product)
+									+product-content(product)
+									+product-header(product)
+									+product-content(product)
+									+product-header(product)
+									+product-content(product)
+								when 'product-generic-paid'
+									+product-header(product)
+									+product-content(product)
+									+product-header(product)
+									+product-content(product)
+									+product-header(product)
+									+product-content(product)
+								when 'product-generic-eyt-pending'
+									+product-header(product)
+									+product-content(product)
+								when 'product-generic-eyt-paid'
+									+product-header(product)
+									+product-content(product)
+								when 'product-generic-eyt-expired'
+									+product-header(product)
+									+product-content(product)
+								when 'product-generic-eyt-cancelled'
+									+product-header(product)
+									+product-content(product)
+								when 'product-generic-eyt-partial'
+									+product-header(product)
+									+product-content(product)
+									+product-content(product,true)
+								when 'product-generic-card-delivered'
+									+product-header(product)
+									+product-content(product)
+								when 'product-generic-card-confirmed'
+									+product-header(product)
+									+product-content(product)
+								when 'product-generic-card-confirmedNoEDD'
+									+product-header(product)
+									+product-content(product)
+								when 'product-generic-card-deliveredUnavailable'
+									+product-header(product)
+									+product-content(product)
+								when 'product-generic-card-downloadable'
+									+product-header(product)
+									+product-content(product)
+									
+				when 'footer'
+						case row.type
+							when 'pending'
+								.o-order__container__footer
+									.o-order__footer__cell 
+										+atom-span('Estatus: ','a-order__footer__status light')
+										+atom-label('a-order__footer__statusPayment --pending normal','Pago pendiente')
+									.o-order__footer__cell 
+										+atom-span('No. de referencia: ','a-order__footer__reference light')
+										+atom-label('a-order__footer__referenceNumber normal','1010-1007-2149-8839')
+									.o-order__footer__cell 
+										+atom-span('Vence: ','a-order__footer__validity light')
+										+atom-label('a-order__footer__validityDate normal','30 Nov 2018, 23:59:59')
+									.o-order__footer__cell 
+										+atom-button('Descargar ticket de pago','a-btn a-btn--primary a-order__footer__downloadTicket ripple')
+
+							when 'paid'
+								.o-order__container__footer
+									.o-order__footer__cell 
+										+atom-span('Estatus: ','a-order__footer__status light')
+										+atom-label('a-order__footer__statusPayment --paid normal','Pagado')
+									div
+									div
+									div
+
+							when 'expired'
+								.o-order__container__footer
+									.o-order__footer__cell 
+										+atom-span('Estatus: ','a-order__footer__status light')
+										+atom-label('a-order__footer__statusPayment --expired normal','Vencido')
+									.o-order__footer__cell 
+										+atom-span('No. de referencia: ','a-order__footer__reference light')
+										+atom-label('a-order__footer__referenceNumber normal','1010-1007-2149-8839')
+									.o-order__footer__cell 
+										+atom-span('Vence: ','a-order__footer__validity light')
+										+atom-label('a-order__footer__validityDate normal','30 Nov 2018, 23:59:59')
+
+							when 'cancelled'
+								.o-order__container__footer
+									.o-order__footer__cell 
+										+atom-span('Estatus: ','a-order__footer__status light')
+										+atom-label('a-order__footer__statusPayment --expired normal','Cancelado')
+									.o-order__footer__cell 
+										+atom-span('Vence: ','a-order__footer__validity light')
+										+atom-label('a-order__footer__validityDate normal','30 Nov 2018, 23:59:59')
+									.o-order__footer__cell 
+				default
+					- break
+
+mixin product-header(product)
+	include ../../atoms/Span/atom-span.pug
+	include ../../atoms/Label/atom-label.pug
+	include ../../atoms/Icons/atom-icon.pug
+	case product.title
+		when 'product-giftRegistry'
+			.o-order__product__header
+				.o-order__header__details
+					+atom-span('Mesa de regalos','a-order__title normal')
+					+atom-span(' | ','a-order__separator light')
+
+					+atom-span('Numero de pedido: ','a-order__order light')
+					+atom-label('a-order__orderNumber normal','1234567890')
+
+					.m-order__header__edd
+						+atom-span('Numero de evento: ','a-order__order light')
+						+atom-label('a-order__orderNumber normal','50066746')
+						+atom-span(' | ','a-order__separator light')
+
+						+atom-span('Nombre del festejado: ','a-order__order light')
+						+atom-label('a-order__orderNumber normal','Guadalupe Villalobos')
+
+				.m-order__header__delivery
+					include ../../atoms/Buttons/atom-buttons.pug
+					+atom-button('Seguimiento a entrega','a-btn a-btn--primary ripple')
+				
+				+atom-icon('icon-arrow_right d-flex d-lg-none')
+
+		when 'product-giftRegistryCard'
+			.o-order__product__header
+				.o-order__header__details
+					+atom-span('Mesa de regalos','a-order__title normal')
+					+atom-span(' | ','a-order__separator light')
+
+					+atom-span('Numero de pedido: ','a-order__order light')
+					+atom-label('a-order__orderNumber normal','1234567890')
+
+					.m-order__header__edd
+						+atom-span('Numero de evento: ','a-order__order light')
+						+atom-label('a-order__orderNumber normal','50066746')
+						+atom-span(' | ','a-order__separator light')
+
+						+atom-span('Nombre del festejado: ','a-order__order light')
+						+atom-label('a-order__orderNumber normal','Guadalupe Villalobos')
+
+		when 'product-consolidated'
+			.o-order__product__header
+				+content-header-button()
+		
+		when 'product-generic-paid'
+			.o-order__product__header
+				+content-header-delivered()
+
+		when 'product-generic-pending'
+			.o-order__product__header
+				+content-header-line()
+		when 'product-generic-eyt-pending'
+			.o-order__product__header
+				+content-header-line()
+		when 'product-generic-eyt-paid'
+			.o-order__product__header
+				+content-header-button()
+		//- when 'product-generic-eyt-expired'
+		//- when 'product-generic-eyt-cancelled'
+		when 'product-generic-eyt-partial'
+			.o-order__product__header
+				+content-header-button()
+
+		when 'product-generic-card-delivered'
+			.o-order__product__header
+				+content-header-delivered()
+
+		when 'product-generic-card-confirmed'
+			.o-order__product__header
+				+content-header-confirmed()
+
+		when 'product-generic-card-confirmedNoEDD'
+			.o-order__product__header
+				+content-header-confirmed('Por ahora no es posible mostrar la fecha estimada de entrega')
+
+		when 'product-generic-card-deliveredUnavailable'
+			.o-order__product__header
+				+content-header-delivered()
+
+		when 'product-generic-card-downloadable'
+			.o-order__product__header
+				.o-order__header__details
+					+atom-span('Numero de pedido: ','a-order__order light')
+					+atom-label('a-order__orderNumber normal','12345')
+
+					.m-order__header__edd
+						+atom-span('Descarga entregada: ','a-order__order__status light')
+				
+
+
+
+
+mixin product-content(product,cancelled)
+	if product.title == 'product-giftRegistry'
+		- 
+			var image = {
+				src: 'https://ss343.liverpool.com.mx/xl/1081633998.jpg', 
+				alt: 'platos de lujo', 
+				class: 'a-order__product__image'
+			}
+	else if product.title == 'product-giftRegistryCard'
+		- 
+			var image = {
+				src: 'https://micredito.liverpool.com.mx:9443/cdn/app/assets/images/tarjeta-lp.svg', 
+				alt: 'certificado de regalo', 
+				class: 'a-order__product__image'
+			}
+	else if product.title == 'product-generic-card-downloadable'
+		- 
+			var image = {
+				src: 'https://ss423.liverpool.com.mx/lg/1069073693.jpg', 
+				alt: 'imagen smash', 
+				class: 'a-order__product__image'
+			}
+	else
+		- 
+			var image = {
+				src: 'https://ss343.liverpool.com.mx/xl/1081633998.jpg', 
+				alt: 'platos de lujo', 
+				class: 'a-order__product__image'
+			}
+
+	.o-order__product__content
+		-var n = 0
+		while n < product.quantity
+			.o-order__product__item(id='product__content__'+(++n))
+				.m-order__product__image
+					figure
+						include ../../atoms/TagImage/atom-image.pug
+						//- 'https://ss307.williams-sonoma.com.mx/xl/1040225320_4p.jpg', // square image
+						+atom-image(
+							image.src, 
+							image.alt, 
+							image.class
+						)
+				.o-order__product__detail
+					include ../../atoms/Paragraph/atom-paragraph.pug
+					+atom-paragraph('Vajilla West Elm reactive glaze blanco','a-order__product__title')
+					include ../../molecules/Stars/molecule-stars.pug
+					- var ratings = { numOfRatings : 5, text : "", textIsVisible : false, index: 1};
+					.m-order__detail__ratings
+						+stars(ratings)
+
+					if product.title == 'product-giftRegistry'
+						.o-order__detail__description
+							.m-order__detail__size
+								+atom-span('Talla: ','a-order__order light')
+								+atom-label('a-order__orderNumber normal','M')
+							.m-order__detail__color
+								+atom-span('Color: ','a-order__order light')
+								+atom-label('a-order__orderNumber normal','blanco')
+							.m-order__detail__material
+								+atom-span('Material: ','a-order__order light')
+								+atom-label('a-order__orderNumber normal','Porcelana')
+							.m-order__detail__quantity
+								+atom-span('Cantidad: ','a-order__order light')
+								+atom-label('a-order__orderNumber normal','1')
+							//- TODO: insert market place here
+					else if product.title == 'product-giftRegistryCard'
+						.o-order__detail__description
+							.m-order__detail__quantity
+								+atom-span('Cantidad: ','a-order__order light')
+								+atom-label('a-order__orderNumber normal','1')
+					else if product.title == 'product-generic-card-downloadable'
+						.o-order__detail__description
+							.m-order__detail__quantity
+								+atom-span('Cantidad: ','a-order__order light')
+								+atom-label('a-order__orderNumber normal','1')
+					else
+						.o-order__detail__description
+							.m-order__detail__size
+								+atom-span('Talla: ','a-order__order light')
+								+atom-label('a-order__orderNumber normal','M')
+							.m-order__detail__color
+								+atom-span('Color: ','a-order__order light')
+								+atom-label('a-order__orderNumber normal','blanco')
+							.m-order__detail__material
+								+atom-span('Material: ','a-order__order light')
+								+atom-label('a-order__orderNumber normal','Porcelana')
+							.m-order__detail__quantity
+								+atom-span('Cantidad: ','a-order__order light')
+								+atom-label('a-order__orderNumber normal','1')
+							if (cancelled)
+								.m-order__detail__cancelled
+									+atom-span('Cancelado ','a-order__order normal')
+
+
+mixin content-header-line()
+	.m-order__header
+		+atom-span('Fecha estimada de entrega: ','a-order__edd light')
+		+atom-label('a-order__edd__date light',' 01 de diciembre - 05 de diciembre ') 
+		+atom-span(' El tiempo estimado de entrega aplica sólo a pagos dentro de la vigencia del ticket. ','a-order__edd__label normal')
+			
+mixin content-header-button()
+	include ../../atoms/Icons/atom-icon.pug
+	.o-order__header__details
+		+atom-span('Numero de pedido: ','a-order__order light')
+		+atom-label('a-order__orderNumber normal','1234567890')
+		
+		.m-order__header__consolidated
+			+atom-span('Preparando pedido: ','a-order__order__status light')
+			+atom-span(' | ','a-order__separator light')
+
+			+atom-span('Fecha estimada de entrega: ','a-order__edd light')
+			+atom-label('a-order__edd__date normal','01 de diciembre - 05 de diciembre') 
+
+	.m-order__header__delivery
+		include ../../atoms/Buttons/atom-buttons.pug
+		+atom-button('Seguimiento a entrega','a-btn a-btn--primary ripple')
+
+	+atom-icon('icon-arrow_right d-flex d-lg-none')
+
+mixin content-header-delivered()
+	include ../../atoms/Icons/atom-icon.pug
+	.o-order__header__details
+		+atom-span('Numero de pedido: ','a-order__order light')
+		+atom-label('a-order__orderNumber normal','1234567890')
+		
+		.m-order__header__edd
+			+atom-span('Pedido entregado: ','a-order__order__status light')
+			+atom-span(' | ','a-order__separator light')
+
+			+atom-span('Fecha estimada de entrega: ','a-order__edd light')
+			+atom-label('a-order__edd__date normal','01 de diciembre') 
+
+	.m-order__header__delivery
+		include ../../atoms/Buttons/atom-buttons.pug
+		+atom-button('Seguimiento a entrega','a-btn a-btn--primary ripple')
+	
+	+atom-icon('icon-arrow_right d-flex d-lg-none')
+
+mixin content-header-confirmed(edd)
+	include ../../atoms/Icons/atom-icon.pug
+	.o-order__header__details
+		+atom-span('Numero de pedido: ','a-order__order light')
+		+atom-label('a-order__orderNumber normal','1234567890')
+		
+		.m-order__header__edd
+			+atom-span('Pedido confirmado: ','a-order__order__status light')
+			+atom-span(' | ','a-order__separator light')
+
+			+atom-span('Fecha estimada de entrega: ','a-order__edd light')
+
+			if(edd)
+				+atom-label('a-order__edd__msg normal',edd) 
+			else
+				+atom-label('a-order__edd__date normal','01 de diciembre - 05 de diciembre') 
+
+	.m-order__header__delivery
+		include ../../atoms/Buttons/atom-buttons.pug
+		+atom-button('Seguimiento a entrega','a-btn a-btn--primary ripple')
+
+	+atom-icon('icon-arrow_right d-flex d-lg-none')
+
+	

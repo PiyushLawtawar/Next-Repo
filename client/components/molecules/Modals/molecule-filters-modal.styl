@@ -1,0 +1,74 @@
+.-mdc_disabled
+  opacity 0.5
+  pointer-events none
+.-btn__cleanDisabled
+  color #888
+  pointer-events none
+#filters-modal
+  .modal-header
+    background $gray-medium
+    border-bottom 0
+    padding 0.5rem .8rem .5rem 1rem
+    button
+      background none
+      border 0
+      -webkit-appearance none
+      color: $carbon
+      &.disabled
+        color: $timberwolf
+  .modal-title
+    font-size 0.875em
+    line-height 1.8
+  .modal-dialog
+    margin 0
+  .modal-content
+    float right
+    min-height 100vh
+    width 75%
+  .modal-body
+    padding 0
+  .mdc-form-field
+    width 100%
+  .card-body
+    padding .8rem 1.25rem
+  .card-body-scroll
+    max-height 322px
+    overflow scroll
+  .m-filters__applied
+    background $white
+    bottom 0px
+    height 70px
+    position fixed
+    width 75%
+    z-index 1000
+#modal-filters
+  width 100%
+  label
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+  .btn-link
+    color $carbon
+    font-size 0.875em
+    padding 0 .75rem
+    &:hover
+      text-decoration none
+    i
+      color $lead
+      font-size .75em
+      position absolute
+      right 25px
+      top 21px
+  .filter-subLevels
+    border-top: solid 1px $gray-medium
+    padding-top: 12px 
+    padding-left: 40px
+  .btn-link[aria-expanded="true"] i:before
+    content "\e905"
+  .card-header
+    background-color #fff
+    padding .75rem .6rem
+  .a-filter-selection
+    color $gray-light
+    font-size 0.75em
+    margin-left 13px

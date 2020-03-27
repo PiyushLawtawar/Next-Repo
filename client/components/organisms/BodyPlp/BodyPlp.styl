@@ -1,0 +1,89 @@
+body
+	background-color $background-color
+.o-content__noResults
+	background $white
+	border-radius 4px
+	box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+	padding 5em 10em
+	.m-header__searchBar
+		box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+	.plp-no__results
+		border-right: solid 1px $timberwolf
+		margin: 5px 0px
+.o-listing__compare
+	column-count 4
+	.m-plp-product-card
+		max-height initial
+	.plp-btn-compare
+		width: 100%
+		border: none
+
+.m-title__marketplace
+	//padding-bottom 10px /* Extra padding. NOt in HTML*/
+
+.m-checkbox__button.mdc-form-field.m-plp-compareCheckbox .mdc-checkbox--selected ~ label
+	text-decoration: underline
+	color $primary-color
+
+.m-plp-list-view
+	.m-ratings, .m-compare__products
+		display none
+.plp-filter-options.active.marcas-height-set
+	height: auto
+	overflow: auto
+span.atom-color.atom-color--mac
+	background-image url("https://ss701.liverpool.com.mx/sh/1028323669.jpg")
+.plpModelsCards
+	.m-figureCard__figure
+		.m-figureCard__figcaption
+			.a-card-description
+				display flex
+				justify-content center
+.o-listing__products .m-plp-card-container .m-plp-product-card .m-figureCard__figcaption h5.card-title.a-card-description
+	height: auto
+	margin-bottom: 16px
+.fiterl-prices
+	height: auto
+	max-height: 220px
+	overflow: auto
+	margin-right: -2.5em
+.filter-brands
+	height: auto
+	max-height: 368px
+	overflow: auto
+	margin-right: -2.5em
+@media only screen and (max-width: 992px)
+	.m-plp-compareCheckbox
+		display: none
+	.o-content__noResults
+		padding 3em 1em
+	.m-title__marketplace
+		background $white
+	.m-plp-list-view
+		.card
+			min-width 170px
+	.row.m-plp-models
+		overflow-x: scroll
+		margin-top: 24px
+	.m-column_mainContent .m-plp-models img
+		width 100%
+@media (min-width: 992px) and (max-width: 1024px)
+	.container
+		max-width 1024px
+
+@media only screen and (min-width: 992px)
+	.m-product__card
+		height auto
+		margin-bottom 20px
+	.a-plp-product-info
+		max-height 400px
+		transition max-height 0.15s ease-out
+	.m-product__listingPlp .bricklayer-column .m-product__card:hover
+		max-height 500px
+		transition max-height .25s ease-in
+		.a-plp-product-info
+			.m-ratings, .m-compare__products
+				display block
+	.card-columns-plp
+		.m-product__card
+			min-height 215px

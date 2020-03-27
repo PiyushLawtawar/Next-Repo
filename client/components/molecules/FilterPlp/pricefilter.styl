@@ -1,0 +1,39 @@
+.a-price__filterInput
+  flex 0 0 40%
+  margin-right .2em
+  max-width 40%
+  .form-group
+    margin-bottom .5rem
+    .form-control
+      border 1px solid $gray
+  input
+    color $gray
+    font-size .75em
+    &:focus
+      border-color #ada8a8
+      box-shadow none
+      color $carbon
+.a-price__range
+  color $carbon
+  line-height 2
+  margin-right .2em
+.a-price__filterButton
+  background #fff
+  border 1px solid $gray
+  border-radius 4px
+  color $gray
+  cursor pointer
+  flex 0 0 11%
+  font-size .75em
+  height 32px
+  margin-left .5em
+  max-width 11%
+  padding 6px 12px
+  
+@media (min-width: 992px) and (max-width: 1024px)
+  .a-price__filterInput
+    max-width 35%
+  .a-price__filterButton
+    flex 0 0 15%
+    max-width 15%
+    padding 12px 13px

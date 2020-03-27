@@ -1,0 +1,37 @@
+.m-flag
+    display: inline-flex
+    flex-wrap: wrap
+    margin: 15px 0 0
+
+.m-flag-item
+    margin: 0 10px 10px 0
+    padding: 5px 10px
+    font: $overline-module 
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 22px
+    border-radius: 16px
+    border: none
+    i
+      font-size 18px
+    span
+        margin: 0
+    &.-notAvailable
+        font: $body2-others
+    &.-mesa
+        font: $flagMesa
+        width: auto
+        justify-content: space-between
+        padding: 5px 13px
+        span
+            padding-right: 8px
+        
+
+.-defaultFlag
+    background: $silver
+    color: $carbon
+
+.-primaryFlag
+    background: $lead
+    color: $white

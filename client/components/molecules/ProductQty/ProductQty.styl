@@ -1,0 +1,101 @@
+
+.m-product__qty
+	border 1px solid $gray89
+	border-radius 4px
+	color $lead
+	display block
+	font-size 1em
+	margin-bottom 19px
+	width 100%
+	@media screen and (max-width: 992px)
+		margin-bottom: 30px
+	h2
+		mixin-font($body1, $lead)
+	i
+		mixin-font($overline-link, $lead)
+		position relative
+		right 3px
+		top 10px
+
+	input
+		border 1px solid transparent
+		border-left 1px solid $gray89
+		padding-left 20%
+		text-align center
+		width 100%
+		&:focus
+			outline none
+	input.pdpQtyMobile
+		text-align right !important  /* added for Qty inputbox alignment 22120*/
+#qty-modal
+	.modal-body
+		padding 0
+	.modal-content
+		box-shadow 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 5px 0 rgba(0, 0, 0, 0.14)
+	.modal-header
+		background #fafafa
+		h2
+			mixin-font($title6-popup, black)
+			margin 0
+	ul
+		margin 0
+		padding 0
+
+@media only screen and (min-width: 992px)
+	.m-product__qty
+		border none
+		font-size 0.7em
+		padding 14px 15px
+		i
+			right 2px
+			top 5px
+		input.a-ProductQty__input
+			font-size 1rem
+			border none
+			margin 0
+			padding-left 0
+			text-align center
+		
+		.m-ProductQty__container
+			align-items center
+			border 1px solid $gray89
+			border-radius 4px
+			display flex
+			height 44px
+			> .row
+				width 100%
+		.dropdown-toggle
+			font-size 1em
+			color $black-with-opacity
+			display block
+			height 44px
+			padding 13px 10px
+			text-align center
+			i
+				font-size 10px
+				right 10px
+				top 10px
+			&:after
+				display none
+		.dropdown-menu
+			font-size 1em
+			margin 0
+			min-width auto
+			padding 0
+			width 90%
+			z-index 3
+			a
+				color $black-with-opacity
+				border-bottom 1px solid $timberwolf
+				display flex
+				height 52px
+				justify-content center
+				padding 20px 0 0
+				&:hover
+					background $gray-mid
+
+.m-ProductQty__container--small
+	width 100%
+	min-width 70px
+.dropdown-menu--small
+	width 100px

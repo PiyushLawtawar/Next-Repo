@@ -1,0 +1,94 @@
+
+.m-product__texture, .m-product__material
+  margin 25px 0
+  width 100%
+
+@media only screen and (min-width: 992px)
+  .m-product__texture, .m-product__material
+    width 220px
+
+.hidedesc
+  max-height:145px
+  overflow:hidden
+
+.a-product__information--title
+    font: $title6
+    color: $carbon
+.a-product_siva_information--title
+    font: $title4
+    color: $red
+
+.m-product__information--code
+    font: .75rem $light
+    color: $carbon
+    margin-bottom: 0
+
+		& ~ hr
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+/*21965 start*/
+.a-product__titleProductDescriptionContentWeb
+    font: $body2
+/*21965 end*/
+.m-product__information--rating
+    display flex
+    margin-top: .5rem
+
+.m-product__informationPdps--rating
+    display flex
+    margin-top: .5rem
+
+.m-product__information--descriptionTitle
+    font: $overline-module
+    color: $lead
+
+.m-characteristics-container
+    button, div
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 1rem
+        font-size: .875rem
+        i
+            font-size: .7rem
+
+
+
+
+
+
+@media only screen and (max-width: 991px)
+
+		.m-product__information--rating
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start
+
+            .rating__comments
+                margin-left: 0
+
+                & a
+                    font-size: .6rem
+
+		.m-product__informationPdps--rating
+            align-items: flex-start
+
+            .rating__comments
+                margin-left: 0
+
+                & a
+                    font-size: .6rem
+
+		.m-product__information--code
+            font: $overline-module
+            color: $carbon
+            margin-bottom: 0
+
+            & ~ hr
+                border-top: 2px solid $timberwolf
+                opacity: 0.3
+                margin-top: .75rem;
+                margin-bottom: .75rem;
+
+        .a-product__titleProductDescriptionContentWeb
+            font: $body2

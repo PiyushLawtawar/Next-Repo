@@ -1,0 +1,98 @@
+
+
+
+.mdc-select__dropdown-icon
+  //top 4px
+.mdc-select.mdc-select--outlined .mdc-floating-label
+  //top 9px
+.mdc-select--outlined .mdc-select__native-control, .mdc-select--outlined .mdc-select__selected-text
+  padding 6px 10px
+.mdc-select:not(.mdc-radio)
+    width 100%
+    //height 36px
+    select
+      //height 36px
+// helper margin
+.mdc-select-helper-line
+  margin-bottom 10px
+// helper text color and opacity
+.mdc-select-helper-line
+  color $gray!important
+  opacity 0
+// required field color
+.mdc-select--required .mdc-floating-label::after
+  color $red
+  padding 0 0 0 3px
+// icon color to primary when focused
+.mdc-select--focused > .mdc-select__dropdown-icon
+  background url("data:image/svg+xml,%3Csvg%20width%3D%2210px%22%20height%3D%225px%22%20viewBox%3D%227%2010%2010%205%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cpolygon%20id%3D%22Shape%22%20stroke%3D%22none%22%20fill%3D%22%23e10098%22%20fill-rule%3D%22evenodd%22%20opacity%3D%22"1"%22%20points%3D%227%2010%2012%2015%2017%2010%22%3E%3C%2Fpolygon%3E%0A%3C%2Fsvg%3E") no-repeat center!important
+// border grey color
+.mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__leading, .mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__notch, .mdc-select--outlined:not(.mdc-select--disabled) .mdc-notched-outline__trailing
+  border-color $whisper
+// label floating color
+.mdc-select:not(.mdc-select--disabled).mdc-select--focused .mdc-floating-label
+  color $primary-color!important
+.mdc-select--outlined
+  height 36px
+.mdc-select__native-control
+  height 36px
+.mdc-select__dropdown-icon
+  bottom 14px
+  height 10px
+
+.mdc-select.mdc-select--outlined .mdc-floating-label
+  top 7px
+  font: $body2
+.mdc-select.mdc-select--outlined .mdc-floating-label.mdc-floating-label--float-above
+  top 14px
+.mdc-select--invalid:not(.mdc-select--disabled).mdc-select--focused .mdc-floating-label
+  color $red
+
+.mdc-select
+  .a-icon__opticHelp
+    position absolute
+    right 0
+    top 0
+.mdc-floating-label--float-above
+  font-size: 1rem
+.mdc-select__dropdown-icon ~ .mdc-select__native-control
+  padding-left: 16px
+@media only screen and (max-width: 992px)
+  .mdc-select:not(.mdc-select--disabled) .mdc-floating-label
+    top 5px
+
+:root
+	--mdc-theme-primary: $primary-color
+	--mdc-theme-secondary: $pale-pink;
+	--mdc-theme-background: #fff;
+	--mdc-theme-surface: #fff;
+	--mdc-theme-error: $ff0000;
+	--mdc-theme-on-primary: #fff;
+	--mdc-theme-on-secondary: #fff;
+	--mdc-theme-on-surface: #000;
+	--mdc-theme-on-error: #fff;
+	--mdc-theme-text-primary-on-background: rgba(0, 0, 0, 0.87);
+	--mdc-theme-text-secondary-on-background: rgba(0, 0, 0, 0.54);
+	--mdc-theme-text-hint-on-background: rgba(0, 0, 0, 0.38);
+	--mdc-theme-text-disabled-on-background: rgba(0, 0, 0, 0.38);
+	--mdc-theme-text-icon-on-background: rgba(0, 0, 0, 0.38);
+	--mdc-theme-text-primary-on-light: rgba(0, 0, 0, 0.87);
+	--mdc-theme-text-secondary-on-light: rgba(0, 0, 0, 0.54);
+	--mdc-theme-text-hint-on-light: rgba(0, 0, 0, 0.38);
+	--mdc-theme-text-disabled-on-light: rgba(0, 0, 0, 0.38);
+	--mdc-theme-text-icon-on-light: rgba(0, 0, 0, 0.38);
+	--mdc-theme-text-primary-on-dark: white;
+	--mdc-theme-text-secondary-on-dark: rgba(255, 255, 255, 0.7);
+	--mdc-theme-text-hint-on-dark: rgba(255, 255, 255, 0.5);
+	--mdc-theme-text-disabled-on-dark: rgba(255, 255, 255, 0.5);
+	--mdc-theme-text-icon-on-dark: rgba(255, 255, 255, 0.5);
+.mdc-select--required 
+	.mdc-floating-label 
+		&::after 
+			color #f00
+			padding 0 0 0 3px
+.singleoption-select
+  font-family: Roboto,sans-serif
+  font-size: 0.75rem
+  color: rgba(0,0,0,.87)
+  padding: 6px 10px 6px 16px

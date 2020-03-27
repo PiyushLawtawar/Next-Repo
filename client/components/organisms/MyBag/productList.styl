@@ -1,0 +1,825 @@
+min-w-mobile = 320px
+max-w-mobile = 991px
+
+min-w-tablet = 992px
+max-w-tablet = 1279px
+
+min-w-desktop = 1280px
+
+max-w-xdesktop = 1600px
+
+mixin-modals()
+  .-show{
+    display: block !important;
+    background: transparent;
+  }
+
+  .-backgroundModalFixed{
+    height: 100vh;
+    overflow: hidden;
+  }
+
+
+  .o-findGiftTable__backPanelMyBag,
+  .o-dontGiftTable__backPanelMyBag,
+  .o-resultGiftTable__backPanelMyBag,
+  .o-selectCelebrated__backPanelMyBag,
+  .o-giftWrap__backPanelMyBag{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .o-resultGiftTable__backPanelMyBag,
+  .o-selectCelebrated__backPanelMyBag{
+    // background: transparent; // Comented for 21561
+  }
+  .o-findGiftTable__head,
+  .o-findGiftTable__body,
+  .o-dontGiftTable__head,
+  .o-dontGiftTable__body,
+  .o-giftWrap__body,
+  .o-giftWrap__head,
+  .o-resultGiftTable__head,
+  .o-resultGiftTable__body,
+  .o-selectCelebrated__head,
+  .o-selectCelebrated__body{
+    width: 568px;
+    height: 48px
+  }
+
+  .o-findGiftTable__head,
+  .o-dontGiftTable__head,
+  .o-resultGiftTable__head,
+  .o-giftWrap__head,
+  .o-selectCelebrated__head{
+    //height: 48px;
+  }
+  .o-selectCelebrated__body,
+  .o-findGiftTable__body,
+  .o-dontGiftTable__body,
+  .o-giftWrap__body,
+  .o-resultGiftTable__body{
+    height: 508px;
+    overflow-y: scroll;
+    padding-top: 12px;
+  }
+  /*22717 start*/
+  #o-findGiftTable .o-findGiftTable__body {
+    min-height: 508px;
+    height: auto;
+    overflow: hidden;
+  }
+  #o-findGiftTable .o-findGiftTable__body, .o-giftWrap .o-giftWrap__body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  #o-findGiftTable .o-findGiftTable__head, .o-giftWrap .o-giftWrap__head {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  /*22717 end*/
+  .o-dontGiftTable__body{
+    height: 158px;
+    overflow: hidden;
+  }
+  .o-findGiftTable__items, .o-dontGiftTable__items{
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 11px;
+    padding-right: 20px;
+  }
+  .o-findGiftTable__items:first-child, .o-dontGiftTable__items:first-child{
+    padding: 0;
+    padding-top: 10px;
+  }
+  .o-findGiftTable__items[name="nameFindGiftTable"]{
+    order: 1;
+  }
+  .o-findGiftTable__items[name="dateEventFindGiftTable"]{
+    order: 2;
+  }
+  .o-findGiftTable__items[name="firstLastNameFindGiftTable"]{
+    order: 3;
+  }
+  .o-findGiftTable__items[name="typeEventGiftTable"]{
+    order: 4;
+  }
+  .o-findGiftTable__items[name="secondLastNameFindGiftTable"]{
+    order: 5;
+  }
+
+  .o-findGiftTable__items[name="findGiftTableByName"]{
+    order: 6;
+    width: 100%;
+    padding-left: 52%;
+  }
+  .o-findGiftTable__items[name="findByNumberEvent"]{
+    order: 7;
+    width: 100%;
+  }
+
+  .o-findGiftTable__items[name="eventCodeFindGiftTable"]{
+    order: 8;
+    width: 100%;
+    padding-right: 53.5%;
+  }
+
+  .o-findGiftTable__items[name="findGiftTableByCode"]{
+    order: 9;
+    width: 100%;
+    padding-left: 52%;
+  }
+  .o-dontGiftTable__items[name="dontGiftTableMessage"]{
+    padding-left: 64px;
+    padding-right: 64px;
+    width: 100%;
+    text-align: center;
+  }
+  .o-dontGiftTable__items[name="dontGiftTable"]{
+    width: 100%;
+    padding-left: 145px;
+    padding-right: 145px;
+
+  }
+
+  .o-resultGiftTable__items{
+    height: 80px;
+    display: flex;
+    // width: 95%;
+    position: relative;
+    border-bottom: 1px solid $timberwolf;
+    border-left:  1px solid $timberwolf;
+    border-right:  1px solid $timberwolf;
+  }
+  .o-resultGiftTable__items .a-text{
+    position: absolute;
+    left: 95%;
+    top: 45%;
+  }
+
+
+  .o-resultGiftTable__items .m-imageResultGiftTable,
+  .o-resultGiftTable__itemsDescription{
+    height: inherit;
+  }
+
+  .o-resultGiftTable__items .m-imageResultGiftTable{
+    width: 15%;
+  }
+  .o-resultGiftTable__items .o-resultGiftTable__itemsDescription{
+    width: 85%;
+  }
+
+  .o-resultGiftTable__items .o-resultGiftTable__itemsDescription .a-inlineElement{
+    margin-bottom: 0px;
+  }
+
+  .o-resultGiftTable__items .m-imageResultGiftTable img{
+    height: 100%;
+    padding: 18% 16%;
+    border-radius: 50%;
+    width: 100%;
+  }
+
+  .o-resultGiftTable__items--fisrtResult{
+    border-top: 1px solid $timberwolf;
+  }
+
+  .o-selectCelebrated__items{
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .o-selectCelebrated__body{
+    padding-left: 51px;
+    padding-right: 50px;
+    padding-top: 13px;
+  }
+
+  .o-selectCelebrated__body .sendMessageToCelebrated{
+    width: 222px;
+    display: block;
+    float: right;
+  }
+  .o-selectCelebrated__body .o-selectCelebrated__items:last-child{
+    display: block;
+  }
+
+.a-closeAlertGiftModal{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 96%;
+    top: 24px;
+    font-size: 10px;
+
+  }
+
+.o-myBag, .o-myBag__column
+  width 100%
+  display flex
+  height auto
+  width 100%
+  padding 0
+  margin 0
+  flex-flow row wrap
+.o-myBag
+  margin 0 16px
+  border-bottom 1px solid $timberwolf
+  position relative
+  padding-bottom 10px
+  padding-top 16px
+
+.o-myBag:last-child
+  border-bottom 0
+
+.o-myBag__column
+  width 206px
+  justify-content flex-start
+  // margin-top 19px
+  align-content flex-start
+
+.o-myBag__container
+  width 222px
+  height auto
+.o-myBag__motionMenu
+  position absolute
+  left 95%
+  top 13px
+  display none
+
+.o-myBag__column--priceContainer
+  width 100%
+
+.o-myBag__column--triple
+  position relative
+  flex-grow 3
+  display flex
+  flex-flow row wrap
+  justify-content space-between
+
+.o-myBag__column--saved
+  width 50%
+  flex-flow row wrap
+  align-content baseline
+
+.o-myBag__column--four
+  flex-grow 4
+
+.o-myBag__image
+  width 205px
+  height 154px
+  margin 0
+  padding 0
+.o-myBag__description
+  width calc(100% - 225px)
+  padding-left 20px
+
+.o-myBag__giftTableDetails
+  width 100%
+  // padding 0 16px
+  flex-grow 6
+  margin-bottom 25px
+
+//   Gift Table Modal  <<< Find >>>
+
+.o-findGiftTable,.o-dontGiftTable, .o-resultGiftTable, .o-selectCelebrated, .o-giftWrap
+  width 100%
+  height 100%
+  position fixed
+  z-index 2
+  display none
+  background $snow
+
+.o-giftWrap
+  background: $white
+
+.o-resultGiftTable
+  z-index 3
+.o-selectCelebrated
+  z-index 4
+
+.o-findGiftTable__head, .o-dontGiftTable__head, .o-resultGiftTable__head, .o-selectCelebrated__head, .o-giftWrap__head
+  height auto
+  display flex
+  flex-flow row wrap
+  justify-content space-between
+  background $snow
+  padding 0 17px
+  padding-top 19px
+  padding-bottom 16px
+  box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.1)
+  position relative
+  z-index 2
+
+.o-findGiftTable__body, .o-dontGiftTable__body, .o-resultGiftTable__body, .o-selectCelebrated__body, .o-giftWrap__body
+  background $white
+  padding 0 17px
+  display flex
+  flex-flow row wrap
+  width 100%
+  justify-content flex-start
+  font: $body2
+
+.o-resultGiftTable.-show
+  .o-resultGiftTable__body
+    padding: 20px 24px 0
+.o-giftWrap__body
+  display block
+  font $body1
+
+.o-findGiftTable__items, .o-dontGiftTable__items, .o-resultGiftTable__items, .o-selectCelebrated__items, .o-resultGiftTableModal__items, .o-giftWrap__items
+  width 100%
+  padding-bottom 27px
+
+.o-findGiftTable__items:first-child, .o-dontGiftTable__items:first-child
+  padding-top 14px
+  padding-bottom 13px
+
+.o-findGiftTable__items[name="dateEventFindGiftTable"] div > i{
+  right: 7px;
+  top: 7px;
+  font-size: 1.2em;
+}
+
+
+
+.o-resultGiftTableModal
+  height 100%
+
+.o-resultGiftTableModal__items--containerList
+  height 90%
+  overflow-y scroll
+
+.o-resultGiftTable__items
+  padding-bottom 17px
+.o-resultGiftTableModal__items
+  padding-bottom 0
+.o-resultGiftTableModal__items--card
+  height 79px
+  border-bottom 1px solid $timberwolf
+  display flex
+  align-items center
+.o-resultGiftTableModal__items--containerList
+  border 1px solid $timberwolf
+
+.o-resultGiftTableModal__itemsDescription
+  width 85%
+  display flex
+  flex-flow row wrap
+  justify-content flex-start
+  align-content center
+
+.o-resultGiftTable-modal
+  .modal-body
+    height 100%
+    overflow-y hidden
+
+.o-buytoGiftTable-modal, .o-resultGiftTable-modal
+  .modal-body
+    padding-left 51px
+    padding-right 51px
+.-show
+  display block
+
+.-hidden
+  display none
+.-errorSelectedCelebbrated
+  color $red
+  height 20px
+  font $body2
+  font-weight normal
+  font-style normal
+  font-stretch normal
+  line-height 1.43
+  letter-spacing normal
+
+.-required
+  font-size 12px
+  color $red
+  text-align right
+.-required::before
+  content "*"
+  font-size 12px
+  margin-right 1px
+
+
+.o-findGiftTableModal
+  display flex
+  flex-flow row wrap
+  width 100%
+
+.o-findGiftTableModal__items
+  width 100%
+  display flex
+  flex-flow initial
+  height 36px
+  justify-content space-between
+  margin-bottom 26px
+
+.o-findGiftTableModal__items:first-child
+  margin-bottom 19px
+  height 21px
+
+.o-findGiftTableModal__items--slim
+  margin-bottom 19px
+  height 21px
+  width 100%
+ /* 22772 start */
+.o-resultGiftTable__list
+    height: 400px;
+    max-height: 400px;
+    overflow-y: scroll;
+    width: 100%;
+ /* 22772 end */
+.o-findGiftTableModal__itemsContainer
+  width 48%
+.o-findGiftTableModal__itemsContainer--small
+  width 35%
+.o-findGiftTableModal__itemsContainer--large, .o-resultGiftTableModal__itemsContainer--large
+  width 100%
+.o-findGiftTableModal__itemsContainer--right
+  margin-left 53%
+  width 100%
+
+.o-resultGiftTableModal__itemsDescription .a-inlineElement
+  margin 0
+
+
+.o-findGiftTable__backPanelMyBag,
+.o-dontGiftTable__backPanelMyBag,
+.o-resultGiftTable__backPanelMyBag,
+.o-selectCelebrated__backPanelMyBag,
+.o-giftWrap__backPanelMyBag
+  background: rgba(0, 0, 0, 0.7);
+  width 100%
+  height 100%
+
+.o-giftWrap__backPanelMyBag
+  @media screen and (max-width: 991px)
+    height: 0
+
+// .-alertErrorFindGiftTable
+//   display none
+
+.-wrapOptions
+  display flex
+  justify-content flex-start
+  flex-flow row wrap
+  justify-content space-between
+  padding-bottom: 58px
+  @media screen and (max-width: 991.5px)
+    padding-bottom: 35px
+
+.o-giftWrap__options
+  width 50%
+  padding-top 43px
+  @media screen and (max-width: 991.5px)
+    width: 100%
+
+.o-giftWrap__items
+  // width 50%
+
+.o-giftWrap__items-modalButtons
+  margin: 0 10px
+  @media screen and (max-width: 991.5px)
+    margin: 0
+    > div
+     padding 0
+
+.o-giftWrap__items:first-child
+  height 24px
+  width 100%
+
+// Mobile
+@media (min-width: min-w-mobile) and (max-width: max-w-mobile) {
+  .o-resultGiftTable__list{
+    height: auto;
+    overflow-y: hidden;
+    width: 100%;
+    max-height: none;
+  }
+  .o-findGiftTable__items:nth-child(2){
+    padding-top: 20px;
+  }
+  .o-myBag__image{
+    width: 118px;
+    height: fit-content;
+    padding-left: 8px;
+    padding-right: 4px;
+  }
+  .o-myBag__description{
+    width: calc(100% - 118px);
+    padding-left: 4px;
+  }
+
+  .o-myBag__description .a-inlineElement--enphasis{
+    width: calc(100% - 30px);
+  }
+  .o-myBag{
+    flex-flow: row wrap;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    background: $white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+    border-radius: 4px;
+  }
+
+  .o-myBag__column, .o-myBag__column--triple{
+    width: 100%;
+    background: $white;
+  }
+  .o-myBag__column[name="columnProduct"]{
+    order: 0;
+  }
+
+  .o-myBag__column[name="columnPrice"]{
+    margin-left: 123px;
+    width: 50%;
+  }
+  .o-myBag__column[name="columnTotal"]{
+    padding-left: 138px;
+    order: 1;
+  }
+  .o-myBag__column[name="columnQuantity"]{
+    margin-top: 15px;
+  }
+  .o-myBag__column[name="columnQuantity"] .m-product{
+    max-width: 164px;
+    // width: 100%;
+    margin-left: 123px;
+  }
+  .o-myBag__column[name="columnQuantity"] .m-product .pt-1{
+    display: none;
+  }
+
+  /*.o-myBag__column[name="columnQuantity"] .m-product .p-0{
+    left: -46px;
+  }*/
+
+  .o-myBag__column[name="columnQuantity"] .m-product .row{
+    justify-content: flex-end;
+  }
+
+
+  .o-myBag__column[name="columnQuantity"] .a-ProductQty__input{
+    border-left: 0px;
+    padding: 9px 45px 9px 15px!important;
+    width: 125%;
+  }
+
+  .o-myBag__column[name="columnPrice"]{
+    .a-inlineElement--enphasis{
+      color : $red;
+      .-decimal{
+        color: $red;
+      }
+    }
+  }
+
+  .o-myBag__motionMenu{
+    display: block;
+    left: 92%;
+  }
+
+  .o-resultGiftTable__items{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $timberwolf;
+  }
+  .o-resultGiftTable__itemsDescription{
+    width: 80%;
+    .a-inlineElement{
+      margin-bottom: 0;
+    }
+  }
+
+  .selectCelebrated.a-inlineElement{
+    margin-bottom: 0;
+  }
+
+  .o-findGiftTable, .o-dontGiftTable, .o-resultGiftTable{
+    overflow-y: scroll;
+  }
+ 
+  .o-resultGiftTable__itemsDescription{
+    width: 72%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .o-resultGiftTable__body{
+    padding-top: 20px;
+    // height: calc(92% - 20px);
+  }
+  .o-resultGiftTable__list{
+    // height: 80%;
+  }
+
+  .o-resultGiftTable__body:last-child{
+    margin-bottom: 0px;
+  }
+  .o-resultGiftTable__items--fisrtResult{
+    padding-top: 0px;
+  }
+
+  .o-resultGiftTable__itemsDescription .a-inlineElement{
+    height: auto;
+  }
+  .o-resultGiftTable__itemsDescription .a-inlineElement:first-child{
+    padding-top: 13px;
+  }
+  .o-myBag__giftTableDetails{
+    border-top: 1px solid $timberwolf;
+    max-width: 100vw;
+    margin-bottom : 0;
+  }
+  .o-findGiftTable__backPanelMyBag,
+  .o-dontGiftTable__backPanelMyBag,
+  .o-resultGiftTable__backPanelMyBag,
+  .o-selectCelebrated__backPanelMyBag{
+    background: transparent;
+  }
+
+  .o-selectCelebrated__backPanelMyBag .o-selectCelebrated__body{
+    padding-top: 20px;
+  }
+  .o-selectCelebrated__items--choiceCelebrated{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+@media (min-width: min-w-mobile) and (max-width: max-w-mobile) and (orientation: landscape){
+  .o-myBag{
+    margin-bottom: 0;
+  }
+}
+// Tablet
+@media (min-width: min-w-tablet) and (max-width: max-w-tablet) {
+  .o-myBag{
+    margin: 0;
+  }
+  .o-myBag__column {
+    width: 167px;
+  }
+  .o-myBag__column--saved{
+    width: 50%;
+  }
+  .o-myBag__image{
+    padding-left: 16px;
+  }
+
+  // Modals
+  mixin-modals()
+
+}
+
+// Desktop
+@media (min-width: min-w-desktop) {
+  .o-myBag__image {
+    width: 146px;
+    height: 110px;
+  }
+  .o-findGiftTable,.o-dontGiftTable, .o-resultGiftTable, .o-selectCelebrated, .o-giftWrap{
+    display: none;
+  }
+
+
+  .o-myBag__column--triple{
+    justify-content: flex-start;
+  }
+
+  // Modals ----------
+  mixin-modals()
+
+}
+
+.o-giftWrap.-show
+  .o-giftWrap__body
+    .o-giftWrap__items
+      p.a-blockElement--enphasis
+        font-size: 0.875rem
+        color: $carbon
+        padding-top: 30px
+
+.o-findGiftTable__backPanelMyBag
+  .o-findGiftTable__head
+    .a-inlineElement.a-inlineElement--enphasis
+      font $body1
+      color $carbon
+  .o-findGiftTable__body
+    .o-findGiftTable__items, .a-inlineElement.a-inlineElement--enphasis
+      font $body1
+      color: $carbon
+      white-space nowrap
+      @media screen and (max-width: 991.5px)
+        white-space: inherit
+    .-required
+      font $caption
+
+.o-resultGiftTable__head .-back
+  font $body1
+  color $carbon
+.o-resultGiftTable__body
+  .a-blockElement.a-blockElement--enphasis
+    font $body1
+    color $carbon
+    width 100%
+  .a-inlineElement
+    font $body2
+    color $lead
+  .o-resultGiftTable__itemsDescription.selectCelebrated
+    padding: 5px 0px
+    .a-inlineElement.a-inlineElement--enphasis
+      font $overline-footer
+      font-weight bold
+      color $carbon
+      margin-top 10px
+    .a-inlineElement
+      font $overline-module
+      color $lead
+
+.o-selectCelebrated__body
+  .a-blockElement--enphasis, .-messageTitle
+    font $body1
+    color $carbon
+  .a-inlineElement
+    font $body2
+    color $lead
+
+#textarea
+  resize: none
+
+.o-selectCelebrated__items
+  .mdc-text-field.mdc-text-field--textarea
+    margin-bottom: 15px
+  .mdc-text-field-character-counter
+    position: absolute
+    top: 125px
+    right: 0
+
+.o-giftWrap__items
+  .mdc-text-field.mdc-text-field--textarea
+    margin-bottom: 15px
+  .mdc-text-field-character-counter
+    position: absolute
+    top: 125px
+    right: 0
+
+/* 21717 fix statr */
+
+.-alertErrorFindGiftTable{
+  height: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-left: 5px solid $red;
+  display: block;
+  width: 100%;
+  background: $pale-red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  padding-top:10px;
+  margin-top: 5px;
+}
+  .-alertErrorFindGiftTable i {
+    top: 10px;
+    right: 2px;
+    left: auto;
+    font-size 12px;
+  }
+  .-alertErrorFindGiftTable .a-blockElement{
+    width: 90%;
+    font $body2;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $carbon;
+  }
+@media screen and (min-width: 992px) {
+  .-alertErrorFindGiftTable{
+    height: 68px;
+  }
+  .o-findGiftTable__backPanelMyBag {
+   flex-direction: column;
+   flex-wrap: nowrap;
+ }
+}
+
+/* 21717 fix end */

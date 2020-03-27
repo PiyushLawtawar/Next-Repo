@@ -1,0 +1,113 @@
+
+
+.o-product__productInfo
+	display: flex
+	flex-direction: column
+	hr
+		@media screen and (max-width: 991.5px)
+			display: none
+
+@media screen and (max-width: 991.5px)
+	.o-product__productEdd
+			order: 2
+
+	.o-product__productItr
+			order: 3
+
+	.o-product__productQty
+			order: 4
+
+	.o-product__marketPdp
+			order: 5
+
+	.o-product__giftPurchase
+			order: 1
+
+	.o-product__giftRegistry
+			order: 6
+
+.o-product__productTop
+	box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.1)
+	background white
+	.divider
+		background $timberwolf
+		margin 0 auto
+		height 100%
+		width 2px
+	.m-product__size
+		.a-product__size, .a-product__sizeActive, .a-product__sizeDisable
+			button
+				width auto
+.m-product__giftRegistry-container
+	button, > div
+		mixin-font($body2, $carbon)
+		text-align left
+		padding 0 16px
+	> div
+		padding-top 10px
+		padding-bottom 10px
+		height auto
+	h2
+		display inline-block
+		margin-bottom 0
+		mixin-font($body2,$carbon)
+	i
+		float right
+		font-size .7rem
+		margin-top 4px
+// .m-product__image
+// 	img
+// 		width 100%
+
+@media only screen and (min-width: 992px)
+	.o-product__productInfo
+		.m-product__qty .row:last-of-type .col
+			padding-right 0
+		hr
+			margin: 10px 0
+		.divider
+			background $timberwolf
+			height 100%
+			width 2px
+
+	.m-product__giftRegistry-container
+		button
+			font-size 0.75rem
+
+@media only screen and (min-width: 1400px)
+	.m-product__giftRegistry-container
+		button
+			font-size 0.875rem
+
+//-Styles for MacBook (1600px)
+@media only screen and (min-width: 1600px)
+	.o-product__productTop
+		> .container > .row > .col-12:last-of-type
+			padding-right 0
+
+// For Gift with Purchase error message
+.m-product__giftPurchase.giftError
+	color: red
+	font-size: 14px
+	border: 1px solid
+	border-color: #e3e3e3
+	border-radius: 4px
+	height: 59px
+	display: table
+	width: 100%
+
+.m-product__giftPurchase.giftError:hover
+	border-color: #ada8a8
+
+.m-product__giftPurchase.giftError
+	.message
+		display: table-cell
+		vertical-align: middle
+		padding: 0 16px;
+
+
+@media only screen and (max-width: 992px){
+.m-product__giftRegistry-container > div {
+    padding: 5px 10px 6px 10px;
+	height: auto;
+}}

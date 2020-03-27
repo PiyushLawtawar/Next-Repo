@@ -1,0 +1,95 @@
+.o-stickyBar__container__collections
+	background $white
+	box-shadow 0 4px 7px 0 rgba(204, 204, 204, 0.5)
+	height 102px
+	padding 16px 0 15px 0
+	position fixed
+	top 0
+	z-index 3
+	width 100%
+	opacity: 0
+	transform: translateY(-102px);
+
+	&.hideSticky
+		// display none
+		// transition all 0.5s ease
+		animation: bounceOutUp .5s linear;
+	&.showSticky
+		display block
+		animation: bounceInDown .5s linear;
+		transform: translateY(0px);
+		opacity: 1
+
+	.container
+		display: grid
+		grid-template-columns: 323px 1px 4fr 1fr
+		grid-template-rows: auto
+		height: 100%
+		overflow: hidden
+		.o-stickyBar__product
+			width: 100%
+			height: 100%
+			max-height: 71px
+		.o-stickyBar__separator
+			background: $nobel
+		.o-stickyBar__productsAdded
+			overflow: hidden
+			.m-gallery
+				padding: 0
+				height: 100%
+
+				.slick-list
+					height 100%
+				.slick-track
+					height 100%
+
+			.o-stickyBar__productAdded
+				width: 240px
+				height: 100%
+				margin: 0 5px;
+				padding: 0
+				position relative
+				opacity 0
+				visibility: hidden
+				&.added
+					opacity 1
+					visibility: visible
+				&.animated
+					transition: visibility 1s
+					animation: bounceIn 0.3s ease-in;
+
+				.m-stickyBar__productAdded__close
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					display: flex;
+					justify-content: flex-end;
+					align-items: flex-start;
+					& > i
+						color: #333
+						&:hover
+							cursor pointer
+
+			.sticky-gallery
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				padding: 0;
+
+
+		.o-stickyBar__addtocart
+			display: flex
+			align-items: center
+			justify-content: flex-start
+
+
+
+@media only screen and (max-width: 991px)
+	.o-stickyBar__container__collections
+		// Must be !important due to the animation to bounce In Up, See animations stylesheet
+		display: none !important;
+/* 22058 start */
+.o-stickyBar__container__collections .container .o-stickyBar__productsAdded .slick-slide .o-stickyBar__productAdded
+	width: 80%
+/* 22058 end */

@@ -1,0 +1,193 @@
+// MASONRY GRID
+.m-product__listingPlpp
+    padding-left: 0px
+    width: 100%
+    li.card-masonry
+        list-style none
+        width: 49%
+        height auto
+        figure
+            height: auto !important
+            max-height: none !important
+            figcaption
+                h5
+                    height: auto !important
+                .m-ratings
+                    ul
+                        margin-top: 0px
+    .w-50
+        width: 50%
+
+@media only screen and (min-width: 1280px)
+    .m-product__listingPlpp
+        li.card-masonry
+            width 24.3% !important
+
+@media only screen and (min-width: 992px)
+    .o-listing__products:not(.card-columns-plp)
+        .m-product__listingPlpp
+            li.card-masonry
+                height: 390px
+                margin-bottom: 8px
+                figure
+                    height 390px !important
+                    margin-bottom: 0;
+                    transition: max-height 0.4s ease-out;
+                    .m-ratings  
+                        visibility: hidden
+                        opacity: 0
+                        transition: visibility 0s ease-out, opacity 500ms ease-out
+                &:hover
+                    visibility: visible
+                    opacity: 1
+                    z-index: 2
+                    figure.m-plp-product-card
+                        max-height: 600px !important;
+                        min-height: 390px !important;
+                        height: auto !important;
+                        transition: max-height 0.4s linear !important;
+                        .m-ratings
+                            visibility: visible
+                            opacity: 1
+                            z-index: 2
+                            cursor pointer
+                            transition: visibility 0s ease-in, opacity 500ms ease-in
+                        .m-checkbox__button
+                            .mdc-checkbox ~ label
+                                font: 1rem 'robotoRegular'
+
+
+@media only screen and (min-width: 768px)
+    .m-product__listingPlpp
+        li.card-masonry
+            width: 32.6%
+
+@media only screen and (max-width: 367px)
+    .m-product__listingPlpp
+        li.card-masonry
+            width: 48.5%
+
+// LIST MODE
+.card-columns-plp-masonry
+    .m-product__listingPlpp
+        li.card-masonry
+            width 100%
+            height: auto
+            margin-bottom 0px
+            .m-plp-card-container
+                position: relative;
+                height: 100%;
+                figure.m-plp-product-card
+                    border-radius: 4px
+                    border: none
+                    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15)
+                    background-color: #fff
+
+                    width 100%
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    flex-direction: row;
+                    margin-bottom 5px !important
+                    height: auto !important
+                    .o-card__image__container
+                        align-self: flex-start;
+                        max-width: 25%;
+                        margin: 20px 0.5rem;
+                    figcaption.m-figureCard__figcaption
+                        .a-plp-color.a-product__color
+                            height: 16px;
+                            width: 16px; 
+                        .a-card-discount
+                            margit-top: 5px
+                        .m-plp-flag-container 
+                            .a-flag
+                                display block !important
+
+@media only screen and (min-width: 1024px)
+    .card-columns-plp-masonry
+        .m-product__listingPlpp
+            li.card-masonry
+                width 100% !important
+                .m-plp-card-container
+                    figure.m-plp-product-card
+                        figcaption.m-figureCard__figcaption
+                            .m-checkbox__button
+                                display inline-flex !important
+                                font: 1rem 'robotoRegular' !important;
+
+@media only screen and (max-width: 500px)
+    .card-columns-plp-masonry
+        .m-product__listingPlpp
+            li.card-masonry
+                width 100%
+                .m-plp-card-container
+                    .m-plp-product-card
+                    figure
+                        .o-card__image__container
+                            max-width: 40%;
+                            margin: 20px 10px 0 0;
+                    figcaption
+                        article
+                            h5
+                                margin-right 4px
+
+// HOVER
+// @media only screen and (max-width: 800px)
+//     .o-listing__products:not(.card-columns-plp ) 
+//         ul.m-product__listingPlpp 
+//             li.card-masonry
+//                 &:hover
+//                     overflow: visible;
+//                     z-index: 2;
+//                     cursor: pointer;
+
+// HOVER HEGHT CARD - OPTIONAL
+// @media only screen and (max-width: 800px)
+//     .m-plp-card-container
+//         &:hover
+//             .m-plp-card-container
+//                 &:after
+//                     text-decoration: none;
+
+// HOVER HEGHT CARD
+// @media only screen and (max-width: 800px)
+//     .o-listing__products:not(.card-columns-plp ) 
+//         ul.m-product__listingPlpp
+//             li.card-masonry
+//                 &:hover 
+//                     figure
+//                         max-height: 600px !important; // HOVER HEGHT CARD
+//                         min-height: 390px !important; // HOVER HEGHT CARD
+//                         height: auto !important; // HOVER HEGHT CARD
+//                         transition: max-height 0.4s linear;
+
+// HOVER RATINGS
+// @media only screen and (max-width: 800px)
+//     .o-listing__products
+//         ul.m-product__listingPlpp
+//             li.card-masonry
+//                 .m-ratings  
+//                     visibility: visible
+//                     opacity: 1
+//                     transition: visibility 0s ease-out, opacity 500ms ease-out
+
+// @media only screen and (max-width: 800px)
+//     .o-listing__products:not(.card-columns-plp ) 
+//         ul.m-product__listingPlpp
+//             li.card-masonry
+//                 &:hover 
+//                     .m-ratings 
+//                         visibility: visible
+//                         opacity: 1
+//                         transition: visibility 0s ease-in, opacity 500ms ease-in
+
+// // HOVER CHECKBOX BUTTON
+// @media only screen and (max-width: 800px)
+//     .o-listing__products
+//         ul.m-product__listingPlpp
+//             li.card-masonry
+//                 .m-plp-card-container
+//                     &:hover
+//                         .m-checkbox__button 
+//                             display: flex

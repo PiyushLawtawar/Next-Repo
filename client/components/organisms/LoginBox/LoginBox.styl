@@ -1,0 +1,32 @@
+.o-box
+    background: $white
+    box-shadow: $b-shadow-card
+    margin-bottom: 16px
+    min-width: 447.99px
+    border-radius: 4px
+header
+    .o-header.reduced
+        min-height: 64px
+header
+    .o-header.noSearchBar
+        min-height: 64px
+.login__section ~ footer
+    margin: 1px
+    nav
+        font $body2
+        div
+            margin: 15px 0px
+@media only screen and (max-width: 991px)
+    .login__section ~ main
+        background: $white
+    header
+        .o-header.reduced
+            min-height: 56px
+    header
+        .o-header.noSearchBar
+            min-height: 56px
+            height: 56px;
+    .o-box
+        min-width: auto !important
+        box-shadow: none
+        margin-bottom: 0!important

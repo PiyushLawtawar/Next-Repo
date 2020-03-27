@@ -1,0 +1,172 @@
+.o-tracking__buyInfo
+    display flex
+    flex-direction column
+
+
+.-right
+    justify-content flex-end
+    align-items center
+
+.o-tracking__deliverDate
+	margin-left 22px
+
+.o-tracking__deliverDateRow
+    margin-top 42px
+    margin-bottom 29px
+
+.o-tracking__rowProgressBar
+    margin-top 15px
+    
+
+@media only screen and (min-width: 992px)
+    .a-tracking__deliverDate
+        margin-left 2px
+    .o-tracking__gallery
+        max-width 85%
+        margin auto
+
+@media only screen and (max-width: 991px)
+    .a-tracking__deliverDate
+        margin-left 22px
+    .o-tracking__boxBuyInfo
+        margin 20px 0 80px 0
+
+@media (min-width: 451px) and (max-width: 991px)
+    .o-tracking__gallery
+        width 50%
+        margin auto
+
+@media only screen and (max-width: 450px)
+    .o-tracking__gallery
+        width 70%
+        margin auto
+
+.o-trackingOrder__headline
+	.a-btn.a-btn--action
+		&:hover
+			border-color: $gray89
+
+.o-trackingOrder__headline
+		font: $body2-others
+		display: -webkit-box
+		-webkit-line-clamp: 1
+		-webkit-box-orient: vertical
+		overflow: hidden
+		text-overflow: ellipsis
+		text-align: left
+		text-transform: initial
+		a
+				color: $lead
+				font-size 1rem
+				display: flex
+				align-items: center
+				justify-content: space-between
+				padding: 0 16px
+				text-transform none
+				height: 59px
+.o-trackingOrder__headlineNumber
+    display flex
+    flex-direction column
+    text-align start
+.o-tracking__boxBuyInfo
+    transition: all 200ms linear
+    box-shadow: $b-shadow-card
+    color: $carbon
+    border: none
+    border-radius(7)
+.m-trackingOrder__figure
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+        max-width 60%
+    border-radius(7)
+    transition: all 200ms linear
+    box-shadow: $b-shadow-card
+    color: $carbon
+    border: none
+    padding: 16px 16px 10px 16px
+    &:hover
+        box-shadow: $b-shadow
+    .card-img-top
+        width: 100%
+        border-radius: 0
+        padding: 0
+    .card-body
+        padding: 16px 0
+    .a-card
+        &-description
+            padding: 0
+            margin: 0
+            font: $body2
+            line-height: 1.3
+            color: $carbon
+            text-align: left
+            overflow: hidden
+            text-overflow: ellipsis
+            -webkit-line-clamp: 2
+            display: -webkit-box
+            /* autoprefixer: off */
+            -webkit-box-orient: vertical
+            /* autoprefixer: on */
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                white-space: nowrap
+                width: 100%
+.m-trackingOrder__figure--guest
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+        max-width 72%
+    border-radius(7)
+    transition: all 200ms linear
+    box-shadow: $b-shadow-card
+    color: $carbon
+    border: none
+    padding: 16px 16px 10px 16px
+    &:hover
+        box-shadow: $b-shadow
+    .card-img-top
+        width: 100%
+        border-radius: 0
+        padding: 0
+    .card-body
+        padding: 16px 0
+    .a-card
+        &-description
+            padding: 0
+            margin: 0
+            font: $body2
+            line-height: 1.3
+            color: $carbon
+            text-align: left
+            overflow: hidden
+            text-overflow: ellipsis
+            -webkit-line-clamp: 2
+            display: -webkit-box
+            /* autoprefixer: off */
+            -webkit-box-orient: vertical
+            /* autoprefixer: on */
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                white-space: nowrap
+                width: 100%
+
+.container
+.row o-tracking__gallery
+		.product-notAvailable
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			img
+				z-index: 1
+				filter: opacity(40%)
+			p
+				z-index: 2
+				position: absolute
+				background: #666
+				color: #fff
+				font: $body2
+				border-radius: 1rem
+				margin: 0
+				padding: 1px 15px

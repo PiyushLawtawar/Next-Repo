@@ -1,0 +1,97 @@
+.o-errorPageContainer,
+.o-errorPageContainer--noJavascript
+    background: $white
+    box-shadow: $b-shadow-card
+    padding: 30px 27px
+    margin: 34px 0 74px
+    @media screen and (min-width: 991.5px)
+        padding: 60px 124px 65px
+        margin: 70px 0 80px
+
+.o-errorPageContainer--noJavascript
+    @media screen and (max-width: 1281.5px)
+        height: 520px
+        padding: 60px 80px
+    @media screen and (max-width: 991.5px)
+        height: 520px
+        padding: 40px 34px
+
+.a-errorPage-title
+    font: $title3
+    color: $carbon
+    margin-bottom: 12px
+    @media screen and (min-width: 991.5px)
+        font: $title1
+    &--noJavascript
+        font: $title2
+        color: $carbon
+        margin-bottom: 16px
+        @media screen and (max-width: 991.5px)
+            font: $title3
+
+.a-errorPage-paragraph
+    color: $carbon
+    font: $body1
+    margin: 0
+    &.-error
+        font: $title6
+        margin-top: -5px
+        @media screen and (min-width: 991.5px)
+            font: $title4
+
+    &.-errorFooter
+        font: $body1
+        @media screen and (min-width: 991.5px)
+            font: $title5
+            width: 85%
+
+.-helpText
+    font: $body2
+    color: $lead
+    margin-bottom: 14px
+
+.m-errorPage-list
+    list-style: none
+    padding: 0
+    margin: 14px 0 27px
+
+.a-errorPage-List__item
+    font: $body2
+    color: $primary-color
+    text-decoration: underline
+
+.m-errorPage__searchBar
+    box-shadow: $b-shadow-card
+    margin: 25px 0 30px
+    .input-group-text
+        border-left: 1px solid $timberwolf
+        z-index: 1
+        margin: 5px 0
+
+.a-errorPage-imageContainer
+    width: 100%
+    display: flex
+    justify-content: center
+    height: 485px
+    margin: 50px 0
+    @media screen and (max-width: 991.5px)
+        height: 265px
+        margin: 41px 0
+
+.a-errorPage-image
+    width: 458px
+    height: auto
+    @media screen and (max-width: 991.5px)
+        width: 248px
+
+.a-errorPage-paragraphFooter
+    width: 100%
+    display: flex
+    justify-content: center
+    @media screen and (max-width: 991.5px)
+        margin-bottom: 25px
+
+.a-errorPage-imageContainer_brandLogo
+    margin-bottom: 28px
+    width: 180px
+    height: auto

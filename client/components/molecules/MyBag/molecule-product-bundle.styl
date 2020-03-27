@@ -1,0 +1,265 @@
+min-w-mobile = 320px
+max-w-mobile = 991px
+
+min-w-tablet = 992px
+max-w-tablet = 1279px
+
+min-w-desktop = 1280px
+
+max-w-xdesktop = 1600px
+
+
+.m-optionsColorWrap__item
+  padding 2px
+  margin-right: 21px
+
+.m-optionsColorWrap
+  width 50%
+  padding-left 64px
+  padding-top 29px
+  @media screen and (max-width: 991.5px)
+    width: 100%
+    padding: 35px 0 0
+.m-optionsColorWrap__list
+  list-style-type none
+  display flex
+  justify-content flex-start
+  flex-flow row wrap
+  padding-left 0
+  margin-bottom: 0
+  .m-optionsColorWrap__item
+    &:last-child
+      margin-right: 0px
+
+.m-listBundle
+  list-style-type none
+  padding 0
+
+.m-latestinlineElement
+  display flex
+  flex-flow row wrap
+  width 160%
+  justify-content flex-start
+  margin-top 18px
+  margin-bottom 8px
+
+
+.m-latestinlineElement--saved
+  margin-top 31px
+
+.m-product
+  width 100px
+img.cursurDef.a-myBagImageProduct {
+    cursor: default;
+}
+.m-breakdownExpenses
+  display flex
+  flex-flow column wrap
+  justify-content space-between
+  width 344px
+  height auto
+  //padding-top 20px
+  margin-top 15px
+  border-radius 4px
+  border 1px solid $timberwolf
+  background $white
+  box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+
+.m-breakdownExpenses__detail, .m-breakdownExpenses__actions
+  display flex
+  flex-flow row wrap
+  justify-content space-between
+  width calc(100% - 32px)
+  height 139px
+  align-content space-evenly
+  margin 0 16px
+  border-bottom 1px solid $timberwolf
+.m-breakdownExpenses__detail
+  border-bottom 1px solid $timberwolf
+  padding-bottom 5px
+  padding-top 14px
+
+.m-breakdownExpenses__actions
+  height 88px
+  border 0
+  // margin-bottom 20px
+
+.m-breakdownExpenses__quantity
+  text-align end
+  padding-right 15px
+
+.m-breakdownExpenses__promotion, .m-breakdownExpenses__apply
+  height auto
+.m-breakdownExpenses__promotion
+  width 70%
+  padding-right 12px
+.m-breakdownExpenses__apply
+  width 30%
+  padding-left 11px
+
+.m-giftTableDetails
+  padding-left 166px
+  position relative
+
+.m-imageResultGiftTableModal
+  border-radius 100%
+  width 80px
+  height 80px
+  margin 0
+  img
+    width 40px
+    height 40px
+    margin 20px auto
+    border-radius 80px
+    display block
+
+  .-selectWrap
+    border 1px solid $carbon
+    padding 1px
+    border-radius 50%
+    width 29px
+    height 29px
+
+/* Start: 19915 */
+.-selectWrap
+  border 1px solid $carbon
+  padding 1px
+  border-radius 50%
+  width 29px
+  height 29px
+/* End: 19915 */
+
+.m-breakdownExpenses__column--priceContainer .a-inlineElement
+  font-size 14px
+  width 100%
+  // text-align right
+  
+// Mobile / Tablet portrait
+@media (min-width: 320px) and (max-width: 991px) {
+  .m-breakdownExpenses__detail{
+    height: 150px;
+  }
+  .m-breakdownExpenses {
+    width: 100%;
+    margin-top: 0;
+  }
+  .m-latestinlineElement--triple{
+    display: none;
+  }
+  .m-breakdownExpenses__quantity{
+    .a-inlineElement--total{
+      display: unset;
+    }
+  }
+  .m-latestinlineElement--saved{
+    display: none;
+  }
+  .m-product {
+    width: 164px;
+    margin-left: 138px;
+  }
+  .m-giftTableDetails{
+    padding-left: 16px;
+    border-top: 0px;
+  }
+  .m-giftTableDetails::after{
+    content: "\e904";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 90%;
+    top: 55%;
+    font-size: 12px;
+  }
+
+  .m-imageResultGiftTable{
+    border-radius: 100%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+  .m-imageResultGiftTable img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .m-breakdownExpenses__actions{
+    padding-top: 20px;
+  }
+}
+
+/* 19748 start*/
+
+// Tablet
+@media (min-width: 992px) and (max-width: 1279px) and (orientation: landscape) {
+  .m-giftTableDetails{
+    padding-left: 245px;
+  }
+  //.m-latestinlineElement--triple{
+    //width: 280%;
+ // }
+}
+
+
+@media (min-width: 991.5px) and (max-width: 1069.5px) and (orientation: landscape) {
+  .m-latestinlineElement--triple, .m-latestinlineElement--saved{
+    width: 280%;
+  }
+}
+
+@media (min-width: 1069.5px) and (max-width: 1280.5px) and (orientation: landscape) {
+  .m-latestinlineElement--triple, .m-latestinlineElement--saved{
+    width: 73vw;
+  }
+}
+
+// Desktop
+@media (min-width: min-w-desktop) {
+  .m-breakdownExpenses__actions{
+    padding-top: 12px;
+  }
+}
+
+/* 19748 start*/
+
+.mdc-text-field.mdc-text-field--outlined .mdc-floating-label
+  //top 9px
+.mdc-text-field:not(.mdc-radio)
+    width 100%
+    //height 36px
+    & .mdc-text-field__input
+        //height 36px
+        caret-color: $carbon
+        font $body1-description
+        font-weight 300
+// required field color
+.mdc-text-field__input:required~.mdc-floating-label::after, .mdc-text-field__input:required~.mdc-notched-outline .mdc-floating-label::after
+  color $red
+// float label
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label
+  font $body2
+  top 7px
+// floating label --float-above
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label.mdc-floating-label--float-above
+  top 14px
+// color float label focused
+.mdc-text-field:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label
+  color $primary-color
+// color float label invalid
+.mdc-text-field--invalid:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label
+  color $red
+// border grey color
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch, .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing
+  border-color $whisper
+
+.mdc-text-field--outlined
+  height 36px
+.mdc-text-field--outlined .mdc-text-field__input
+  padding 0 16px
+.mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading, .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch, .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing
+  border-color $primary-color
+@media only screen and (max-width: 992px)
+  .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label
+    top 5px
+.o-giftWrap__options.thirdParties[name="typeWrap"]
+  padding: 50px 0 0

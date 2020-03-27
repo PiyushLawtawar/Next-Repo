@@ -1,0 +1,51 @@
+.m-airTime-paymentCard
+    border-bottom: solid 1px #e4e4e4;
+    padding-bottom: 12px
+    margin-bottom: 16px
+    &.border-none
+        border-bottom: none
+    .m-radioButton.mdc-form-field
+        display: flex
+        align-items: start
+        .mdc-radio.mdc-ripple-upgraded
+            position relative
+            top:-8px
+    .mdc-text-field+.mdc-text-field-helper-line
+        padding-right:0px
+        padding-left:0px
+    .a-airTime-date__label
+        font: 0.875rem 'robotoLight';
+        color: #666;
+        margin-left: 44px;
+    .a-airTime-required__label
+        color: #f00;
+        font: 0.75rem 'robotoRegular';
+        margin-left: 44px;
+        margin-bottom: 20px;
+    .m-airTime-paymet_cardInfo
+        .a-airTime-payCard
+            font $body2
+            color: $carbon
+            margin-bottom: 4px
+            &--predetermined
+                color: #e54197;
+                font: 0.75rem 'robotoLight';
+                margin-bottom: 4px
+.m-airTime-infoHidden
+    .m-input-helper__text.mdc-text-field-helper-line p
+        white-space: nowrap
+ .a-iconHelper:before
+    content: url("/static/images/atomo-icono-help-small.svg") 
+main.t-airTimeRecharge ~ .popover .popover-body
+    font: $caption
+    border-radius: 4px
+    padding: 12px
+main.t-airTimeRecharge ~ .popover .popover-header
+    visibility hidden
+
+@media only screen and (max-width:992px)
+    .o-box
+        .m-airTime-paymentCard.border-none, 
+        .m-checkCellphone-data__item.border-none
+            border-bottom: solid 1px $gray-lighter
+

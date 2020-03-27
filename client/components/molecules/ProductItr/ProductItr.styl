@@ -1,0 +1,83 @@
+.m-product__giftPurchase-container
+		font: $body2-others
+		padding-bottom: 3px
+		display: -webkit-box
+		-webkit-line-clamp: 1
+		-webkit-box-orient: vertical
+		overflow: hidden
+		text-overflow: ellipsis
+		text-align: left
+		text-transform: initial
+		button,
+		div
+				color: $lead
+				font-size 0.875rem
+				display: flex
+				align-items: center
+				justify-content: space-between
+				padding: 0 16px
+				text-transform none
+				height: 59px
+		span
+				margin: 0 0 0 0px
+				padding-bottom: 3px
+				width: 210px
+				display: -webkit-box
+				-webkit-line-clamp: 1
+				-webkit-box-orient: vertical
+				overflow: hidden
+				text-overflow: ellipsis
+				text-align: left
+				text-transform: initial
+				&.-imageBtn
+					
+					margin: 0 0 0 55px
+					@media screen and (max-width: 1540px)
+						width: 215px
+						margin: 0 0 0 55px
+					@media screen and (max-width: 1375px)
+						width: 190px
+						margin: 0 0 0 55px
+					@media screen and (max-width: 1350px)
+						width: 175px
+						margin: 0 0 0 55px
+					@media screen and (max-width: 1180px)
+						width: 140px
+						margin: 0 0 0 55px
+					@media screen and (max-width: 1110px)
+						width: 120px
+						margin: 0 0 0 55px
+					@media screen and (max-width: 991.5px)
+						margin: 0 0 0 65px
+						width: 230px
+					@media screen and (max-width: 340.5px)
+						margin: 0 0 0 60px
+						width: 165px
+				&.-red
+					@media screen and (max-width: 1540px)
+						width: 290px
+					@media screen and (max-width: 1390px)
+						width: 265px
+					@media screen and (max-width: 1290px)
+						width: 250px
+					@media screen and (max-width: 991.5px)
+						width: 290px
+					@media screen and (max-width: 340.5px)
+						margin: 0 0 0 60px
+						width: 200px
+
+		i
+				font: $actionButton-text
+		&.-small
+			button
+				height 48px
+		&.-specs
+			padding-bottom 0px
+			button
+				height 56px
+				h2
+					mixin-font($body1, $gray29)
+					margin 0
+					padding-left 10px
+					text-overflow none
+					width auto

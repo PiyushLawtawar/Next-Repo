@@ -1,0 +1,75 @@
+.o-preferencesContainer
+    padding: 25px 25px 40px
+    @media screen and (max-width: 991.5px)
+        margin-left: -1rem !important
+        margin-right: -1rem !important
+        padding: 0
+
+.a-preferences-title
+    font: $title5
+    @media screen and (max-width: 991.5px)
+        font: $title6
+
+.m-form-ul
+    list-style: none
+    display: flex
+    flex-flow: column wrap
+    height: 300px
+    @media screen and (max-width: 991.5px)
+        height: auto
+    li
+        max-width: 245px
+
+.m-form-listTitle
+    font: $title5
+    margin: 15px 0 10px
+    @media screen and (max-width: 991.5px)
+        font: $title6
+
+.m-preferences_form-buttons
+    display: flex
+    flex-direction: row
+    margin-top: 25px
+    @media screen and (max-width: 991.5px)
+        flex-direction: column
+        margin-bottom: 45px
+    button
+        width: 170px
+        @media screen and (max-width: 991.5px)
+            width: 100%
+
+        &:first-child
+            margin-right: 22px
+            @media screen and (max-width: 991.5px)
+                margin: 20px 0 0
+        &.a-btn--primary
+            order: 2
+            @media screen and (max-width: 991.5px)
+                order: 1
+        &.a-btn--secondary
+            order: 1
+            @media screen and (max-width: 991.5px)
+                order: 2
+
+.mdc-form-field.a-preferences-giftPurchase
+    padding: 0
+    @media screen and (max-width: 991.5px)
+        margin-top: 10px
+    .mdc-checkbox
+        margin-left: -11px
+        & ~ label
+            font: $body1
+
+.mdc-form-field.a-form-li
+    .mdc-checkbox
+        & ~ label
+            font: $body3-legend
+
+.m-preferences_form
+    @media screen and (max-width: 991.5px)
+        padding: 0 25px 1px
+
+.m-preferences-titleSection
+    padding: 0 15px 0
+    @media screen and (max-width: 991.5px)
+        padding: 25px 25px 0

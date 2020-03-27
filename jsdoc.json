@@ -1,0 +1,16 @@
+{
+    "source":{
+        "include":["./app","./contexts","./helpers","./pages","./routes","./server"],
+        "includePattern":".js$",
+        "excludePattern":"(node_modules|docs)"
+    },
+    "plugins":[
+        "plugins/markdown"
+    ],
+    "opts":{
+        "encoding":"",
+        "destination":"docs/",
+        "recurse":"true",
+        "verbose":"true"
+    }
+}

@@ -1,0 +1,240 @@
+.container-wishlist
+    .o-content
+      background: white
+      min-height: 600px
+      width: 75%
+      margin: 2rem auto
+      border-radius: 4px
+  .a-box__resume.-totalLabel
+      font-size 18px
+      font-family: $medium
+      color: $carbon
+
+    .--wishlist-divider
+        border-bottom: solid 1px #e4e4e4
+      .o-whishlist__head
+        background: $white
+        height: 75px
+        display: grid
+        grid-template-columns: 25% 50% 25%
+        grid-template-rows: auto
+        border-bottom: 1px solid $gray-lighter
+
+        .m-whishlist__head__title
+          display: flex
+          justify-content: center
+          align-items: center
+          font-family: $bold
+          p
+            margin: 25px
+        .m-whishlist__head__description
+          display: flex
+          justify-content: flex-start
+          align-items: center
+        .m-whishlist__head__price
+          display: flex
+          justify-content: center
+          align-items: center
+          p
+            margin-bottom: 0
+            display: inline
+            margin-right: 1rem
+          label
+            color: $red
+            font-size: 1rem
+        .a-whishlist__head__total
+          font-family: $bold
+          font-size: 16px
+      .m-wishlist__price
+        display: flex
+        align-items: flex-start
+        justify-content: center
+        padding-left: 50px
+      .o-whishlist__body
+        background: $white
+        height: 512px
+        overflow-x: hidden
+        overflow-y: scroll
+        .menuMotion.dropleft
+          display: none
+        .o-wishlist__product
+          display: grid
+          grid-template-columns: 25% 50% 25% 0px
+          grid-template-rows: auto
+          height 256px
+          line-height: 15px
+          margin-top: 1rem
+          border-bottom: 1px solid $gray-lighter
+        .wishlist-img
+          display: flex
+          align-items: center
+          justify-content: center
+          flex-flow: row nowrap
+        .a-checklist__imageProduct
+          display: flex
+          flex-flow:row wrap
+          width: 50%
+        .a-wishlist__body__title
+              font-size 16px
+              font-family: $regular
+              color: $carbon
+        .a-wishlist__body__middle_content
+            color: $carbon
+            font-size: 12px
+            font-family: $light
+        .a-wishlist__body__content
+            color: $carbon
+            font-size: 14px
+            font-family: $regular
+        .a-wishlist-body__aling__price
+            display: flex
+            align-items: flex-end
+            justify-content: flex-end
+            font-size: 16px
+            font-family: $regular
+            // padding: 0 11.5rem
+
+      .o-whishlist__footer
+        background: $white
+        height: 75px
+        display: grid
+        grid-template-columns: 25% 45% 30%
+        grid-template-rows: auto
+        .m-wishlist__buy
+          padding 1rem
+          display: flex
+          align-items: center
+          button
+            margin: 0
+
+
+/*
+    Mobile Media Querys
+*/
+
+@media only screen and (max-width: 991px)
+  .container-fluid.m-wishlist__head
+    background-color: $white
+    box-shadow: $b-shadow-card
+    height: 60px
+    display: flex
+
+  .container-wishlist
+    width: 100%
+    padding: 1rem
+    margin-top: -24px
+    .o-content
+      background: $background-color
+      width: 100%
+      display: flex
+      flex-direction: column
+      box-shadow: none
+
+      .o-whishlist__head
+        order: 1
+        height: auto
+        margin-bottom: 1rem
+        box-shadow: $b-shadow-card
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        padding: 1rem
+        .m-whishlist__head__title
+          height: 50px
+          width: 100%
+          display: flex
+          justify-content: flex-start
+          font-family: $bold
+        .m-whishlist__head__title p
+          margin: 0px
+        .m-whishlist__head__description
+          height: 50px
+          display: flex
+          width: 100%
+          justify-content: flex-start
+          font-family: $regular
+          font-size: 14px
+        .m-whishlist__head__price
+          height: 50px
+          display: flex
+          width: 100%
+          justify-content: space-between
+        .a-whishlist__head__total
+          font-family: $bold
+          font-size: 16px
+
+
+      .o-whishlist__body
+        background: $background-color
+        overflow: visible
+        height auto
+        .menuMotion.dropleft
+          display: flex
+          align-items: flex-end
+          justify-content: flex-end
+          top: 12%;
+          padding-right: 1%;
+
+        .o-wishlist__product
+          background: $white
+          margin-bottom: 1rem
+          box-shadow: $b-shadow-card
+          display: grid
+          grid-template-rows: auto auto auto
+          grid-template-columns: 40% 60%
+          border-radius: 4px
+          line-height: 15px
+          .m-wishlist__image
+            grid-area: 1 / 1 / 3 / 2
+          .m-products-content
+            margin-top: 10%
+          .a-wishlist__description
+            font-size: 16px
+            font-family: $medium
+            padding: 1rem
+            text-decoration: none
+            color: $gray29
+          label
+            padding: 1rem
+          .m-wishlist__price
+            display: flex
+            align-items: flex-start
+            justify-content: flex-start
+            padding-left: 0px
+            min-height: 30px
+          .a-wishlis--icon:before
+            //content url('../images/atomo-icono-arrow-right-small-carbon.svg')
+          .m-wishlist-product
+            grid-area: 3 / 1 / 4 / 3
+            height: 50px
+            display: flex
+            width: 95%
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            height: 100%
+            padding: 0 1rem
+            border-top: 1px solid #e4e4e4
+
+          .a-wishlist__body__title
+              font-size 16px
+              font-family: $regular
+              color: $carbon
+          .a-wishlist__body__content
+            color: $carbon
+            font-size: 14px
+            font-family: $regular
+          .a-wishlist-body__aling__price
+            display: flex
+            align-content: flex-start
+            justify-content: flex-start
+            padding: 0
+
+      .o-whishlist__footer
+        order: 2
+        box-shadow: $b-shadow-card
+        height: auto
+        display: block
+        margin-top: 32px
+        .m-wishlist__buy
+          padding: 0

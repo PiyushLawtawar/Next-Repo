@@ -1,0 +1,107 @@
+/* ------------------- */
+/* Kevin Salinas       */
+/* ------------------- */
+
+// This is the styles for stars molecule
+
+fieldset, label { margin: 0; padding: 0; }
+
+.rating 
+  border: none;
+  float: left;
+
+  & ~ .rating__comments
+    font: $overline-module  
+    color: $lead
+    display: flex
+    align-items: center
+    margin-left: 5px
+    
+    & > a
+      font: $overline-module 
+      text-decoration: underline
+      color: $lead
+
+  &:not(:checked)
+    
+    & > label:hover
+      color: $yellow-rating
+
+      /* hover previous stars in list */
+      & ~ label
+        color: $yellow-rating;
+
+        /* hover current star */
+        &:before
+          content: "\e916"  
+  
+  & > input
+    display: none; 
+
+    &:checked 
+
+      /* show gold star when clicked */
+      & ~ label
+        color: $light-gold
+
+        &:hover
+
+          & label
+            color: $yellow-rating
+
+          & ~ label 
+            color: $yellow-rating;
+
+        &:before
+          content: "\e916"
+
+        &.half:before
+          content: "\e915"
+      
+      & + label:hover
+        color: $yellow-rating;
+
+  & > label
+    color: $light-gold
+    float: right; 
+    
+    &:before 
+      margin: 0 5px 0 0;
+      font-size: 1em;
+      display: inline-block;
+      font-family: 'icomoon';
+      content: "\e914";
+
+    &:hover
+
+      /* lighten current selection */
+      & ~ input:checked ~ label 
+        color: $yellow-rating 
+      
+      &:before
+        margin: 0 5px 0 0;
+        font-size: 1em;
+        display: inline-block;
+        font-family: 'icomoon';
+        content: "\e916"; 
+
+  & > .half
+    
+    &:before
+      content: "\e914";
+      position: absolute;
+
+
+    &:hover:before
+      content: "\e915";
+      
+.ratingNumber
+  font $overline-footer
+  color $carbon
+  font-weight 300
+  font-style normal
+  font-stretch normal
+  letter-spacing normal
+  margin 0
+  margin-bottom 12px
+  height 16px

@@ -1,0 +1,119 @@
+
+
+.m-stickyBar__info
+	>.row
+		align-items center
+	.a-stickyBar__color
+		&.-container
+			border-right 1px solid $nobel
+			border-left 1px solid $nobel
+			height 28px
+	.a-stickyBar__title p
+		mixin-font($body1, $lead)
+		overflow hidden
+		text-overflow ellipsis
+		margin 0
+		white-space nowrap
+		width 200px
+	.a-stickyBar__size
+		padding-left 10px
+		p
+			mixin-font($body1,$carbon)
+	.m-stickyBar__price.-range, .m-stickyBar__price
+		margin-top 7px
+		.a-stickyBar__price.-start, .a-stickyBar__price.-end
+			mixin-font($title4, $red)
+			display inline-block
+			sup
+				font-size 60%
+				top -.5em
+
+
+.m-stickyBar__eyesBlock
+	.m-stickyBar__price, .m-stickyBar__eyesContainer
+		display inline-block
+		vertical-align middle
+	.m-stickyBar__eyesContainer
+		margin-top 12px
+
+.m-stickyBar__eyesContainer
+	overflow hidden
+	.m-gallery
+		padding 0
+		.m-carousel
+			.m-stickyBar__eyeInfo
+				width 420px
+				height 100%
+				margin 0 5px
+				padding 0
+
+	.a-stickyBar__eyeLabel
+		mixin-font($body2, $carbon)
+		border-right 1px solid $nobel
+		border-left 1px solid $nobel
+		display inline-block
+		margin 0
+		padding 3px 10px
+		width auto
+	ul
+		display inline-block
+		list-style-type none
+		padding 0
+		margin 0
+		li
+			mixin-font($body3, $carbon)
+			display inline-block
+
+
+.m-stickyBar__actions
+	padding-top 25px
+	.a-stickyBar__qtyLabel
+		mixin-font($overline-module, $very-dark-grayish-magenta)
+		p
+			text-align right
+			padding-right 5px
+	.a-stickyBar__addButton button
+		font-size 1em
+		text-transform none
+	.m-stickyBar__qtyInputs
+		font-size 7px
+		> *
+			display inline-block
+			vertical-align middle
+		#a-stickyBar__inputQty
+			border 1px solid $gray89
+			border-radius 4px
+			font-size 1rem
+			height 44px
+			text-align center
+			width 44px
+
+.m-stickyBar__options
+	ul
+		display block
+		list-style-type none
+		padding-left 10px
+		margin 0px //defect 22065 fixes
+		li
+			display inline-block
+			padding 0 8% 0 0
+			margin-bottom 0px //defect 22065 fixes
+			vertical-align middle
+		.a-stickyBar__link
+			mixin-font($overline, $carbon)
+			display block
+
+ @media screen and (min-width: 1024px)
+	.m-stickyBar__actions
+		.a-stickyBar__addButton button
+			font-size 0.875rem
+
+@media screen and (min-width: 1400px)
+	.m-stickyBar__actions
+		.a-stickyBar__addButton button
+			font-size 1em
+			
+ @media screen and (min-width: 1024px)
+	.container
+		.o-stickyBar__addtocart button
+			font-size 0.875rem

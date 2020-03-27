@@ -1,0 +1,459 @@
+.o-checkout__header
+	min-height 64px
+	max-height 64px
+.m-searchBar
+	& > div
+		//min-height 63px
+		//padding-top: 14px!important
+
+.a-checkoutSteps__bar
+	height 3px
+	background $white
+.m-modal
+	.modal-content
+		height auto!important
+.m-box
+	background-color $white
+	box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+	border-radius 4px
+	padding 10px 25px
+.m-checkoutSteps
+	display block
+	label
+		margin .5rem 0
+	&:hover
+		color $white
+.m-checkoutHelp
+	display flex
+	align-items flex-end
+	justify-content center
+	flex-direction column
+	i
+		padding-right 4px
+	&:hover
+		color $white
+.m-menuBack
+	color $a-topLink-color
+	position absolute
+	top 11px
+	&:hover
+		color $a-topLink-color
+.m-box__accordionHeading
+	display flex
+	width 100%
+	color inherit
+	justify-content space-between
+	flex-direction row
+	align-items center
+.m-box__containershipToAddress
+	display flex
+	justify-content space-between
+	align-items center
+.a-checkout__fail
+	font-size 88px
+	color $red
+.a-box__radioWarningAlert
+	color $tangerine
+	font $caption
+.a-box__radioSuccessAlert
+	color $lime-green
+	font $caption
+.m-checkoutSteps
+	height 3px
+.icon-arrow_down
+	transition transform .3s ease-in-out
+.rotate-180
+	transform rotate(180deg)
+	transition transform .3s ease-in-out
+.-failPayment
+	color $red
+.-headingMargin
+	margin 30px 0
+.-progressColor
+	background-color $checkoutProgressColor
+.-disabled
+	opacity 0.7
+	font $body2-others
+.-bgWhite
+	background-color transparent
+.-ml-45
+	margin-left 45px
+.-btnCheckout
+	height 36px
+	font-size 0.875rem
+.-stores
+	max-height 500px
+	overflow-y scroll
+	padding-right 1rem
+	width 100%
+	display none
+.-previewList
+	max-height 500px
+	overflow hidden
+//  overflow-y scroll
+.-pl-associatedPurchase
+	padding-left 45px
+.bs-popover-top
+	border 0
+.noSearchBar
+	.m-menuBack
+		position relative
+		top 0
+.-primaryColor
+	color $primary-color
+.-white
+	background-color $white
+.-digital
+	color $lime-green
+.-small
+	font-size x-small
+.-bold
+	font-weight bold
+.-driveThru
+	color $primary-color
+.-alertCheckout
+	top 94px
+.-boxUnshatter
+	background-color transparent
+	box-shadow none
+.-pendingDelivery
+	color $tangerine
+.-underline
+	text-decoration underline
+.-static
+	position static
+	display block
+	top unset
+	width 100%
+	margin 0 0 10px 0!important
+	.mdc-snackbar__surface
+		max-width 100%
+		width 100%
+	p
+		margin 0
+@media (max-width 992px)
+	.m-box
+		padding 15px
+	.a-checkoutSteps__text
+		color $lead
+	.-failPayment
+		font $body1
+	.-boxUnshatter
+		background-color #fff
+		box-shadow 0 2px 4px 0 rgba(0,0,0,0.15)
+	.-noBottomBorders
+		border-bottom-left-radius 0
+		border-bottom-right-radius 0
+	.-noTopBorders
+		border-top-left-radius 0
+		border-top-right-radius 0
+	.-checkoutHeaderConfirmation
+	 // background-color $primary-color
+	 // margin 0 -15px
+	.-resumeTitle
+		font $body1
+	.-bgWhite
+		background-color $white
+	.-progressColor
+		background-color $primary-color
+		height 3px
+	.-headingMargin
+		margin 20px 0
+	.-ml-45
+		margin-left 0
+	.-btnCheckout
+		border 0
+		text-align left
+		border-top 1px solid #f2f2f2
+		padding 15px 0 0 0
+		color $carbon
+		font $body2-title
+		i
+			float right
+		&:hover
+			color $carbon
+			border-color transparent
+.overlay
+	width 100%
+	height 100%
+	position absolute
+	background-color rgba(0,0,0,0.6)
+	z-index 20
+header
+	.o-header
+		&.reduced
+			min-height 64px
+
+
+
+
+
+.o-header
+	background-color $header-color
+	min-height 56px
+.m-megamenu
+	background-color $white
+.popover
+	border 0
+.o-navDesktop
+	a
+		display block
+		text-decoration none
+.m-navDesktop__menuList
+	list-style-type none
+	padding 0
+	margin 0
+	li
+		display inline-block
+		padding 9px 0
+.m-megamenu__dropdown
+	background-color #f8f8f8
+	margin 0
+	border 0
+	border-radius 0
+	min-width 15rem
+	top 36px!important
+	border-radius 4px
+	box-shadow 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 3px 14px 2px rgba(0, 0, 0, 0.12)
+	&:after
+		bottom 100%
+		left 53%
+		border solid transparent
+		content ""
+		height 0
+		width 0
+		position absolute
+		pointer-events none
+		border-color rgba(255,255,255,0)
+		border-bottom-color #f8f8f8
+		border-width 7px
+		margin-left -7px
+	li
+		display block
+		padding 0 10px
+	.popover
+		display none
+		border-radius 0
+		box-shadow 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 3px 14px 2px rgba(0, 0, 0, 0.12)
+		max-width none
+		height auto!important
+.m-desktop-subcategory-list
+	list-style-type none
+	padding 13px 0 0 0
+.wrap-megamenu
+	background-color $white
+	border-bottom 1px solid #d6d6d6
+.m-searchBar
+	color #fff
+.wrap-boutiques
+	background-color $soft-gray
+	padding 5px 15px
+	position relative
+	//height 28px
+.float-bar
+	background-color $primary-color
+	position fixed
+	display none
+	z-index 3
+.nav-desktop-menu-action
+	font-family 'robotomedium'
+.pl-6
+	padding-left 4rem!important
+.m-promotions
+	background-color $white
+.a-promotions__banner
+	width 100%
+.a-promotions__btn
+	position absolute
+	margin-left auto
+	margin-right auto
+	left 0
+	right 0
+	width 50px
+	height 15px
+	background rgba(200,200,200,1)
+	text-align center
+	top 0
+	opacity 0.3
+	cursor pointer
+	text-decoration none
+	&:hover
+		color inherit
+		text-decoration none
+.a-promotions__icon
+	position relative
+	bottom 3px
+span.a-header__topLink
+	 cursor pointer
+
+@media (max-width 991px)
+	.m-searchBar > div
+		max-height initial
+	.o-checkout__header
+		max-height initial
+
+.a-header__strongLink i {
+	font-size: 11px;
+	padding: 0 0 0 10px;
+}
+/* added by zensar*/
+.a-desktop__subcategoryMore
+	color $primary-color!important
+/*end*/
+
+.m-promotions
+	background-color $white
+.a-promotions__banner
+	width 100%
+.hide
+	display none
+
+
+.a-header__profile
+	display inline-block
+	background-color transparent
+	border 0
+	cursor pointer
+	padding 0 3px
+.a-header__profile
+	i
+		color $mobile-color
+		font-size 24px
+		line-height 1.3
+
+.o-megamenu__mobile
+	height 100%
+	width 0
+	position fixed
+	z-index 30
+	top 0
+	left 0
+	background-color #fff
+	overflow-x hidden
+	-webkit-transition 0.5s
+	-moz-transition 0.5s
+	transition 0.5s
+
+.o-megamenu__mobile
+	ul
+		list-style-type none
+		margin 0
+		padding 0
+
+
+.m-header__searchBar
+
+		&:focus
+			outline none
+.m-header__searchBar
+	-moz-border-radius 4px
+	border-radius 4px
+	-webkit-box-shadow: $b-shadow-card
+	-moz-box-box-shadow: $b-shadow-card
+	box-shadow: $b-shadow-card
+
+
+.o-newlist
+	position relative
+
+@media only screen and (max-width : 991px)
+	.m-header__searchBar
+		-webkit-box-shadow none
+		-moz-box-shadow none
+		 box-shadow none
+	header
+				.o-header.reduced
+						min-height: 56px
+
+@media (min-width: 991px)
+	.m-searchBar
+		.no-gutters
+			margin 0 -15px
+		.no-gutters>.col, .no-gutters>[class*=col-]
+			padding 0 15px
+
+.m-navDesktop__section{
+	position: relative !important;
+}
+
+
+.m-arrow_box:after, .m-arrow_box:before {
+	bottom: 100%;
+	left: 87%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.m-arrow_box:after {
+	border-color: rgba(136,183,213,0);
+		border-bottom-color: #f8f9fa;
+		border-width: 7px;
+		margin-left: -16px;
+}
+.m-arrow_box:before {
+			border-color: rgba(239,245,54,0);
+		border-bottom-color: #343a4047;
+		border-width: 8px;
+		margin-left: -17px;
+}
+
+.arrow-pos:before, .arrow-pos:after
+	left: 76%
+
+.m-megamenu__category:hover .m-desktop__submenu .a-desktop__img {
+		animation-name: floating, fadeIn;
+		animation-duration: 1s;
+		margin-right: 0;
+}
+/*20363 Start*/
+// .m-searchBar > div
+//min-height 63px
+/*20363 END*/
+@media (max-width: 1200px)
+	.m-megamenu
+		.o-navDesktop
+			.m-megamenu__dropdown
+				.popover
+					.col-lg-8
+						flex 0 0 74%
+					width 736px
+@media (min-width: 1200px)
+	.m-megamenu
+		.o-navDesktop
+			.m-megamenu__dropdown
+				.popover
+					.col-lg-8
+						flex 0 0 100%
+					width 956px
+@media (min-width: 1250px)
+	.m-megamenu
+		.o-navDesktop
+			.m-megamenu__dropdown
+				.popover
+					width 1000px
+@media (min-width: 1350px)
+	.m-megamenu
+		.o-navDesktop
+			.m-megamenu__dropdown
+				.popover
+					width 1100px
+@media (min-width: 1500px)
+	.m-megamenu
+		.o-navDesktop
+			.m-megamenu__dropdown
+				.popover
+					width 1213px
+
+/* 23573 Start */
+
+@media screen and (max-width 991.5px)
+	.o-checkoutSteps
+		.a-checkoutSteps__text
+			padding-bottom: 12px
+			padding-top: 14.6px
+
+/* 23573 End */

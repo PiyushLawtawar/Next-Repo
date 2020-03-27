@@ -1,0 +1,27 @@
+body
+  background-color $background-color
+.o-container__noResults
+  background $white
+  border-radius 4px
+  box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+  padding 5em 10em
+  .m-header__searchBar
+    box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+
+.o-listing__compare
+  column-count 4
+  .m-plp-product-card
+    max-height 450px
+  
+.m-title__marketplace
+  //padding-bottom 10px /* Extra padding. NOt in HTML*/
+    
+
+@media only screen and (max-width: 992px)
+  .o-container__noResults
+    padding 3em 1em
+  .m-title__marketplace
+    background $white
+@media (min-width: 992px) and (max-width: 1024px)
+  .container
+    max-width 1024px

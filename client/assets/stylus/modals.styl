@@ -1,0 +1,303 @@
+/* ------------------- */
+/* Modified by Kevin Salinas */
+/* ------------------- */
+
+
+
+
+body.noScrollModal
+	overflow-y hidden
+
+.modal
+	overflow-y scroll
+
+.modal-dialog
+	height 100%
+	max-width 100%
+	margin 0
+	padding 0
+	.modal-content
+		border 0px
+		border-radius 4px
+		height auto
+		min-height 100%
+		&.with-fix-header
+			padding-top 58px
+&.modal-dialog-centered
+	align-items normal
+	min-height 100%
+
+.o-product__modal
+	.modal-header
+		background #f9f9f9
+		border none
+		box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.1)
+		box-sizing content-box
+		padding 18px
+		position relative
+		min-height 20px
+		.modal-title
+			mixin-font($body1, $carbon)
+			margin 0
+			margin-left 5px
+		.close
+			font-size 16px
+			padding-top 18px
+		.a-modalHeder__back
+			color $carbon
+			cursor pointer
+			padding 3px 3% 0 14px
+		&.fixed-header
+			position fixed
+			top 0
+			width 90%
+			z-index 1
+	.modal-footer
+		border 0px
+		display block
+		p
+			mixin-font($caption,$lead)
+			line-height 1em
+			text-align center
+			margin 0 auto
+			width 230px
+
+.modal
+	.modal-small
+		height auto !important
+		margin 0 auto !important
+		max-width 280px
+
+#edd-modal, #itr-modal
+	.a-product__colorLabel
+		margin-top 5px
+		margin-left 0
+	.a-productColor__item
+		height 25px
+		width 25px
+		.atom-color
+			height 21px
+			width 21px
+	.modal-body
+		margin-top 0
+		.m-product__image
+			& > figure
+				img
+					max-height: 200px
+					width: 100%
+	.m-product__productColor ul
+		overflow hidden
+
+#edd-modal
+	.a-product__eddModalSize
+		font $overline
+	.modal-body
+		margin-top 0
+		.m-product__image
+			& > figure
+				img
+					max-height: 200px
+					width: 100%
+#itr-modal
+	.a-product__eddModalSize
+		font $overline
+
+#availability-modal-itr, #availability-modal, #specs-modal, #promo-modal
+	.modal-header
+		.a-modalHeder__back
+			padding 3px 3% 0 0
+			cursor pointer
+
+#extraInfo-modal
+	img
+		width 100%
+
+#delete-number-modal
+	left 50%
+	margin-left -45%
+	overflow-y hidden
+	width 90%
+	.modal-header
+		position relative
+	.modal-dialog
+		height auto
+		align-items center
+	.modal-content
+		height auto
+	.modal-body
+		margin-top 0
+		.m-product__image
+			& > figure
+				img
+					max-height: 200px
+					width: 100%
+		button
+			display block
+			margin 30px auto
+			width 210px
+		p
+			mixin-font($body2, $carbon)
+			margin 20px auto 0
+			max-width 350px
+			text-align center
+			width 80%
+
+@media only screen and (min-width: 400px)
+	#availability-modal-itr, #availability-modal, #specs-modal, #promo-modal
+		.modal-header
+			.a-modalHeder__back
+				padding 3px 5% 0 0
+
+@media only screen and (min-width: 992px)
+	.modal
+		overflow-y hidden
+	.o-product__modal
+		.modal-header .a-modalHeder__back
+			color $carbon
+			padding 4px 14px 0 0
+		.modal-header.absolute-header
+			position absolute
+			width 93%
+			z-index 1
+	.modal .modal-dialog
+		margin auto !important
+		max-width 510px
+		&.modal-dialog-centered
+			align-items center
+		.modal-content
+			height 500px
+			min-height auto
+			overflow auto
+			&.with-absolute-header
+				padding-top 58px
+				overflow-x hidden
+	#edd-modal, #itr-modal
+		.m-product__productColor ul
+			overflow hidden
+		.a-productColor__item
+			margin 0
+			.a-product__colorLabel
+				mixin-font($body1, $lead)
+	#establishments
+		.modal-dialog
+			margin: 0 auto !important
+			max-width: 818px
+			width: 80vw
+			height: 100%
+		.modal-content
+			height: 70%
+			margin: 15% 0
+
+	#establishments2
+		.modal-dialog
+			margin 35px auto 0 auto !important
+			max-width 818px
+			width 80vw
+
+		.modal-content
+			height auto
+	#social-modal
+		.modal-content
+			height auto
+		.modal-body
+			overflow hidden
+
+	#itr-modal.modal .modal-dialog
+		.modal-content
+			height 510px
+			overflow hidden
+		.m-product__itrSelectStates
+			overflow-x hidden
+			> .row:last-of-type
+				height 200px
+				overflow-y auto
+
+	#availability-modal-itr
+		li:hover
+			background $gray-mid
+		.a-product__store p
+			font-size 0.875em
+	.o-buytoGiftTable-modal
+		.modal-dialog
+			max-width 567px
+			max-height 540px
+			.modal-content
+				max-width 567px
+				height 540px
+
+	.o-resultGiftTable-modal
+		.modal-dialog
+			max-width 567px
+			max-height 540px
+			.modal-content
+				max-width 567px
+				height 540px
+
+
+@media only screen and (max-width: 991px)
+	#promo-modal
+		.modal-dialog .modal-content
+			overflow hidden;
+			// removed for 19884 fixes
+	.o-buytoGiftTable-modal .modal-dialog, .o-resultGiftTable-modal .modal-dialog
+		max-width 567px
+		max-height 540px
+
+@media only screen and (max-width: 991px)
+
+	.modal.show
+
+		.modal-dialog-centered
+			//align-items: flex-start
+
+			.modal-content
+				border-radius: 0
+
+				.modal-header
+					//position: fixed;
+					//height: 56px;
+					//width: 100%;
+					//z-index: 2;
+					//padding: 0;
+					//display: flex;
+					//justify-content: space-between;
+					//align-items: center;
+
+					.modal-title
+						//margin-left: 1rem
+
+					button.close
+						//padding: 0
+						//margin: 0 1rem 0 0
+	#select-product-modal
+		.modal-body
+			 padding: 0; //commented for #21872 bug, uncommented for collections 
+
+			//height: -webkit-fill-available
+#filters-modal
+	.modal-body
+		margin-top: 0px
+#social-modal
+	.modal-body
+		height: auto
+	// For PDP modal in collections
+	#select-product-modal .modal-body{
+		padding: 0;
+	}
+
+	// Styles for mobile modals
+	#social-modal,#qty-modal
+		.modal-dialog
+			display: flex
+			align-items: center;
+
+			.modal-header
+				position relative
+
+			.modal-body
+				margin-top: 0
+
+@media only screen and (min-width: 1199px)
+	#establishments2
+		.modal-dialog
+			margin 0px auto 0 auto !important

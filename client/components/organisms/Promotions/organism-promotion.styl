@@ -1,0 +1,72 @@
+min-w-mobile = 320px
+max-w-mobile = 991px
+
+min-w-tablet = 992px
+max-w-tablet = 1279px
+
+min-w-desktop = 1280px
+
+min-w-xdesktop = 1600px
+
+// max-w-desktop = 1280px
+
+.o-promotions
+	
+	max-width 347px
+	// height 451px
+	display flex
+	flex-flow row wrap
+	justify-content center
+	margin-right 8px
+	margin-left 8px
+	
+
+.o-promotions:nth-child(4n){
+	// margin-left: 0;
+}
+
+.o-promotions__card, .o-promotions__moreInformacion, .o-promotions__validity
+	width 100%
+	
+.o-promotions__card
+	border-radius 4px
+	background $white
+	box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+	padding-bottom 32px
+
+// Mobile
+@media (min-width: min-w-mobile) and (max-width: max-w-mobile) {
+
+	.o-promotions{
+		width: 100%;
+		// padding-right: 16px;
+	}
+	.-promotionFigure{
+		padding-bottom: 15px;
+	}
+
+}
+// Tablet
+@media (min-width: min-w-tablet) and (max-width: max-w-tablet) {
+	.o-promotions{
+		width: 31.66%;
+	}
+	.-promotionFigure{
+		padding-bottom: 15px;
+	}
+	
+
+}
+
+// Desktop
+@media (min-width: min-w-desktop) {
+	.o-promotions{
+		width: 23.5%;
+	}
+}
+
+@media (min-width: min-w-xdesktop) {
+	.o-promotions{
+		width: 347px;
+	}
+}

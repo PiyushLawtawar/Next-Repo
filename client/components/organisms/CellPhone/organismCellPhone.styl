@@ -1,0 +1,133 @@
+.o-myAccount__cellphone.-empty
+	text-align center
+	.m-account__cardInfo
+		padding 20px 0
+	.a-account__cardInfoEmpty
+		mixin-font($body1, $carbon)
+		text-align center
+		margin 0
+
+.o-box.o-myAccount__cellphone
+	background transparent
+	box-shadow none
+.m-account__cardInfo
+	box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+	border-radius 4px
+	background $white
+	padding 20px 0
+	.a-account__cardInfoLabel
+		mixin-font($overline, $carbon)
+		margin 0
+	.a-account__cardInfoText
+		mixin-font($body2, $carbon)
+		word-wrap break-word
+	h3
+		mixin-font($body2, $carbon)
+		margin 0
+#addPhone .m-box-form__content .mdc-text-field-helper-line
+	padding-bottom: 0px !important
+.m-account__cardDetails
+	position relative
+	.menuMotion
+		position absolute
+		right 20px
+		top 0
+	.row
+		.m-myAccount__cellphone
+			margin-bottom 20px
+			padding-left 30px
+			&:nth-child(4)
+				margin-bottom 0px
+				max-width: 21%
+				display: block
+
+.a-cellphone__formTitle
+	mixin-font($title6, $carbon)
+	margin-bottom 30px
+
+.o-myAccount__cellphoneEdit
+	.o-myAccount__cellphoneForm
+		width 100%
+		button
+			margin-bottom 30px
+			margin-top 0
+		h2
+			padding-bottom 30px
+		.a-changePass-label
+			mixin-font($caption, $red)
+			display block
+			padding-top 20px
+			text-align right
+
+@media only screen and (max-width: 1025px)
+	.o-myAccount__cellphone.-empty .row .m-account__cardInfo
+		padding 71px 0
+	.o-myAccount__cellphone .row .m-account__cardInfo
+		border-bottom 1px solid $timberwolf
+
+	.o-myAccount__cellphoneEdit .o-myAccount__cellphoneForm .a-changePass-label
+		padding-top 25px
+
+	.o-myAccount__cellphone .row
+		.m-account__cardInfo
+			padding 15px 20px
+			//order 2
+		&.-cellphone
+			border-bottom 1px solid $timberwolf
+		.m-account__cardAdd
+			//order 1
+
+	.o-box
+		&.o-myAccount__cellphone
+			background transparent
+			box-shadow none
+			max-width 100%
+
+	.m-account__cardDetails .menuMotion
+		right 0
+		top 0
+		@media screen and (max-width: 1199.5px) and (min-width: 991.5px)
+			right: -5px
+
+	.m-account__cardDetails .row .m-myAccount__cellphone
+		margin-bottom 0
+		padding-left 15px
+
+@media only screen and (min-width: 1026px)
+	.o-myAccount__cellphone.-empty .row .m-account__cardInfo
+		padding 71px 0
+	.o-myAccount__cellphone .row .m-account__cardInfo
+		border-bottom 1px solid $timberwolf
+
+	.o-myAccount__cellphoneEdit .o-myAccount__cellphoneForm .a-changePass-label
+		padding-top 25px
+
+	.o-myAccount__cellphone .row
+		.m-account__cardInfo
+			padding 15px 20px
+			order 2
+		&.-cellphone
+			border-bottom 1px solid $timberwolf
+		.m-account__cardAdd
+			order 1
+
+	.o-box
+		&.o-myAccount__cellphone
+			background transparent
+			box-shadow none
+			max-width 85%
+
+	.m-account__cardDetails .menuMotion
+		right 0
+		top 0
+
+	.m-account__cardDetails .row .m-myAccount__cellphone
+		margin-bottom 0
+		padding-left 15px
+
+@media only screen and (min-width: 992px)
+	.o-myAccount__cellphone .row
+		.m-account__cardInfo
+			order 2
+		.m-account__cardAdd
+			order 1

@@ -1,0 +1,306 @@
+// -----------------------
+// Kevin Salinas
+// -----------------------
+
+// PDP Collections mark product
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}
+// PDP Collections unmark product
+@keyframes bounceOut{
+  0%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: 0.9;
+    transform: scale(0.89);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+}
+
+
+// Sticky pdp collections
+@keyframes bounceInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-120px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+// Sticky pdp collections
+@keyframes bounceOutUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-80px);
+    }
+    80% {
+        transform: translateY(-95px);
+    }
+    100% {
+        opacity 0;
+        transform: translateY(-120px);
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 0;
+        transform: scale3d(1.8, 1.5, 1.5);
+    }
+/*     50% {
+        opacity: 0.5;
+
+    } */
+    to {
+        opacity: 1;
+    }
+}
+
+.zoomOut {
+    animation-name: zoomOut;
+
+    animation-duration: 1.3s;
+    animation-fill-mode: both;
+
+    // -webkit-animation-iteration-count: infinite;
+    // animation-iteration-count: infinite;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    animation-name: zoomIn;
+
+    animation-duration: 1.3s;
+    animation-fill-mode: both;
+}
+
+/*Footer Sticky
+.o-content__columnCenter--fluid.container-fluid {
+    min-height: calc(100vh - 275px);
+}
+.container-fluid.o-main-container {
+    min-height: calc(100vh - 440px);
+}
+.container-fluid.o-main-container-taire {
+    min-height: calc(100vh - 460px);
+}
+Footer Sticky*/
+
+/*Menu Animations*/
+.m-popover.m-arrow_box.arrow-pos.show-menu {
+    height: auto;
+    transform: scaleY(1);
+    transform-origin: top;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+/*Mi crédito and Mis seguros dropdown */
+.show-menu {
+    height: auto;
+    transition: transform 0.3s ease-out;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+.hide-menu {
+    transition: transform 0.1s ease-in .1s;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+/*Iniciar Session dropdown*/
+.popover.bs-popover-bottom.align-arrow.show-menu,{
+    width: 140px;
+}
+.popover.bs-popover-bottom.align-arrow.hide-menu {
+    width: 140px;
+    transition: transform 0.1s ease-in .3s;
+}
+.a-header__sessionLink:hover {
+    margin-left: 3px;
+    transition: all 0.1s ease-out;
+}
+/*Menu Animations*/
+
+/*Accordian Animations*/
+/*21667 Animations start*/
+.show-accord {
+    position: relative;
+    display: block!important;
+    overflow: hidden;
+    animation: slideDown 2s ease-in-out both;
+
+  //   transition: all .5s ease-in-out;
+  // transform-origin: left top;
+  // max-height: 10000px;
+}
+
+.hide-accord {
+    position: relative;
+    overflow: hidden;
+    //   transform: scaleY(0);
+  //   trnsition: all .5s ease-in-out;
+  // transform-origin: left top;
+  max-height: 0px;
+    animation: slideUp 0.5s ease-in-out both;
+}
+/*21667 Animations end*/
+
+/*PDP Animations */
+/* PDP modals */
+ #o-findGiftTable {
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ }
+ #o-resultGiftTable {
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ }
+.o-giftWrap {
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.o-product__modal.modal.fade .modal-dialog {
+	-webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.o-product__modal.modal.fade:not(.show) .modal-dialog {
+	-webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+            transition: opacity 1s;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+            transition: opacity 1s;
+  }
+}
+/*21667 Animations start*/
+
+@keyframes slideUp {
+    0% {
+        max-height: 10000px;
+    }
+    to {
+        max-height: 0;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        max-height: 0;
+    }
+    to {
+        max-height: 10000px;
+    }
+}
+
+/*21667 Animations end*/
+
+/*Modal dark backdrop fade-in*/
+.modal-backdrop.show {
+  overflow: hidden;
+  -webkit-animation: mod-fadeIn 0.1s forwards;
+	        animation: mod-fadeIn 0.1s forwards;
+}
+@media only screen and (max-width: 769px) {
+    .modal-backdrop.show {
+     background-color: #000;
+     -webkit-animation: none;
+	        animation: none;
+    }
+}
+@-webkit-keyframes mod-fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.3; }
+  80% { opacity: 0.4; }
+  100% { opacity: 0.5; }
+}
+@keyframes mod-fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.3; }
+  80% { opacity: 0.4; }
+  100% { opacity: 0.5; }
+}
+/*Modal dark backdrop fade-in*/
+/*PDP Animations*/
+/*Loading Animation Show header no flash*/
+.loading {
+   background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 115px, rgba(255,255,255,1) 118px, rgba(255,255,255,1) 100%);
+}
+
+@media only screen and (max-width: 769px) {
+   .loading {
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 112px, rgba(255,255,255,1) 115px, rgba(255,255,255,1) 100%);
+   }
+}
+/*Loading Animation end*/

@@ -1,0 +1,109 @@
+
+//---------------------------
+//- Kevin Salinas
+//---------------------------
+html
+	scroll-behavior: smooth!important
+	-webkit-overflow-scrolling: touch
+.o-productInfo-greenMA
+	color: #3ab54a
+	font-weight: bold
+	font-size: 12.5px
+	line-height: 16px
+	min-height: 50px
+
+section.o-product__detail
+		background: $white
+		width: 100%
+		height: auto
+		min-height: 500px
+		// height: 500px
+		// overflow-y: auto
+		box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.1)
+		display: flex
+		align-items: stretch
+
+		& > .container
+				display grid;
+				grid-template-columns: 7.5fr 2px 2.5fr
+				grid-template-rows: 1fr
+				padding: 0;
+
+				main
+						display grid;
+						grid-template-columns: 60% 40%
+						grid-template-rows: 1fr
+						padding: 0;
+						height: auto
+
+		.o-product__image
+				// min-height: 470px
+				height auto
+				width: 100%
+				padding: 5%;
+
+		.o-product__description
+				padding: 6% 7%;
+				width: 100%
+
+		.a-product__separator
+				background: $background-color
+				width: 100%
+				margin: 30px 0
+
+		.o-product__purchase
+				width: 100%
+				padding: 6% 7%;
+				padding-right: 16px
+
+				& > aside.o-product__productInfo
+						width: 100%
+
+@media only screen and (max-width: 991px)
+
+		section.o-product__detail
+				background: $white
+				height auto
+
+				& > .container
+						width: 100%
+						overflow: hidden
+						display: grid
+						grid-template-rows: auto 2px auto
+						grid-template-columns:  100%
+						padding: 0 15px 1rem 15px;
+
+						main
+								display: grid
+								grid-template-columns: 100%
+								grid-template-rows: auto auto
+								padding-bottom: 0;
+
+						.o-product__image
+								height: auto
+								min-height: auto
+								padding: 1rem 0
+
+						& > div:not(.a-product__separator)
+								padding: 1em
+
+						.a-product__separator
+								margin: 0 1em
+								width: auto
+
+
+
+				.o-product__description
+						padding: inherit;
+						width: 100%
+
+				.a-product__separator
+						background: $white
+						width: 100%
+						margin: 0
+
+				.o-product__purchase
+						width: 100%
+						padding: inherit;
+						padding-bottom: 0
+

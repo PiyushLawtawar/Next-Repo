@@ -1,0 +1,174 @@
+.a-monedero-label
+  margin 0
+  color $lead
+  font-size 12px
+  font $overline
+  span
+    display inline-block
+  .a-monedero-label-strong
+    color $carbon
+    font $caption
+.a-product__spanColor
+        mixin-font($body2,$black-with-opacity)
+        font-size 0.875rem
+        letter-spacing 0.5px
+
+.a-product__colorLabel
+        mixin-font($overline,$carbon)
+        display inline-block
+        margin-left 7px
+        margin-top 2px
+        vertical-align top
+
+.a-desktop__submenuTitle
+        display block
+        width 100%
+        font-size 1.125em
+        border-bottom 1px solid #979797
+        font $body1
+        color $primary-color
+        margin 3px 0 20px 0
+        padding 3px 0 4px 0
+
+.a-desktop__categoryTitle
+    font $title7
+    font-size 16px
+    color #666
+
+.a-flag
+    background-color $silver
+    border-radius 10px
+    color $carbon
+    display block
+    font $overline-module
+    height 22px
+    margin-bottom 6px
+    padding .1em .8em
+
+.m-plp-list-view
+    .a-flag
+        display inline-block
+
+.a-product__spanProductDescriptionTab
+        mixin-font($body2, rgba(0,0,0,0.87))
+
+.mobileLogOut
+    display inline-block
+    font-size 0.875rem
+    padding 0
+    strong
+        font $title7
+
+.a-vendors__offerPrice
+  mixin-font($body2, $primary-color)
+  i
+    color $carbon
+    float right
+    margin 7px 5px
+.a-marketplace__ratingsTitle
+  mixin-font($caption, $carbon)
+.a-marketplace__ratingsNumber
+  mixin-font($overline-medium, $gray-dark)
+.a-marketplace__ratingsLevel
+  background $silver
+  display block
+  height 4px
+.a-marketplace__ratingsLevel.active
+  background $primary-color
+
+span.a-product__paragraphDiscountPrice,
+span.a-product__paragraphRegularPrice
+  padding-right 5px
+.a-checkout__headingDeliveryDate
+  mixin-font($body2,$lime-green)
+.a-checkoutBox__clickCollect
+  margin-left .5rem
+  mixin-font($caption,$primary-color)
+.a-checkout__minimunPurchase
+  display block
+  margin-bottom 1rem
+  mixin-font($caption,$carbon)
+.a-productQty__minimal
+  font-size 0.750em
+.a-tracking__deliverDate
+  mixin-font($body2, $lime-green)
+.a-tracking__deliverDateValue
+  mixin-font($body2-title, $carbon)
+  margin-left 22px
+  margin-right 8px
+.a-progressBar__itemName
+  font $body2
+.a-progressBar__date
+  mixin-font($caption, $carbon)
+.a-checkout__email
+  font $body4
+  color $carbon
+.a-box__promotionText
+  font $body3
+  color $carbon
+//checkout
+.a-checkout__resumePurchase
+  font $body2
+  color $carbon
+.a-box__radioFlag
+  font $overline-module
+  color $primary-color
+.a-box__radioTitle
+  color $carbon
+  font $body2
+.a-box__radioSubtitle
+  color $carbon
+  font $caption
+.a-cards__defaultTitle
+  display block
+  height 1rem
+  margin-bottom 1rem
+  mixin-font($overline-module,$primary-color)
+.a-cards__requestLabel
+  display block
+  mixin-font($caption,$red)
+  text-align right
+.a-checkout__session
+  font $overline
+  color $lead
+  margin 0
+  display inline-block
+@media only screen and (min-width: 992px)
+  .a-tracking__buyInfoValue
+    mixin-font($body2-title, $carbon)
+    display flex
+  .a-tracking__buyInfoField
+    mixin-font($caption, $carbon)
+    margin-bottom 4px
+  .a-confirmationInvoice__centerTitle
+    mixin-font($title4-discount,$carbon)
+
+@media only screen and (max-width: 991px)
+  .a-tracking__buyInfoValue
+    mixin-font($body2-title, $carbon)
+    display flex
+    margin-left 7px
+  .a-tracking__buyInfoField
+    mixin-font($caption, $carbon)
+    margin-top 2px
+  .a-confirmationInvoice__centerTitle
+    mixin-font($body1,$carbon)
+
+.a-trackingOrder__numberSpan1
+    mixin-font($body2-title, $carbon)
+.a-trackingOrder__numberSpan2
+    mixin-font($body3-legend , $carbon)
+.a-trackingOrder__numberSpan3
+    mixin-font($body2-title, $carbon)
+    margin-left 5px
+.a-billing__invoiceAccept
+  font $body2
+  color #3b3b3e
+.a-invoice__requiredtext
+  mixin-font($caption,$red)
+  display: flex;
+  justify-content: flex-end;
+.a-confirmationInvoice__fieldName
+  mixin-font($body4,$carbon)
+.a-confirmationInvoice__fieldValue
+  mixin-font($body3,$carbon)

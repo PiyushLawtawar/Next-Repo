@@ -1,0 +1,256 @@
+// Delete this once it's on production ...
+#ratings .show-accord
+	overflow-y scroll
+
+#swogo-bundle-1
+	margin: 50px 0
+
+.m-box__accordionHeading
+	&[aria-expanded="true"]
+		.a-box__accordionIcon
+			transform rotate(180deg)
+			transition transform .3s ease-in-out
+	&[aria-expanded="false"]
+		.a-box__accordionIcon
+			transform rotate(0deg)
+			transition transform .3s ease-in-out
+
+.card-header
+	&[aria-expanded="true"]
+		i
+			transform rotate(180deg)
+			transition transform .3s ease-in-out
+	&[aria-expanded="false"]
+		i
+			transform rotate(0deg)
+			transition transform .3s ease-in-out
+.o-nav-sideBar-blpClp, .o-product__productExtraInfo, .o-product__comment, .o-product__swogo, .o-product__productSpecsPromos
+		font $title7
+		cursor pointer
+		border-radius 4px
+		box-shadow 0 4px 7px 0 rgba(204,204,204,0.5)
+		background $white
+		.collapse:not(.show)
+			display none
+		.nav-item
+				border none
+				.card-header
+					cursor pointer
+					background $white
+					border-bottom solid 1px $whisper
+					margin 0 auto
+					width 98%
+					padding 14px 24px
+					.col-auto
+							display block!important
+					h3
+						margin-bottom 0
+						font $body2-footer
+						color $carbon
+						font-weight normal
+					i
+						font $caption
+						color $lead
+						margin-bottom 0
+				.card-body
+						padding 0
+						padding-bottom 0
+						ul
+							list-style none
+							padding 0
+							li
+								padding 0
+								border-bottom solid 1px $whisper
+								.nav-link
+										font $body2
+										color $carbon
+										text-decoration none
+										padding 14px 24px 14px 44px
+								.nav-sub-options
+									.nav-sub-link
+										.nav-link
+											padding-left: 60px
+											&:active
+												background: $silver
+						img
+							width 100%
+
+.o-nav-sideBar-blpClp
+	.nav-item
+		.card-header
+			width 100%
+			&:active
+				background: $silver
+
+.o-nav-sideBar-blpClp .nav-item .card-header h3
+	font:  $body2-footer-bold
+.o-product__productSpecsPromos
+	box-shadow: none
+	.nav-item
+		.card-body
+			ul
+				li
+					border-bottom: none
+		.show-accord
+			padding: 24px 0
+
+.o-product__swogo
+	.nav-item
+		.card-header
+			width: inherit
+
+.o-product__comment
+	font: $body1-price-plp-grid
+
+.o-product__productExtraInfo,
+.o-product__comment,
+.o-product__swogo,
+.o-product__productSpecsPromos
+	.nav-item
+		.card-header
+			margin: 0 1rem
+			padding: 14px 0px
+		i
+			position relative
+			right 1%
+
+.o-product__productExtraInfo .-a-image__moreInfo
+	height 450px
+
+.m-footer__accordion
+		background-color #555
+		border 0
+		.card-header
+				pointer-events none
+				background-color transparent
+				border 0
+				padding 0 0 15px 0
+		.card-body
+			padding 0
+			ul
+					padding 0 0 10px 0
+					li
+							padding 8px 0
+							list-style-type none
+		h3
+			font-size 0.875em
+		i
+			color $white
+			font-size 12px
+			transition transform .3s ease-in-out
+			display none
+
+.o-product__productExtraInfo .nav-item .card-header h3,
+.o-product__comment .nav-item .card-header h3,
+.o-product__swogo .nav-item .card-header h3,
+.o-product__productSpecsPromos .nav-item .card-header h3
+	mixin-font($title6-slot, $very-dark-grayish-magenta)
+
+@media only screen and (max-width: 992px)
+		.o-product__swogo
+			background none
+			box-shadow none
+			.a-product__swogoMobileTitle
+				mixin-font($title7, $carbon)
+				margin 0
+				text-align center
+		.m-footer__accordion
+				i
+					display block
+				padding 3px
+				border-radius 0
+				border-bottom 1px solid #444
+				background-color #555
+				.card-header
+						cursor pointer
+						pointer-events auto!important
+
+	.o-product__productExtraInfo .nav-item .card-body img
+		max-height 480px
+
+ul.nav-sub-options
+	border-top: solid 1px #e6e6e6
+	background: #f8f8f8;
+	// li.nav-sub-link a
+	//   margin-left: 15px
+
+.turnto-container
+	span.labelClassname
+		font $body1
+		@media screen and (min-width: 991.5px)
+			display: none
+
+.m-product__productSpecsList .card-header.turnto-container
+	h3.labelClassname
+		font: $title6-slot
+		color: $very-dark-grayish-magenta
+		@media screen and (max-width: 991.5px)
+			display: none
+
+.o-nav-sideBar-blpClp
+	.nav-item
+		.card-body
+			ul
+				li
+					.nav-link:active
+						background: $silver
+
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        transform: translatex(-20px);
+    }
+    to {
+        opacity:1;
+        transform: translatex(0);
+    }
+}
+
+@keyframes fadeOutLeft {
+    from {
+        opacity:1;
+        transform: translatex(0);
+    }
+    to {
+        opacity:0;
+        transform: translatex(-20px);
+    }
+}
+
+.in-left {
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 500ms;
+    -moz-animation-duration: 500ms;
+    -o-animation-duration: 500ms;
+    animation-duration: 500ms;
+    -webkit-animation-delay: 100ms;
+    -moz-animation-delay: 100ms;
+    -o-animation-duration:100ms;
+    animation-delay: 100ms;
+}
+
+.out-right {
+	-webkit-animation-name: fadeOutLeft;
+    -moz-animation-name: fadeOutLeft;
+    -o-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 500ms;
+    -moz-animation-duration: 500ms;
+    -o-animation-duration: 500ms;
+    animation-duration: 500ms;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-duration:0s;
+    animation-delay: 0s;
+}

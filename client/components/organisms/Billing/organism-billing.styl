@@ -1,0 +1,136 @@
+.o-invoiceOptionContainer
+    height 3.375rem
+    display flex
+    justify-content center
+    align-items center
+    cursor pointer
+
+.o-invoiceOptionContainer__selector
+    width 97%
+    background-color #fff
+    height 89%
+    text-align center
+    box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+    display flex
+    justify-content center
+    align-items center
+    border-radius 4px
+
+.o-invoiceOptionContainer__selector--selected
+    width 97%
+    background-color #333333
+    height 89%
+    text-align center
+    box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+    display flex
+    justify-content center
+    align-items center
+    border-radius 4px
+
+.o-invoiceOptionContainer__selector--selected .a-invoiceOptionContainer__tooltip::after
+    content ""
+    position absolute
+    top 93%
+    left 48%
+    margin-left -5px
+    border-width 7px
+    border-style solid
+    border-color #333333 transparent transparent transparent
+
+.o-invoice__box
+    background-color $white
+    box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+    border-radius 4px
+    padding 15px 25px
+    label
+        margin 3px 0
+    .row > .col-12.col-lg-6 .row:first-of-type .m-invoice__colInput
+      margin-top 15px
+
+.t-billing__main
+    display flex
+    flex-direction: column
+
+.o-invoice__tabs--horizontal
+    display flex
+    flex-direction: row
+
+.o-billing__rowBtnsForm
+    display flex
+    justify-content space-between
+
+@media only screen and (min-width: 992px)
+    .o-billing__rowButtons
+        margin-bottom 100px
+        margin-top 10px
+    .o-billing__invoiceAcceptTerms
+        display flex
+        justify-content flex-end
+    .a-invoiceOptionContainer__optionText--selected
+        mixin-font($body1,$white)
+    .a-invoiceOptionContainer__optionText
+        mixin-font($body1,$lead)
+    .o-invoice__box .row > .col-12.col-lg-6 .row:first-of-type .m-invoice__colInput
+      margin-top 35px
+@media only screen and (max-width: 991px)
+    .o-billing__rowButtons
+        margin-bottom 1px
+        margin-top 30px
+    .o-billing__invoiceAcceptTerms
+        display: flex;
+        justify-content: flex-start;
+    .a-btn__confirmedInvoice
+        margin-bottom 8px
+    .a-btn__confirmedInvoice--another
+        margin-bottom 120px
+    .o-billing__invoiceAcceptTerms
+        order 1
+    .o-billing__rowButtons
+        order 0
+    .a-invoiceOptionContainer__optionText--selected
+        mixin-font($body2,$white)
+    .a-invoiceOptionContainer__optionText
+        mixin-font($body2,$lead)
+
+.o-billing__fieldsForeignPersonaStyle
+    width 106px !important
+
+.o-billing__fieldsForeignCountryStyle
+    width 40px !important
+
+.m-invoice__colInput
+    .mdc-text-field--outlined
+        .m-input-notched
+            .m-input-outline__notch
+                .mdc-floating-label
+                    top 3px
+
+.m-inputBilling__helperSelect
+    padding-left 15px
+    color rgba(0,0,0,.6)
+    font $caption
+    font-weight 400
+    letter-spacing .0333333333em
+    -moz-osx-font-smoothing grayscale
+    -webkit-font-smoothing antialiased
+.o-invoice__box .mdc-text-field ~ .mdc-text-field-helper-line
+	visibility: hidden
+
+.o-invoice__box .mdc-text-field--invalid ~ .mdc-text-field-helper-line
+	visibility: visible
+
+.o-invoice__box .mdc-text-field ~ .mdc-text-field-helper-line .a-textField__helperText
+	visibility: visible
+
+.o-invoice__box .mdc-text-field--invalid ~ .mdc-text-field-helper-line .a-textField__helperText
+	visibility: visible
+
+.o-invoice__box	.mdc-select:not(.mdc-select--disabled)+.mdc-select-helper-line .mdc-select-helper-text
+	color: rgba(0,0,0,.6)
+	visibility: hidden
+
+.o-invoice__box .mdc-select--invalid:not(.mdc-select--disabled).mdc-select--invalid + .mdc-select-helper-line .mdc-select-helper-text--validation-msg
+	color: red
+	visibility: visible
+.o-invoice__box .mdc-select--invalid:not(.mdc-select--disabled).mdc-select--invalid + .mdc-select-helper-line .mdc-select-helper-text--validation-msg
+	padding-left: 15px

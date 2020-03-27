@@ -1,0 +1,191 @@
+.mdc-snackbar
+	bottom auto
+	margin 0
+	position absolute
+	top 56px
+	.mdc-snackbar__label
+		mixin-font($body2,$carbon)
+		padding-left 15px
+		.a-alert__text
+			text-transform capitalize
+	.mdc-snackbar__surface
+		position relative
+		width 100%
+		.a-alert__icon
+			display none
+			left 15px
+			top 14px
+			position absolute
+			&.icon-error
+				color $red
+			&.icon-warning
+				color $light-gold
+			&.icon-done
+				color $lime-green
+		.icon-close
+			color $gray-night
+			font-size 0.75em
+			position absolute
+			right 0
+			top 20%
+			margin-right: 8px
+			//Overwrite third party styles
+			height 30px !important
+			width 30px !important
+			padding 10px !important
+			&:before
+				background transparent
+	&.-alert
+		.mdc-snackbar__label
+			background-color $pale-red
+			border-left 4px solid $red
+		.mdc-snackbar__surface
+			background-color $pale-red
+	&.-warning
+		.mdc-snackbar__label
+			background-color $pale-yellow
+			border-left 4px solid $light-gold
+		.mdc-snackbar__surface
+			background-color $pale-yellow
+	&.-success
+		.mdc-snackbar__label
+			background-color $pale-green
+			border-left 4px solid $lime-green
+		.mdc-snackbar__surface
+			background-color $pale-green
+	&.-toTop, &.-toTopSticky
+		position fixed
+		top 0 !important
+		z-index 100000 !important
+
+// modal alerts
+.m-alert
+	box-shadow $b-shadow-card
+	margin 0px 0px 23px
+	padding: 16px 40px 16px 10px
+	cursor pointer
+	position relative
+	.a-alert-iconAlert
+		width 15px
+		height 15px
+		padding 8px
+		margin-right 10px
+	.a-alert-text
+		font $body2
+		color $carbon
+		margin 0
+	.a-alert-iconClose
+		width 15px
+		height 15px
+		align-self flex-start
+		position absolute
+		right 20px
+	&.-alert
+		background-color $pale-red
+		border-left solid 5px $red
+		.a-alert-iconAlert
+
+			background-position center
+			background-repeat no-repeat
+			background-size cover
+		.a-alert-iconClose
+
+			background-position center
+			background-repeat no-repeat
+			background-size cover
+
+
+
+@media only screen and (min-width: 992px)
+	.mdc-snackbar
+		margin 8px
+		position absolute
+		.mdc-snackbar__label
+			padding-left 40px
+		.mdc-snackbar__surface
+			min-width 500px
+			width 50%
+			.a-alert__icon
+				display block
+		&.-toTop
+			margin-top 0
+			top 0 !important
+			position fixed
+		&.-toTopSticky
+			top 95px !important
+			position fixed
+
+
+// checkout
+.a-checkoutSteps__bar
+  height 3px
+  background #fff
+.react-date-picker
+	width 100%
+	.react-date-picker__wrapper
+		width 100%
+		border-radius 4px
+		height 36px
+		border-color #e6e6e6
+.react-datepicker__input-container
+	position relative
+	.a-calendar__icon
+		position absolute
+		top 10px
+		right 8px
+	.a-calendar__required
+		z-index 0
+		position absolute
+		top 8px
+		color $red
+		left 151px
+	.a-calendar__input
+		width 100%
+		border-radius 5px
+		padding 0 0 0 16px
+		height 36px
+		border 1px solid rgba(0,0,0,.12)
+		&:hover
+			border 1px solid #000
+		&:focus
+			border 2px solid $primary-color
+			outline $primary-color
+	input::placeholder
+		font $body2
+		color rgba(0,0,0,.6)
+.input-calendar-alert
+	color rgba(0,0,0,.6)
+	padding 0 16px
+.-previewList
+	max-height 500px
+	overflow hidden
+
+#shipToAddress .mdc-form-field
+	align-items start
+	label
+		padding-top 8px
+	//overflow-y scroll
+.-step1
+	top 68px
+.-alertCheckout
+	top 94px
+.-primaryLogo
+	path
+		fill $primary-color
+.-noClose
+	.mdc-snackbar__actions
+		.icon-close
+			display none
+#otherArea
+	display none
+
+/* Start: Defect 20012, 19236 */
+.alert-top-defult
+	position: relative
+
+.alert-top-defult
+	.mdc-snackbar
+		top -8px
+		z-index 500
+
+/* End: Defect 20012, 19236 */

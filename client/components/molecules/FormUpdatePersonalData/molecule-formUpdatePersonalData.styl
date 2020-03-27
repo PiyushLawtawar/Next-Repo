@@ -1,0 +1,41 @@
+#UpdateDataPersonal
+    .a-updatePersonalData-label
+        color $lead
+        font $body2
+        &:before
+            content: '* '
+            color: $red
+    .mdc-text-field.mdc-text-field--outlined
+        margin-top: 0px
+    .mdc-text-field ~ .mdc-text-field-helper-line
+        visibility hidden
+        padding-left 0px
+    .mdc-text-field--invalid ~ .mdc-text-field-helper-line
+        visibility visible
+    // .mdc-text-field__input:required~.mdc-floating-label::after, .mdc-text-field__input:required~.mdc-notched-outline .mdc-floating-label::after
+    //     display none
+    .m-inputText.mdc-text-field--invalid ~ .m-input-helper__text .a-intput-paragraph
+        margin-bottom: 13px
+
+/* In Pug file there no direct CSS available */
+.o-box
+    background: #fff
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15)
+    margin-bottom: 16px
+    min-width: 447.99px
+    border-radius: 4px
+.a-myAccount-aside--title__formChangePassowrd
+    font: 1.25rem 'robotoRegular'
+    color: #333
+    text-align: left
+    margin-left: 0px
+    padding-top: 20px
+
+.-forms .m-box-form__content--my__account .a-changePass-label--required
+    color: #f00
+    font: 0.75rem 'robotoRegular'
+    float: right
+    margin: 10px 0px 24px
+.-forms .a-btn
+	margin-bottom: 16px
+	margin-top: 24px

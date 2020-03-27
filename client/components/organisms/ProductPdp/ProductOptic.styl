@@ -1,0 +1,57 @@
+
+
+.o-product__optionsOptic
+
+	.mdc-floating-label
+		font-size 0.75rem
+	.mdc-select
+		padding-top 20px
+		select
+			font-size 0.75rem
+		.mdc-notched-outline--upgraded .mdc-floating-label--float-above
+			max-width calc(100% / .55)
+
+	.m-product__optionsOpticContainer
+		margin-top 10px
+		.mdc-select__dropdown-icon
+			bottom -8px
+
+
+	.a-product__opticRequired
+		mixin-font($body3, red)
+		display none
+	.a-product__opticLabel
+		mixin-font($overline,$lead)
+	.a-product__opticSelect
+		mixin-font($body2, $carbon)
+		display inline-block
+		margin 0
+		vertical-align middle
+	.a-icon__opticOk
+		background $primary-color
+		border-radius 50%
+		color $white
+		display none
+		font-size 7px
+		padding 5px 4px
+		vertical-align middle
+		&.visible
+			display inline-block
+
+	.popover
+		box-shadow 0 3px 5px 2px rgba(0, 0, 0, 0.15)
+		width 290px
+	.popover-header
+		background white
+		box-shadow none
+		width 235px
+		font $body2-title
+		margin 0 auto
+		color $carbon
+		padding-left 0
+	.popover-body
+		margin 0
+		padding 10px 20px 10px 20px
+		box-shadow none
+		color $carbon
+		font $overline-footer

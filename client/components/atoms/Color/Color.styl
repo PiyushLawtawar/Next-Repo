@@ -1,0 +1,55 @@
+.productColor, .productColorActive, .productColorEdd
+  border-radius 50%
+  border 1px solid #cdcdcd
+  display inline-block
+  height 28px
+  list-style-type none
+  margin 0 2px
+  padding 1px
+  width 28px
+  a
+    border-radius 50%
+    border 1px solid white
+    cursor pointer
+    display inline-block
+    height 24px
+    width 24px
+    &.white
+      border 1px solid transparent
+
+.productColorActive
+  border 1px solid #000
+
+.productColorEdd
+  border 1px solid $lead
+  box-shadow 0 0 4px 0 rgba(0, 0, 0, 0.5)
+  height 24px
+  margin 0
+  width 24px
+  a
+    border-radius 50%
+    height 12px
+    padding 9px
+    margin 0
+    width 12px
+    &.white
+      border 1px solid #cdcdcd
+.a-product__colorLabel
+  mixin-font($overline,$carbon)
+  display inline-block
+  margin-left 7px
+  margin-top 2px
+  vertical-align top
+  
+.a-plp-color
+  margin .6em 0
+  ul
+    margin-bottom 0
+    padding 0
+  .a-product__color
+    border 1px solid $timberwolf
+    height 17px
+    width 17px
+    a
+      height 13px
+      width 13px

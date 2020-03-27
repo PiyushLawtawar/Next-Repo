@@ -1,0 +1,30 @@
+.m-pagination
+    .page-item
+        .page-link
+            background none
+            border 0
+            color $gray-dark
+            font $body3
+            line-height 1
+            &:focus
+                box-shadow none
+    .page-item
+        cursor pointer
+    .page-item.active
+        background $white
+        border-radius 50%
+        height 24px
+        box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+        padding 0
+        position relative
+        margin-top 2px
+        margin-right 5px
+        width 24px
+        .page-link
+            background-color transparent
+            color $gray-dark
+            font $title7
+            position absolute
+            top 2px
+            padding 0
+            left 9px

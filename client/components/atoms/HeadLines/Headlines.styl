@@ -1,0 +1,74 @@
+.a-product__headline
+  mixin-font($title4, black)
+.a-product__eddModalTitle
+  mixin-font($title5, $carbon)
+.a-product__headLineEmailShareContent
+  mixin-font($title6,rgba(0, 0, 0, 0.87))
+.a-headline__typeahed
+  mixin-font($caption, $carbon)
+.a-headline__marketplace
+  mixin-font($title5-discount, $carbon)
+  span
+    color $gray-silver
+    font $body1
+.a-headline__results
+  mixin-font($body1, $carbon)
+.a-headline__noResults
+  mixin-font($body1, $lead)
+  strong
+    color $primary-color!important
+    mixin-font($title6,rgba(0, 0, 0, 0.87))
+.a-clp-categoryName
+  color $carbon
+  font $title5-discount
+  margin 0
+  text-align left
+.a-product__headLineProductPromo
+  font: $title6-slot
+  border-bottom 1px solid $timberwolf
+  height 43px
+.a-product__headLineProductPromoSubtitle
+  mixin-font($body1, $carbon)
+.a-giftRegistry__titlepProduct
+  mixin-font($title5,$carbon)
+
+//checkout
+.a-box__heading
+  font $title6-popup
+  margin 0
+.a-box__title
+  margin-bottom 0
+  mixin-font($body2-title,$carbon)
+.a-checkout__heading
+  font $title4_discount
+.a-checkout__nameHeading
+  font $checkout_nameTitle
+  color $primary-color
+.a-checkout__purchaseDetail
+  color $carbon
+  font $title6
+.a-select__helpText
+  color $lead
+  font $caption
+  margin 0 0 20px 0!important
+  display block
+  z-index 3
+.a-cards__titleCard
+  margin-bottom 0
+  mixin-font($title6-popup,$carbon)
+.a-cards__infoCardTitle
+  margin-bottom 1.5rem
+  mixin-font($title6,$carbon)
+//sitemap
+.a-sitemap__title
+  mixin-font($title6-popup,$carbon)
+@media only screen and (max-width: 991px)
+  .a-headline__marketplace
+    text-align center
+  //checkout
+  .a-box__heading
+    font $body1-section
+  .a-checkout__nameHeading
+    font $checkout_nameTitle2
+  .a-checkout__purchaseDetail
+    font $body2

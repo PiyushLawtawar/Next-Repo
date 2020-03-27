@@ -1,0 +1,217 @@
+.t-myBag
+  display flex
+  flex-flow column wrap
+  justify-content center
+  height auto
+  max-width 1472px
+  padding 0
+  padding-top 33px
+  padding-left: 16px;
+  padding-right: 16px;
+  
+
+.t-myBag__head, .t-myBag__cards, .t-myBag__productList, .t-myBag__breakdownExpenses, .t-myBag__footerTab
+  margin 0
+  padding 0
+  display flex
+  flex-flow row wrap
+  width 100%
+
+.t-myBag__emptyList
+  width 100%
+
+.t-myBag__productList, .t-myBag__emptyList
+  background $white
+  border-radius 4px
+  box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+
+.t-myBag__head, .t-myBag__footerTab
+  height 44px
+  justify-content space-between
+
+.t-myBag__footerTab
+  margin-bottom 40px
+  margin-top 50px
+  
+.t-myBag__breakdownExpenses
+  justify-content flex-end
+  position relative
+  
+.t-myBag__breakdownExpensesNotice
+  position absolute
+  top 105%
+  height 16px
+
+.t-myBag__headTabs,.t-myBag__toBuy, .t-myBag__continueToBuy
+  justify-content flex-start
+  height auto
+
+.t-myBag__toBuy, .t-myBag__continueToBuy
+  width 222px
+
+.t-myBag__toBuy
+  align-self flex-end
+.t-myBag__continueToBuy
+  align-self flex-start
+
+.t-myBag__cards
+  padding-top 16px
+
+.t-myBag__cards--saved
+  margin-bottom 123px
+  
+.t-myBag__emptyList
+  width 100%
+  background $white
+  display flex
+  flex-flow row wrap
+  justify-content center
+  align-items baseline
+  margin-bottom 119px
+  padding-bottom 47px
+
+
+// Mobile
+@media (min-width: 320px) and (max-width: 991px) {
+  .t-myBag{
+    padding-top: 0;
+    background: $background-color;
+  }
+  .t-myBag__productList{
+    background: $background-color;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0);
+
+  }
+  .t-myBag__toBuy[name="toBuyTop"]{
+    display: none;
+  }
+  .t-myBag__toBuy[name="toBuyBottom"],.t-myBag__continueToBuy[name="continueToBuyBottom"]{
+    width: 100%;
+  } 
+  .t-myBag__toBuy[name="toBuyBottom"]{
+     order: 0;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .t-myBag__continueToBuy[name="continueToBuyBottom"]{
+    order: 1;
+  }
+  .t-myBag{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .t-myBag__breakdownExpensesNotice{
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+  .t-myBag__headTabs{
+    width: 100%;
+  }
+  
+  .t-myBag__headTabs .mdc-tab{
+    justify-content: center;
+  }
+  
+  .t-myBag__footerTab{
+    margin-bottom 90px
+  }
+  .t-myBag__cards--saved .o-myBag__column[name="columnTotal"], .t-myBag__cards--saved .o-myBag__column[name="columnQuantity"]{
+  //  display: none;
+  }
+  .t-myBag__cards--saved .o-myBag__column[name="columnPrice"]{
+    margin-bottom: 19px;
+    margin-left: 123px;
+    margin-top : 0;
+  }
+  //Bug 23561 removing .t-myBag__cards--saved  .-greenText
+  .t-myBag__cards--saved  .a-inlineElement--fEstimadaTitle {
+    display: none;
+  }
+  
+  .t-myBag__emptyList{
+        margin: 0 auto 51px auto;
+  }
+  
+  .t-myBag__emptyList .t-myBag__continueToBuy{
+    display: flex;
+    justify-content: center;
+  }
+  .t-myBag__emptyList .a-product__buttonBuy{
+    padding: 0 15px;
+    width: auto;
+  }
+}
+
+// Tablet
+@media (min-width: 992px) and (max-width: 1279px) and (orientation: landscape) {
+  .t-myBag {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .t-myBag__footerTab{
+    margin-bottom: 70px;
+  }
+  
+  .t-myBag__cards--saved .m-myBagHeadersName__items{
+    width: 222px;
+  }
+  
+  .t-myBag__cards--saved .m-myBagHeadersName__items--saved{
+    width: 50%;
+    padding-left: 245px;
+  }
+  
+  .t-myBag__cards--saved .o-myBag__column[name="columnQuantity"], .t-myBag__cards--saved .o-myBag__column[name="columnTotal"]{
+    display: none;
+  }
+  .t-myBag__cards--saved .o-myBag__column[name="columnPrice"]{
+    width: 50%;
+  }
+  .t-myBag__emptyList{
+    margin: 0 auto;
+  }
+}
+
+// Desktop
+@media (min-width: 1280px) {
+  .t-myBag {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .dontGift-modal{
+    width: 510px;
+    height: 208px;
+    top: 35%;
+    left: 35%;
+    overflow: hidden !important;
+  }
+  
+  .dontGift-modal .a-product__paragraphProductDescription{
+    font: $body2;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    width: 383px;
+    height: 37px;
+    margin: 0;
+    padding-left: 20%;
+    padding-top: 15px;
+
+  }
+  
+  .dontGift-modal .a-btn{
+    width: 220px;    
+    margin-left: 28%;
+    margin-top: 27px;
+  }  
+}
+
+.modelTop{
+  top: 0px
+}
+

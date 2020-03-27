@@ -1,0 +1,84 @@
+.m-gallery
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+
+    .m-carousel
+        width: 90%
+        div 
+            width: 100%
+
+            img 
+                width 100%
+        
+        .slick-next
+
+            &:before
+                // This style represent the substitution of slick font for liverpool font icon
+                // When gallery will be rewrited for react this styles have to be removed
+                font-family: 'icomoon' !important;
+                content: "\e904"
+                color: black
+                font-size: 12px
+
+        .slick-prev
+            z-index: 2;
+
+            &:before
+                // This style represent the substitution of slick font for liverpool font icon
+                // When gallery will be rewrited for react this styles have to be removed
+                font-family: 'icomoon' !important;
+                content: "\e903"
+                color: black
+                font-size: 12px
+
+.slick-dots 
+    li.slick-active    
+        button:before
+            opacity: .75;
+            color: $primary-color;
+            font-size: .6rem;
+
+.slick-dots 
+    li 
+        button:before
+            font-size: 9px;
+        button:hover:before
+            opacity: 1;
+            color: #ff87d8;
+            font-size: 9px;
+
+@media only screen and (max-width: 991px)
+    .m-carousel
+        width: 90%
+        height: auto
+        max-height: fit-content
+        div 
+            width: 100%
+
+            img 
+                width 100%
+        
+        .slick-next
+            padding-bottom: 30px
+
+            &:before
+                // This style represent the substitution of slick font for liverpool font icon
+                // When gallery will be rewrited for react this styles have to be removed
+                font-family: 'icomoon' !important;
+                content: "\e904"
+                color: black
+                font-size: 12px
+
+        .slick-prev
+            z-index: 2;
+            padding-bottom: 30px
+
+            &:before
+                // This style represent the substitution of slick font for liverpool font icon
+                // When gallery will be rewrited for react this styles have to be removed
+                font-family: 'icomoon' !important;
+                content: "\e903"
+                color: black
+                font-size: 12px
+

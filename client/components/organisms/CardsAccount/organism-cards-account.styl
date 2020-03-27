@@ -1,0 +1,54 @@
+.m-cardBox
+	//min-height 320px
+#delete-modal.modal
+	.modal-dialog .modal-content
+		height 200px
+.o-myAccount__cards
+	&.-default
+		margin-top: -10px
+		& .row:nth-child(2)
+			margin-top: 22px
+.o-myAccount__cards .a-cards__descriptionCardBox
+	word-break: break-all
+.o-myAccount__cards--empty .m-account__cardInfo
+	order 2
+@media only screen and (max-width: 991px)
+	#delete-modal.modal
+		.modal-dialog
+			height auto
+			//align-items: center
+	.o-myAccount__cards--empty
+		margin-bottom: 180px
+	.o-myAccount__cards--empty .m-account__cardInfo
+		order initial
+	.a-cards__infoCardTitle
+		margin-bottom 0
+		white-space nowrap
+		font-size: 1.005rem
+
+.o-myAccount__editCards .mdc-text-field ~ .mdc-text-field-helper-line
+	visibility: hidden
+
+.o-myAccount__editCards .mdc-text-field--invalid ~ .mdc-text-field-helper-line
+	visibility: visible
+
+.o-myAccount__editCards .mdc-text-field ~ .mdc-text-field-helper-line .a-textField__helperText
+	visibility: visible
+
+.o-myAccount__editCards .mdc-text-field--invalid ~ .mdc-text-field-helper-line .a-textField__helperText
+	visibility: visible
+
+.o-myAccount__editCards	.mdc-select:not(.mdc-select--disabled)+.mdc-select-helper-line .mdc-select-helper-text
+	color: rgba(0,0,0,.6)
+	visibility: hidden
+
+.o-myAccount__editCards .mdc-select--invalid:not(.mdc-select--disabled).mdc-select--invalid + .mdc-select-helper-line .mdc-select-helper-text--validation-msg
+	color: red
+	visibility: visible
+
+.o-myAccount__editCards .m-textField__helperText.mdc-select-helper-line
+	margin 0px
+	padding-bottom 16px !important
+
+.o-click_and_collect .modal-content
+	background-color #f5f5f5

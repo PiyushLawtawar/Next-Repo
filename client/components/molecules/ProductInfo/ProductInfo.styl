@@ -1,0 +1,55 @@
+.m-offerList-productInfo
+    .a-offerList-title
+        font $title6
+        color $carbon
+    .m-ratings
+        display block
+    .a-offertList-note
+        font $body2
+        color $carbon
+        margin 16px 0px
+        white-space: nowrap
+    .a-offertList-product__size
+        mixin-font($overline, $gray-light)
+        margin-bottom: 3px
+        .a-offertList-product__sizeProperty
+            mixin-font($overline,$carbon)
+    .a-offertList-product__labelColor
+        font $overline-module
+        color $carbon
+    .--offerList
+        border-radius: 4px
+
+.o-offerList-product
+    .m-product__size
+        ul
+            list-style none
+            li
+                list-style none
+                margin: 8px 4px
+                span
+                    padding: 7px 11px
+                    width: auto
+                    height auto
+
+.m-product__texture, .m-product__material
+  margin 25px 0
+  width 100%
+
+@media only screen and (min-width: 992px)
+  .m-product__texture, .m-product__material
+    width 220px
+
+@media only screen and (max-width: 992px)
+  .m-offerList-productInfo
+    .a-productColor__item
+      height 16px
+      margin-top 6px
+      padding 0
+      width 16px
+      a
+        display block
+        height 14px
+        width 14px
+    .a-offertList-product__labelColor
+      margin-top 6px

@@ -1,0 +1,89 @@
+.o-cashInfo
+  background-color $white
+  box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+  border-radius 4px
+  padding 16px
+  margin-bottom 8px
+
+.o-personalInfo
+    background-color $white
+    box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+    border-radius 4px
+    padding 16px
+    margin-bottom 8px
+
+.a-cashInfo__accordionHeading
+  display flex
+  width 100%
+  color inherit
+  justify-content space-between
+  flex-direction row
+  align-items center
+  &[aria-expanded="true"]
+    .a-cashInfo__accordionIcon
+      transform rotate(180deg)
+      transition transform .3s ease-in-out
+  &[aria-expanded="false"]
+    .a-cashInfo__accordionIcon
+      transform rotate(0deg)
+      transition transform .3s ease-in-out
+
+
+.a-cashInfo__heading
+  font $body1-section
+  margin 0
+
+.a-cashInfo__Info
+  font $body2
+  text-align left
+  color $carbon
+  margin-bottom 19px
+
+.a-cashInfo__important
+  font 0.75rem $bold
+  color #ff001f
+
+.a-cashInfo__description
+  font $caption
+  color #3b3b3e
+  text-align center
+  margin 0
+
+.a-cashInfo__bolded
+  font 0.75rem $bold
+  color #3b3b3e
+
+.a-cashOptions__rectangleCard
+  width 80px
+  height 52px
+
+.a-cashInfo__horizontalSeparator
+  margin 14px 0
+
+.a-cashInfo__horizontalSeparator--alter
+  margin 14px 0 13px 0
+
+@media (min-width: 991px) 
+  .o-cashInfo
+    padding 24px 24px 10px 24px
+    margin-bottom 24px
+
+  .a-cashInfo__heading
+    font $title6-popup
+
+  .a-cashInfo__Info
+    margin-bottom 20px
+
+  .a-cashOptions__rectangleCard
+    width 93px
+    height 60px
+
+  .a-cashInfo__horizontalSeparator--alter
+    margin 14px 0 14px 0
+
+@media (min-width: 1199px)
+  .o-cashInfo
+    padding 24px 24px 16px 24px
+
+  .a-cashInfo__horizontalSeparator--alter
+    margin 14px 0 24px 0

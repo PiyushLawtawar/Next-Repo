@@ -1,0 +1,34 @@
+.m-card-list--aside
+    background-color $white
+    box-shadow $b-shadow-card
+    padding 10px
+    margin 16px 0px
+    border-radius: 4px
+    .a-card-title
+        padding 3px 24px 13px 20px
+        font $title7
+        border-bottom: solid 1px $timberwolf
+    .m-card-body--aside
+        ul
+            padding: 0px
+            margin: 0px
+            li
+                margin-top 0px
+                list-style none
+                a
+                    font $body2
+                    text-decoration none
+                    color $carbon
+                    display: flex
+                    align-items: center
+                    height: 40px
+                    padding-left: 50px
+                    margin-left: -10px
+                    margin-right: -10px
+                    &:active
+                        background: $silver
+
+@media (min-width: 992px) and (max-width: 1279px)
+    .m-cardBody__margin
+        margin-left: -20px;
+

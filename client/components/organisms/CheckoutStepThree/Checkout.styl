@@ -1,0 +1,226 @@
+// checkout
+.a-checkoutSteps__bar
+	height 3px
+	background $checkoutStepBarColor
+.react-date-picker
+	width 100%
+	.react-date-picker__wrapper
+		width 100%
+		border-radius 4px
+		height 36px
+		border-color #e6e6e6
+.react-datepicker__input-container
+	position relative
+	.a-calendar__icon
+		position absolute
+		top 10px
+		right 8px
+	.a-calendar__required
+		z-index 0
+		position absolute
+		top 8px
+		color $red
+		left 151px
+	.a-calendar__input
+		width 100%
+		border-radius 5px
+		padding 0 0 0 16px
+		height 36px
+		border 1px solid rgba(0,0,0,.12)
+		&:hover
+			border 1px solid #000
+		&:focus
+			border 2px solid $primary-color
+			outline $primary-color
+	input::placeholder
+		font $body2
+		color rgba(0,0,0,.6)
+.input-calendar-alert
+	color rgba(0,0,0,.6)
+	padding 0 16px
+.m-modal
+	.modal-content
+		height auto!important
+.m-box
+	background-color $white
+	box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+	border-radius 4px
+	padding 10px 25px
+.m-checkoutSteps
+	display block
+	label
+		margin .5rem 0
+	&:hover
+		color $white
+.m-checkoutHelp
+	display flex
+	align-items flex-end
+	justify-content center
+	flex-direction column
+	i
+		padding-right 4px
+	&:hover
+		color $white
+.m-menuBack
+	color $a-topLink-color
+	position absolute
+	top 11px
+	&:hover
+		color $white
+.m-box__accordionHeading
+	display flex
+	width 100%
+	color inherit
+	justify-content space-between
+	flex-direction row
+	align-items center
+.m-box__containershipToAddress
+	display flex
+	justify-content space-between
+	align-items center
+.a-checkout__fail
+	font-size 88px
+	color $red
+.a-box__radioWarningAlert
+	color $tangerine
+	font $caption
+.a-box__radioSuccessAlert
+	color $lime-green
+	font $caption
+.m-checkoutSteps
+	height 3px
+.icon-arrow_down
+	transition transform .3s ease-in-out
+.rotate-180
+	transform rotate(180deg)
+	transition transform .3s ease-in-out
+.-failPayment
+	color $red
+.-headingMargin
+	margin 30px 0
+.-progressColor
+	background-color $checkoutProgressColor
+.-disabled
+	opacity 0.7
+	font $body2-others
+.-bgWhite
+	background-color transparent
+
+.-ml-45
+	margin-left 45px
+.-btnCheckout
+	height 36px
+	font-size 0.875rem
+.-stores
+	max-height 500px
+	overflow-y scroll
+	padding-right 1rem
+	width 100%
+	display none
+.-previewList
+	max-height 500px
+	overflow hidden
+
+#shipToAddress .mdc-form-field
+	align-items start
+	label
+		padding-top 8px
+	//overflow-y scroll
+.-pl-associatedPurchase
+	padding-left 45px
+.bs-popover-top
+	border 0
+.noSearchBar
+	.m-menuBack
+		position relative
+		top 0
+.-primaryColor
+	color $primary-color
+.-white
+	background-color $white
+.-digital
+	color $lime-green
+.-small
+	font-size x-small
+.-bold
+	font-weight bold
+.-driveThru
+	color $primary-color
+.-step1
+	top 68px
+.-alertCheckout
+	top 94px
+.-boxUnshatter
+	background-color transparent
+	box-shadow none
+.-pendingDelivery
+	color $tangerine
+.-primaryLogo
+	path
+		fill $primary-color
+.-underline
+	text-decoration underline
+.-noClose
+	.mdc-snackbar__actions
+		.icon-close
+			display none
+.-static
+	position static
+	display block
+	top unset
+	width 100%
+	margin 0 0 10px 0!important
+	.mdc-snackbar__surface
+		max-width 100%
+		width 100%
+	p
+		margin 0
+#otherArea
+	display none
+@media (max-width 992px)
+	.m-box
+		padding 15px
+	.a-checkoutSteps__text
+		color $lead
+	.-failPayment
+		font $body1
+	.-boxUnshatter
+		background-color #fff
+		box-shadow 0 2px 4px 0 rgba(0,0,0,0.15)
+	.-noBottomBorders
+		border-bottom-left-radius 0
+		border-bottom-right-radius 0
+	.-noTopBorders
+		border-top-left-radius 0
+		border-top-right-radius 0
+	.-checkoutHeaderConfirmation
+		background-color $checkoutHeaderConfirmation
+		margin 0 -15px
+	.-resumeTitle
+		font $body1
+	.-bgWhite
+		background-color $white
+	.-progressColor
+		background-color $primary-color
+		height 3px
+	.-headingMargin
+		margin 20px 0
+	.-ml-45
+		margin-left 0
+	.-btnCheckout
+		border 0
+		text-align left
+		border-top 1px solid #f2f2f2
+		padding 15px 0 0 0
+		color $carbon
+		font $body2-title
+		i
+			float right
+		&:hover
+			color $carbon
+			border-color transparent
+
+#shipToAddress .-btnCheckout
+	@media screen and (min-width: 991.5px)
+		width: auto
+		min-width: 200px

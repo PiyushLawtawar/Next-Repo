@@ -1,0 +1,39 @@
+.m-plp__filterApplied
+    .plp-head-filter
+        p
+            color $carbon
+            display inline-flex
+            font $body1-section
+            margin 0
+            width 70%
+        a
+            color $carbon
+            display inline-block
+            font-size .75em
+            text-align right
+            width 30%
+            &:hover, &:focus
+                color $carbon
+                text-decoration none
+    .mdc-chip-set
+        display inline-block
+        padding 0
+        &:focus
+            outline 0
+.a-icon__filter
+    -moz-transition all .2s linear
+    -webkit-transition all .2s linear
+    transition all .2s linear
+
+.a-icon__filter.down
+    -ms-transform: rotate(180deg)
+    -moz-transform: rotate(180deg)
+    -webkit-transform: rotate(180deg)
+    transform: rotate(180deg)
+@media (min-width: 992px) and (max-width: 1024px)
+    .m-plp__filterApplied
+        .plp-head-filter
+            p
+                width 60%
+            a
+                width 40%

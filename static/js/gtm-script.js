@@ -1,0 +1,4 @@
+/**
+ * GTM script  minitied manually.
+ */
+var process={};process.env=JSON.parse(document.getElementById("envVar").value);var locationHref=this.location.href,sendKey="";locationHref.indexOf("liverpool")>0?sendKey=process.env.GTMLP||"GTM-K4M5VFN":locationHref.indexOf("williams-sonoma")>0?sendKey=process.env.GTMWS||"GTM-PRJL2D":locationHref.indexOf("potterybarnkids")>0?sendKey=process.env.GTMPBK||"GTM-TB95D2":locationHref.indexOf("potterybarn")>0?sendKey=process.env.GTMPB||"GTM-KHJC6L":locationHref.indexOf("pbteen")>0?sendKey=process.env.GTMPBT||"GTM-52R4FR":locationHref.indexOf("westelm")>0&&(sendKey=process.env.GTMWEL||"GTM-MGXXT9"),function(e,n,s,o,t){e[o]=e[o]||[],e[o].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var r=n.getElementsByTagName(s)[0],a=n.createElement(s);a.async=!0,a.src="https://www.googletagmanager.com/gtm.js?id="+t,r.parentNode.insertBefore(a,r)}(window,document,"script","dataLayer",sendKey);

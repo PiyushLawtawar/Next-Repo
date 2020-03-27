@@ -1,0 +1,397 @@
+// All normal
+.a-blockElement
+  margin 0
+  width 100%;
+.a-blockElement--validity
+  margin-top 19px
+  text-align center
+  padding-bottom 39px
+  font $body2-others
+  font-weight normal
+  font-style normal
+  font-stretch normal
+  line-height normal
+  letter-spacing normal
+  color $carbon
+
+.a-text, .a-inlineElement, .a-columnName
+  font-weight normal
+  font-style normal
+  font-stretch normal
+  line-height normal
+  letter-spacing normal
+.a-text
+  margin 0 8.5px
+  margin-left 0
+.a-text--iconMybag
+  font-size 20px
+
+.a-buttonTabIcon
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  width: auto;
+  height: 25px;
+  border-radius: 25px;
+
+.a-buttonTabIcon--selected
+  background $primary-color
+  // width auto
+  // height auto
+  // border-radius 999px
+  // margin 0
+  margin-top 10px
+  line-height 24px
+  margin-left 5px
+  color white
+
+.a-buttonTabIcon--unselected
+  background $lead
+  // width auto
+  // height auto
+  // padding 0 7px
+  // margin 0
+  margin-top 10px
+  line-height 24px
+  margin-left 5px
+  color white
+
+.a-inlineElement
+  font: $overline-link
+  color $carbon
+  font-weight 300
+  margin 0
+  margin-bottom 12px
+  height 16px
+  border 0
+  background transparent
+
+.a-inlineElement--choiceCategoryTitle
+  font-size .875em
+  margin-bottom 12px
+  padding-left 16px
+
+.a-inlineElement:focus
+  outline 0
+
+.a-inlineElement--giftTableMessage, .a-inlineElement--giftTableActions, .a-inlineElement--giftTableName, .a-inlineElement--giftTableType, .a-inlineElement--eventsProduct
+  color $carbon
+  font-weight normal
+  font-style normal
+  font-stretch normal
+  line-height normal
+  letter-spacing normal
+
+.a-inlineElement--giftTableName
+  font-size 16px
+
+.a-inlineElement--giftTableActions, .a-inlineElement--giftTableType, .a-inlineElement--eventsProduct
+  margin-right 19px
+  font-size 14px
+.a-inlineElement--eventsProduct
+  height 21px
+  margin-bottom 0
+.a-inlineElement--eventsProduct:first-child
+  padding-left 0
+.a-inlineElement--giftTableType
+  padding-top 19px
+  border-top 1px solid $timberwolf
+  height 34px
+
+.a-inlineElement--giftTableMessage
+  font-size 12px
+
+.a-inlineElement--enphasis
+  font-size 16px
+  font-weight normal
+  height auto
+  margin-bottom 3px
+
+.a-inlineElement--enphasisPrice
+  font-size 16px
+  font-weight normal
+  height 21px
+  margin-bottom 3px
+
+.a-inlineElement--strikethrough
+  font-size 16px
+  font-weight normal
+  height 21px
+  margin-bottom 3px
+  color $lead
+  text-decoration line-through
+  width auto
+  position relative
+  display inline-block
+
+.a-inlineElement--emptyMessage
+  width 100%
+  height 26px
+  font: $share-modal
+  font-weight normal
+  font-style normal
+  font-stretch normal
+  line-height normal
+  letter-spacing normal
+  text-align center
+  margin-top 48px
+  color $carbon
+
+// flags
+.a-inlineElement--default
+  background $silver
+  border-radius 16px
+  color $carbon
+  height 22px
+  padding 0 10px
+  line-height 1.9em
+  text-align center
+  min-width 100px
+
+// .a-inlineElement--specialTag, .a-inlineElement--giftTag, .a-inlineElement--presaleTag
+//   background $silver
+//   border-radius 16px
+//   color $carbon
+//   height 22px
+//   padding 0 10px
+//   line-height 1.9em
+
+.a-inlineElement--presaleTag
+  padding 0 20px
+
+.a-inlineElement--simpleLineSpacing
+  margin-bottom 1px
+  color $carbon
+
+.a-inlineElement--seller
+  margin-top 16px
+
+.a-inlineElement--total
+  color $red
+  position relative
+  display inline-block
+
+.a-inlineElement--totalTitle
+  font: $body1
+  color $carbon
+  font-weight bold
+
+.a-inlineElement--fEstimadaTitle
+  font-weight normal
+  margin 0
+  margin-top 16px
+
+
+.a-inlineElement--yellowOrangeText
+  color $yellow-orange
+
+.a-inlineElement--terms
+  font: $caption
+  color $carbon
+
+.a-columnName
+  font: $body2-others
+
+.a-closeGiftModal
+  line-height 1.5em
+
+.-yellowOrangeText
+  font-size 14px
+  height 19px
+  color $yellow-orange
+
+.-greenText
+  font-size 14px
+  height 19px
+  color $lime-green
+
+.-marginSeparatorTop
+  margin-top 16px
+  margin-bottom 1px
+
+.-decimal
+  top -0.2em
+  padding-left 1px
+  position absolute
+  left 100%
+  top 32%
+
+.-enphasisDecimal
+  position relative
+  display inline-block
+  margin-bottom 0
+
+.-alignDecimal
+  line-height 14px
+.-alignDecimal .-decimal
+  font-size inherit
+  top 7px
+
+.-alignDecimal .-decimal:before
+  content "."
+
+.-quantityReadOnly
+  width 100px
+  height 44px
+  text-align center
+  border 1px solid $gray89
+  line-height 3em
+  border-radius 4px
+  font $body1
+  color $lead
+  display: flex
+  align-items: center
+  justify-content: center
+.-back:before
+  content "\e906"
+  font-family 'icomoon'
+  margin-right 6px
+
+.-brand
+  margin-top 14px
+
+.-gift::before
+  font-family 'icomoon'
+  content "\e927"
+  padding-right 8px
+  font-size 16px
+
+.-gift
+  padding-left 0
+.-giftWrap
+  font $caption
+  font-weight 300
+  font-style normal
+  font-stretch normal
+  line-height normal
+  letter-spacing normal
+  color $lead
+  text-decoration underline
+  padding-top 6px
+  height 14px
+  padding-left 0
+
+.-block
+  display block
+
+.a-inlineElement--noticePrice
+  margin-top 10px
+  margin-bottom 9px
+
+.a-inlineElement--total .-alignDecimal .-decimal
+  font-size 20px
+  top 7px
+.-optionColor
+  width 25px
+  height 25px
+  border-radius 50%
+  border solid 1px #ddd // changes made for 22523
+  // margin 4px
+  // margin-right 21px
+  // margin-left 0
+
+.a-optionWrap
+  width 25px
+  height 25px
+  opacity 0
+
+.-blueWrap
+  background $pale-green
+.-yellowWrap
+  background $yellow-orange
+.-grayWrap
+  background $lead
+.-pinkWrap
+  background $pale-red
+
+
+.-promotionDescription
+  padding-left 15px
+  padding-right 15px
+  font $body2-others
+  font-weight 300
+  font-style normal
+  font-stretch normal
+  line-height normal
+  letter-spacing normal
+  color $carbon
+
+.-messageTitle
+  padding-bottom 16px
+.a-figCaption
+  padding-top 25px
+
+// Mobile
+@media (min-width: 320px) and (max-width: 991px) {
+  .a-inlineElement{
+    width: auto;
+    height: auto;
+  }
+  .a-inlineElement--enphasisPrice{
+    color: $red;
+  }
+  .a-inlineElement--giftTableActions, .a-inlineElement--total{
+    display: none;
+  }
+
+  .a-inlineElement--giftTableMessage{
+    width: 85%;
+    height: 12px;
+    overflow: hidden;
+  }
+  .a-inlineElement--giftTableType{
+    margin-right: 0;
+    border-top: 0px;
+  }
+  .-greenText{
+    width: 95%;
+  }
+  .-quantityReadOnly{
+    max-width: 150px;
+    width: 66%;
+    height: 43.6px;
+  }
+  .a-inlineElement--emptyMessage{
+    font-size: 16px;
+  }
+
+  .a-inlineElement--choiceCategoryTitle{
+    padding-left: 0;
+  }
+  .a-inlineElement--giftTableName{
+    font-size: 14px;
+  }
+}
+// Tablet
+@media (min-width: 992px) and (max-width: 1279px) {
+  .a-inlineElement--giftTableMessage{
+    width: 90%;
+  }
+  .-quantityReadOnly{
+    width: 100px;
+  }
+  .a-inlineElement--choiceCategoryTitle{
+    padding-left: 0;
+  }
+}
+
+// Desktop
+@media (min-width: 1280px) {
+  .a-text--iconMybag{
+    margin-left: 0;
+  }
+  .a-inlineElement--total{
+    left: 0px;
+  }
+}
+
+
+
+// @media screen and (min-width:0\0) {
+//   .-alignDecimal .-decimal{
+//     font-size: 19px;
+//     top: 7px;
+//   }
+// }

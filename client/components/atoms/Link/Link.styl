@@ -1,0 +1,580 @@
+
+.iconSmallText
+			font-size 9px
+
+.a-product__anchorColors
+		mixin-font($caption,#959595)
+		display none
+		cursor pointer
+		&:hover
+				color #959595
+		&.visible
+				display block
+
+.a-product__anchorProductQuantity
+		border-bottom 1px solid $timberwolf
+		list-style-type none
+		a
+				mixin-font($body2, $lead)
+				display block
+				padding 15px 0 15px 30px
+.a-product__anchorProductDescriptionMoreInfo
+		mixin-font($overline, $lead)
+		text-decoration underline
+		padding-top 10px
+.m-product__anchorShareSocial
+		mixin-font($caption, $carbon)
+.a-product__anchorProductDownloadCode
+		mixin-font($overline, $lead)
+		text-decoration underline
+		padding-bottom 1em
+		margin-right .3em
+		display inline-block
+		position relative
+
+.a-product__anchorSelectState
+		mixin-font($body2, rgba(0,0,0,0.6))
+		border-bottom 1px solid $timberwolf
+		display block
+		padding 15px 0 15px 17px
+		width 100%
+		&:last-of-type
+				border-bottom none
+		&:hover
+			background $gray-mid
+		.a-product__iconProductShare
+				display block
+				padding 25px 0 0 25px
+				width 100%
+				i
+						color #9a9a9a
+						font-size 1.438em
+						display inline-block
+						height 44px
+						margin-right 20px
+						padding-top 10px
+						text-align center
+						vertical-align middle
+						width 44px
+				span
+						mixin-font($body2,$carbon)
+						display inline-block
+						font-size 0.875rem
+						vertical-align middle
+
+.a-productInfo__selledByLink
+		color $lead
+		text-decoration underline
+		cursor  pointer
+		&:hover, &:after
+				color $lead
+				text-decoration underline
+
+.a-list__grid
+		line-height 2.4em
+		text-align center
+		.a-grid-link
+				color $carbon
+				text-decoration none
+				&:after
+						text-decoration none
+				i
+						color $timberwolf
+						font-size .75em
+						margin-left .75em
+		.a-grid-link.show
+				i:before
+						content "\e919"
+
+.a-breadcrumb__label
+		color $carbon
+		font-size 0.75em
+		text-decoration none
+		&:hover
+				color $carbon
+				text-decoration underline
+				font-weight: 600
+				i
+					text-decoration: none
+		i
+				font-size .75em
+				margin 0 .6em 0 1em
+span.a-breadcrumb > i.icon-arrow_right
+			font-size 9px
+			margin-left 1em
+			margin-right 0.6em
+.a-back__button
+		mixin-font($caption,$black)
+		i
+				margin-right 10px
+.a-marketplace__moreOpinions
+		mixin-font($body2,$carbon)
+		text-decoration underline
+		&:hover, &:after
+				color $carbon
+.a-marketplace__moreOpinions.show
+		display none
+
+// PLP
+.a-btn__filters
+		color $lead
+		i
+				color $lead
+				font-size .625em
+				margin-left 1em
+.a-plp__moodview.inactive
+		color $silver-light
+.a-plp__moodview
+		color $carbon
+		margin-right 1em
+		&:hover
+				color $carbon
+				text-decoration none
+		&:after
+				text-decoration none
+.tooltip-inner
+		background $lead
+		color $white
+		font-size .625em
+.tooltip .arrow::before, .tooltip.bs-tooltip-top .arrow::before
+		border-top-color $lead
+
+.a-productColor__item
+		border-radius 50%
+		border 1px solid #cdcdcd
+		display inline-block
+		height 30px
+		list-style-type none
+		margin 0 2px
+		padding 1px
+		width auto
+		a
+				border-radius 50%
+				border 1px solid white
+				cursor pointer
+				display inline-block
+				height 26px
+				width 26px
+				&.white
+						border 1px solid transparent
+		&.-mac
+				width: 37px
+				height: 37px
+				a
+						height: 33px
+						width: 33px
+						background-image: url(https://ss701.liverpool.com.mx/sh/1028323669.jpg)
+						background-size: 100%
+		&.active
+				border 1px solid #000
+
+.a-product__colorLabel
+		mixin-font($overline,$carbon)
+		display inline-block
+		margin-left 7px
+		margin-top 2px
+		vertical-align top
+
+.a-plp-color
+		margin 0.6em 0 .5em 0
+		ul
+				margin-bottom 0
+				padding 0
+		.a-product__color
+				border 1px solid $timberwolf
+				height 20px
+				width 20px
+				span
+						border-radius 50%
+						display block
+						height 16px
+						width 16px
+		.a-product__color.active
+				border 1px solid $gray
+.a-plp-color
+	.a-product__color
+		.atom-color
+			background-size contain
+			border-radius 50%
+			display block
+			height 16px
+			width 16px
+
+
+@media only screen and (max-width: 991px)
+		.a-plp-color
+				.a-product__color
+						height 16px
+						width 16px
+						.atom-color
+								height 12px
+								width 12px
+		.o-product__detail .m-product__productColor .a-productColor__item
+				margin 0 22px 5px 0
+//- header
+.a-header__logo
+		width auto
+		max-width 174px
+		max-height 40px
+.a-header__navMobileLink
+		padding 10px 0
+		white-space nowrap
+		overflow hidden
+		text-overflow ellipsis
+		text-decoration none
+		font $body2
+		color $lead
+		display block
+		transition 0.3s
+		&:hover
+				text-decoration none
+				color $lead
+.-primary-style
+		color $primary-color
+.mobile-category-action
+		font $title7
+		color $carbon
+		i
+				top 16px
+				position absolute
+				right 15px
+				font-size 11px
+.mobile-subcategory-action
+		font $title7
+		color $carbon
+		padding 10px 30px
+		i
+				font-size 11px
+				position absolute
+				top 16px
+				left 16px
+.a-header__strongLink
+		font $body2
+		color #3b3b3b
+		padding 0
+		i
+				font-size 11px
+				padding 0 0 0 10px
+		&:hover, &:focus
+				color $primary-color
+				text-decoration none
+				box-shadow none
+.a-header__typeaheadLink
+		padding 15px 0
+		display block
+		text-decoration none
+		font $body2
+		color #000
+		label
+			cursor pointer
+		strong
+				font $body1-section
+		span
+				font $body1-price-plp-grid !important
+				color $primary-color
+		&:hover
+				text-decoration none
+				color initial
+.a-typeahead-title
+		color #000
+		font $title7
+		margin-bottom 0
+		padding-top 5px
+.a-header__topLink
+		font $body2
+		color $a-topLink-color !important
+		text-decoration none
+		line-height 36px
+		&:hover, &:focus
+				color $a-topLink-color
+				text-decoration none
+				box-shadow none
+		i
+				font-size 11px
+				padding 0 0 0 10px
+.a-header__sessionLink
+		font $caption
+		color $lead
+		line-height 26px
+		&:hover
+				color $primary-color
+				text-decoration none
+.a-dekstop__categoryLink
+		padding 5px 0
+		color #666
+		font-size 14px
+		white-space nowrap
+		overflow hidden
+		text-overflow ellipsis
+		font $body2
+		i
+				font-size 10px
+				position absolute
+				top 7px
+		&:hover
+				i
+						color #666
+.m-megamenu__dropdown li:hover .a-dekstop__categoryLink span
+				color #000
+				margin-left 5px
+				transition margin-left .1s
+
+.a-desktop__subcategoryTitle
+		font $body2
+		color #666
+		padding 0
+		&:hover
+				margin-left 5px
+				transition margin-left .1s
+				color $primary-color
+.a-desktop__subcategoryMore
+		color $primary-color
+		font $body1-menu-title
+		&:hover
+				color $primary-color
+.a-desktop__moreTitle
+		color #4a4a4a
+		font $body1
+		display block
+		margin 15px 0 25px 0
+		&:hover
+				color $primary-color
+.popover-body
+		box-shadow 0 2px 8px 0 rgba(0, 0, 0, 0.3)
+		padding .5rem 1.90rem
+//- footer
+.a-footer__linkSession
+		font $body2-title
+		color $white
+		text-decoration none
+		&:hover
+				color $white
+.a-footer__linkSession--login
+	text-decoration none
+	&:hover
+		color $white
+
+.a-footer__linkSpan1
+		font $body2
+		color $white
+.a-footer__linkSpan2
+	font $body2
+	color $white
+	margin-left 5px
+.a-footer__boletin
+		font $body2
+		border solid 1px #fff
+		display block
+		padding 10px
+		color #fff!important
+		text-align center
+		width 100%
+		&:hover
+				-moz-osx-font-smoothing grayscale
+				background #333
+				border solid 1px #313131
+.a-footer__link
+		font $caption
+		color $white
+		&:hover
+				color $white
+				text-decoration underline
+.a-footer__socialMedia
+		display inline-block
+		color #fff
+		font-size 20px
+		padding 0 13px
+		&:hover
+				color #fff
+				text-decoration none
+.a-footer__comments
+		display inline-block
+		font $caption
+		color #fff
+		//white-space nowrap
+		margin 0
+		&:hover
+				color #fff
+a.a-footer__contact
+	&:hover
+		text-decoration underline
+a.a-footer__comments
+	&:hover
+		text-decoration underline
+.a-footer__contact
+		font $caption
+		color #fff
+		padding 1px 0
+		margin 0
+		text-decoration none
+		&:hover
+				color #fff
+.a-footer__sectionTitle
+		font $body2
+		color $white
+		margin 0
+.a-footer__disclaimers
+		font $caption
+		display inline-block
+		color #fff !important 
+		padding 0 7px
+		&:hover
+				color #fff
+				text-decoration underline
+.a-footer__slash
+		font $caption
+		color #fff
+.a-footer__misc
+		padding 6px 0
+		color #fff
+		font $flagMesa
+		margin 0
+.a-header__profile, .a-header__zoom
+		display inline-block
+		background-color transparent
+		border 0
+		cursor pointer
+		padding 0 3px
+		&:focus
+				outline none
+		i
+				color $mobile-color
+				font-size 24px
+				line-height 1.3
+				padding 0 7px 0 0
+.a-header__bag
+		position relative
+		display inline-block
+		background-color transparent
+		border 0
+		cursor pointer
+		padding 0 3px
+		&:focus
+				outline none
+		i
+				color $bag
+				font-size 24px
+				line-height 1.3
+		span
+				font $body4
+				font-weight 500
+				position absolute
+				color $bag-items
+				padding 6px 3px
+				top 4px
+				margin-left auto
+				margin-right auto
+				left 0
+				right 0
+// .a-desktop__subcategoryImg
+// 		figure
+// 				img
+// 						width 100%
+.a-boutique__link
+		font $header-links
+		color #3b3b3b
+		vertical-align middle
+		&:hover
+				color $primary-color
+				text-decoration none
+.a-boutique__link .strong
+		font $body1-section
+
+//checkout
+.a-checkout__deleteBtn
+	mixin-font($body2,$carbon)
+	text-decoration none
+.a-checkoutBox__link
+	mixin-font($caption,$primary-color)
+	text-decoration underline
+.a-checkout__termsLink
+	mixin-font($caption,$primary-color)
+	text-decoration underline
+	margin-left 5px
+@media only screen and (max-width: 1100px)
+	.a-checkout__termsLink
+		font-size .65rem
+.a-box__actionAddress
+	color $carbon
+	font-size 24px
+.a-menuMotion__link
+	color $lead!important
+	font $body2
+	&:hover
+		background-color $gray-mid
+.a-checkout__phoneID
+	font $body2-title
+	color $carbon
+.a-checkout__btnOptions
+	font $share-modal
+	color $lead
+.a-checkout__moreInfo
+	color $lead
+	font $caption
+	i
+		position absolute
+		right 16px
+		top 3px
+.a-box__btnConfirm
+	font $body1
+	color $lead
+	i
+		font-size 18px
+.a-box__moreInfo
+	font $body2
+	color $primary-color
+	display inline-block
+.a-box__invoice
+	color $primary-color
+	text-decoration underline
+	font $body2
+	display inline-block
+.a-mycards__termsLink
+	mixin-font($caption,$primary-color)
+	text-decoration underline
+//tracking
+.a-tracking_buyDetails
+	mixin-font($caption, $primary-color)
+	margin-right 8px
+	text-decoration underline
+
+.a-tracking__addressValue
+	mixin-font($body2, $carbon)
+
+.a-tracking__addressValue--topPadding
+	margin-top -7px
+//sitemap
+.a-sitemamp__category
+	display block
+	mixin-font($body3,$carbon)
+
+.a-billing__invoiceConditions
+	mixin-font($body2, $primary-color)
+.a-billing__invoiceConditions:hover
+	color: $primary-color
+.a-labelCompareLink
+	color $primary-color
+	text-decoration underline
+
+
+@media only screen and (max-width: 991px)
+		.a-footer__link
+				display block
+				padding 9px 0
+				font-size 0.875em
+		.a-footer__contact
+				margin 0 0 10px 0
+		.a-header__logo
+				max-width 150px
+				margin 0 auto
+		// checkout
+		.a-box__invoice
+			font $caption
+		.a-box__moreInfo
+			display block
+@media only screen and (min-width: 992px)
+		.a-product__anchorSelectState:first-of-type
+				border-top 1px solid $timberwolf
+
+		.a-product__anchorColors.visible
+				display none

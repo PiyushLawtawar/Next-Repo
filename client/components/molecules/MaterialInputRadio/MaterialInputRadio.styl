@@ -1,0 +1,40 @@
+.mdc-radio::before, .mdc-radio::after
+		background-color $lead
+.mdc-form-field .mdc-radio.mdc-ripple-upgraded.mdc-ripple-upgraded--unbounded .mdc-radio__background .mdc-radio__outer-circle
+		border solid 1px $gray
+.mdc-form-field .mdc-radio.mdc-ripple-upgraded.mdc-ripple-upgraded--unbounded.mdc-radio--disabled .mdc-radio__background .mdc-radio__outer-circle
+	border solid  1px $timberwolf
+.mdc-form-field .mdc-radio.mdc-ripple-upgraded.mdc-ripple-upgraded--unbounded .mdc-radio__background .mdc-radio__inner-circle
+		border-color $primary-color
+.mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle
+		border solid 2px
+		border-color $primary-color
+.a-pdp__inputRadioStore
+	.mdc-form-field, label
+		width 100%
+		span:first-of-type
+			color $carbon
+		span:last-of-type
+			mixin-font($body2,$black-with-opacity)
+			line-height 1.2em
+			width 100%
+		.not-available
+			color $red !important
+.mdc-form-field .mdc-radio ~ label
+	font-size 1em
+	margin-bottom 0
+
+.mdc-component__cards
+		.mdc-card
+				background-color $white
+				height 316px
+				width 262px
+.mdc-radio--disabled+label
+	color $timberwolf
+//Created by zensar
+.popupPosition 
+	position absolute
+	will-change transform
+	top 0px
+	left 0px
+	transform translate3d(-139px, 2px, 0px)

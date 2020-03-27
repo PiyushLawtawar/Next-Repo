@@ -1,0 +1,73 @@
+.m-product__eddClickAndCollect
+	border-top 1px solid $timberwolf
+	padding 12px 0 19px
+
+.m-product__eddAddressList
+	border 1px solid #ececec
+	overflow-y scroll
+	max-height 140px
+	.user-address
+		li
+			border-bottom 1px solid #f2f2f2
+			list-style-type none
+			&:hover
+				cursor pointer
+			.mdc-form-field
+				margin 12px 0
+				padding-left 5px
+				width 100%
+				label
+					mixin-font($body2, $carbon)
+					cursor pointer
+					line-height 1.2em
+					padding 0
+					width 100%
+					> span
+						font-size 0.75rem
+
+.m-product__eddAddress
+	.mdc-text-field.mdc-text-field--outlined
+		height 36px
+		&.mdc-text-field--outlined
+			.mdc-floating-label.a-input-label.mdc-floating-label--float-above
+				top 13px
+				left 5%
+		.mdc-floating-label
+			mixin-font($overline, #444)
+			left 10%
+			top 7px
+	.mdc-text-field--focused:not(.mdc-text-field--disabled):not(.mdc-text-field--textarea):not(.mdc-radio) .mdc-floating-label
+		font-size 0.75rem
+		left 0
+		top 10px
+		width auto
+
+.m-product__eddDate
+	border 1px solid $gray89
+	border-radius 4px
+	cursor pointer
+	display block
+	padding 14px 15px
+	position relative
+	margin 0
+	width 100%
+	p
+		mixin-font($caption, $carbon)
+		width 90%
+		word-break: break-all
+		&.-green
+			color $lime-green
+			word-break break-word 
+		&.a-product__eddDateStore
+			text-transform uppercase
+			word-break break-word 
+	i
+		mixin-font($overline-link, $carbon)
+		position absolute
+		right 16px
+		top 45%
+
+@media only screen and (min-width: 992px)
+	.m-product__eddAddress .mdc-text-field.mdc-text-field--outlined .mdc-floating-label
+		left 25%
+		top 7px

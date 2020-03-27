@@ -1,0 +1,103 @@
+//- megamenu interaction slidedown
+.category-menu
+  display flex
+  flex-flow wrap
+  .row
+    width 100%
+  .all-sections
+    align-items flex-end
+.m-megamenu_dropdown_close
+  transform-origin top
+  transform scaleY(0)
+  -webkit-transition -webkit-transform 0.1s 0.1s
+  transition -webkit-transform 0.1s 0.1s
+  -o-transition transform 0.1s 0.1s
+  transition transform 0.1s 0.1s
+.m-megamenu_dropdown_open
+      transform scaleY(1)
+      transform-origin top
+      -webkit-transition -webkit-transform 0.2s
+      transition -webkit-transform 0.2s
+      -o-transition transform 0.2s
+      transition transform 0.2s
+.m-megamenu__dropdown
+      display block
+    .nav-desktop-menu-action
+      cursor pointer
+  .m-megamenu__category
+    // opacity 0
+    // height 0
+.m-navDesktop__section
+    &:hover
+    .m-megamenu_dropdown_show
+      color $primary-color
+      cursor pointer
+    .m-megamenu__dropdown
+      .m-megamenu__category
+        opacity 1
+        height 31px // calc max height of li of dropdown
+       
+// image fadeIn effect
+@keyframes floating
+  from
+    transform: translate(0,  -50px)
+  to
+    transform: translate(0, 0px)
+@keyframes fadeIn
+  from
+    opacity 0
+  to
+    opacity 1
+.m-megamenu__category
+  &:hover
+    .m-desktop__submenu
+      .a-desktop__img
+        animation-name floating,fadeIn
+        animation-duration 1s
+        margin-right 0
+// submenu title effect margin left
+.a-desktop__submenuTitle
+  &:hover
+    span
+      color $primary-color
+      margin-left 5px
+      transition margin-left 0.1s
+
+
+
+
+@media (max-width: 1200px)
+  .m-megamenu
+    .o-navDesktop
+      .m-megamenu__dropdown
+        .popover
+         .col-lg-8
+            flex 0 0 74%
+            zoom 0.9
+          width 736px
+@media (min-width: 1200px)
+  .m-megamenu
+    .o-navDesktop
+      .m-megamenu__dropdown
+        .popover
+          .col-lg-8
+            flex 0 0 100%
+          width 956px
+@media (min-width: 1250px)
+  .m-megamenu
+    .o-navDesktop
+      .m-megamenu__dropdown
+        .popover
+          width 1000px
+@media (min-width: 1350px)
+  .m-megamenu
+    .o-navDesktop
+      .m-megamenu__dropdown
+        .popover
+          width 1100px
+@media (min-width: 1500px)
+  .m-megamenu
+    .o-navDesktop
+      .m-megamenu__dropdown
+        .popover
+          width 1213px

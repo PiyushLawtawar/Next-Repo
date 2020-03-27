@@ -1,0 +1,83 @@
+.m-plp__filterSection
+    margin-top 2em
+    .plp-filter-options
+        margin-top 1.5em
+        overflow hidden
+        padding-right 2.5em
+        .mdc-form-field .mdc-checkbox ~ label
+            font-size: 0.75rem
+            padding: 8px 0px
+            width: 100%
+        ul.a-plp-color li
+            display: inline
+        .a-search-filter
+            color $gray
+            font-size .75em
+            height 30px
+            &:focus
+                border-color #ada8a8
+                box-shadow none
+                color $carbon
+        label
+            font $overline
+            cursor pointer
+        .mdc-form-field
+            display flex!important
+            padding: 0px
+        .mdc-checkbox
+            flex 0 0 14px
+            height 14px
+            padding 13px
+            width 14px
+        ul
+            margin 0
+            padding 0
+        .a-link__viewMore
+            color $carbon
+            display block
+            font-size .875em
+            margin 1em 0
+        .a-product__color
+            border 0
+            height 20px
+            margin 8px 5px
+            width 20px
+            a
+                height 20px
+                width 20px
+       .a-product__sizeActive
+		    button
+			    background-color: $white
+			    border: 1px solid $primary-color
+			    color: $primary-color
+    .a-alert__input
+        color $red
+        font-size .75em
+    .plp-filter-options.active
+        max-height 500px
+        transition max-height 1s ease-out
+        overflow: auto
+    .plp-filter-options
+        max-height 0
+        transition max-height .5s ease-in
+    .plp-filter-options.active.show
+        max-height 520px
+        -webkit-transition max-height 1s ease-out
+        -moz-transition max-height 1s ease-out
+        transition max-height 1s ease-out
+.plp-filter-options .a-product__size, .plp-filter-options .a-product__sizeActive
+    .mdc-chip::before, .mdc-chip::after
+        background-color $white
+
+/* 20841 Start*/
+#filters-modal
+    .mdc-checkbox__background
+        left 21px
+        border 1px solid #ada8a8;
+    .mdc-checkbox.mdc-ripple-upgraded::before, .mdc-checkbox.mdc-ripple-upgraded::after
+        left 18px
+/* 20841 End*/
+@media (min-width: 992px) and (max-width: 1024px)
+    .m-plp__filterSection
+        .plp-filter-options
+            padding-right 0

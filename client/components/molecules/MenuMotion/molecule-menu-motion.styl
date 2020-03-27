@@ -1,0 +1,27 @@
+
+
+.menuMotion
+  .dropdown-toggle::before
+    
+  .dropdown-menu
+    position absolute
+    will-change transform
+    transform: translate3d(0px, 2px, 0px)
+    box-shadow 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 5px 0 rgba(0, 0, 0, 0.14)
+    border-radius 4px
+    background-color $gray98
+    border none
+    padding 0
+  .a-menuMotion__link
+    padding 10px 25px
+  .ripple-motion
+    /* Defect 23631 */
+    display block !important
+    background-position center
+    transition background 0.8s
+  .ripple-motion:hover
+    background #f2f2f2 radial-gradient(circle, transparent 1%, #f2f2f2 1%) center/15000%
+  .ripple-motion:active
+    background-color #d9d9d9
+    background-size 100%
+    transition background 0s

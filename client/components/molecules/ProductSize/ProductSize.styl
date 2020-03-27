@@ -1,0 +1,47 @@
+.m-product__size
+	&.--noScroll
+		overflow-x hidden
+	.a-product__sizeMore
+		mixin-font($overline-footer, #959595)
+		text-decoration underline
+
+.m-product__size ul
+	list-style-type none
+	margin 0
+	padding 0
+	li
+		display inline-block
+		margin-bottom 8px
+		margin-right 6px
+		vertical-align top
+		button
+			font-size 0.75em
+			height 40px
+			min-width 60px
+			padding 0 10px
+			width auto
+			white-space: nowrap
+			.mdc-icon-button:not(.mdc-ripple-upgraded)::after
+				transition opacity 100ms linear
+			.mdc-icon-button::before, .mdc-icon-button::after
+				border-radius 0
+				background-color $white
+
+&.-optic
+	ul
+		display flex
+		overflow-x auto
+		width 100%
+		&.dBlock
+			display block
+			overflow hidden
+	.a-product__anchorSizes
+		mixin-font($caption,$nobel)
+		cursor pointer
+		&.visible
+			display block
+
+@media only screen and (min-width: 992px)
+	.m-product__size.-optic ul
+		overflow-x hidden
+		max-width 400px

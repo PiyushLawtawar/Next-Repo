@@ -1,0 +1,138 @@
+.btnsize button
+           font-size:1rem !important
+
+.m-product__giftPurchase-container
+		font: $body2-others
+		padding-bottom: 3px
+		display: -webkit-box
+		-webkit-line-clamp: 1
+		-webkit-box-orient: vertical
+		overflow: hidden
+		text-overflow: ellipsis
+		text-align: left
+		text-transform: initial
+		button,
+		div
+				color: $lead
+				font-size 1rem
+				display: flex
+				align-items: center
+				justify-content: space-between
+				padding: 0 16px
+				text-transform none
+				height: 59px
+		span.a-giftPurchase-btnText
+				font: $body2-others
+				margin: 0 0 0 -25px
+				padding-bottom: 3px
+				width: 210px
+				display: -webkit-box
+				-webkit-line-clamp: 1
+				-webkit-box-orient: vertical
+				overflow: hidden
+				text-overflow: ellipsis
+				text-align: left
+				text-transform: initial
+				&.-imageBtn
+					width: 100%
+					margin: 0
+				&.-red
+					@media screen and (max-width: 1540px)
+						width: 290px
+					@media screen and (max-width: 1390px)
+						width: 265px
+					@media screen and (max-width: 1290px)
+						width: 250px
+					@media screen and (max-width: 991.5px)
+						width: 290px
+					@media screen and (max-width: 340.5px)
+						margin: 0 0 0 60px
+						width: 200px
+
+		i
+				font: $actionButton-text
+				color: $carbon
+		&.-small
+			button, > div
+				height 48px
+		&.-specs
+			padding-bottom 0px
+			button
+				height 56px
+				h2
+					mixin-font($body1, $gray29)
+					margin 0
+					padding-left 10px
+					text-overflow none
+					width auto
+
+.m-giftPurchase_modalList
+		ul
+				list-style: none
+				li
+						border-bottom: 1px solid $timberwolf
+						width: 100%
+						.mdc-form-field
+								height: 63px
+								width: 100%
+								cursor: pointer
+								label
+										font: $body2
+										height: 100%
+										display: flex
+										align-items: center
+										width: 100%
+										cursor: pointer
+								img
+										width: 55px
+										height: 40px
+										margin: 0 6px
+
+.-disabled
+	opacity: 0.33
+	cursor: not-allowed
+
+.-red
+	color: $red
+
+.m-giftPurchase-modal__title
+		font: $body2
+		margin-top: 15px
+
+.m-giftPurchase-modal__bodyTitle
+		font: $body2
+		margin-bottom: 15px
+
+.m-giftPurchase-modal__caption
+		font: $caption
+		color: $lead
+		margin-top: 15px
+		margin-bottom: -5px
+		text-align: center
+
+.a-giftAdded-img
+		width: 55px
+		height: 41px
+		margin-right:1rem
+
+@media only screen and (min-width: 992px)
+	.m-product__giftPurchase-container.-small
+		& button,
+		& div
+			height 40px
+			padding-left 16px
+			text-align left
+			color $carbon
+
+	.m-product__giftPurchase-container
+		button,
+		div
+			color: $carbon
+			font-size 1rem
+
+.a-giftPurchase-btnText
+	text-transform: inherit
+
+.a-giftPurchase-text
+	font: $overline
+	margin-bottom: 8px
